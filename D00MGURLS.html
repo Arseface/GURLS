@@ -4,9 +4,1194 @@
 
 <h1>D**MGURLS</h1>
 
-<h3>Introduction</h3>
+<h2>Introduction</h2>
 
 <p>A shameless copy and conversion of the mechanics from DRL's wiki. Both a proof of concept and a completely playable RPG in its own right.</p>
 
-</html>
+<h3>Dice Notation</h3>
+
+<p>You're going to be rolling a lot of dice when you play. When something says to roll XdY roll X number of Y-sided dice and adds the results together.
+
+For dice with a number of sides that don't exist, you can roll the next highest sided die and reroll max values till you get something legal. For instance, rolling 2d7 you'd roll two eight sided dice and reroll any 8s.
+
+Sometimes a weapon's damage will be listed as (XdY)×Z. This means that the weapon makes Z separate attacks whenever it is fired, and each attack does XdY damage.</p>
+
+<h2>Characters</h2>
+
+<h3>Inherent Qualities</h3>
+
+<p>Players start with 50 health points(HP).</p>
+
+<p>Everybody has a fists weapon and one prepared weapon slot. If you happen to lose your fists for some reason call the weapon something else.</p>
+
+<p>Players have a sight radius of 8 tiles. They're probably 5 ft tiles, but maybe they're a meter or something.</p>
+
+<h3>Classes</h3>
+
+<p>Classes subtly but drastically affect the ability of your character while playing through DoomRL. They come with their own unique strengths, as well as special traits from which only their class can choose. Currently there are no limitations, whether natural or artificial in construct, on what class you can choose for any reason.</p>
+
+<p>All classes have special starting characteristics, an advanced trait they can use from the very beginning of the game (as opposed to needing other traits to unlock its selection), and five unique master traits that highlight the class's uses.</p>
+
+<h4>Marine</h4>
+
+<p>The Marine is the hardy and forceful class, preferring brute strength and sheer power over all else.</p>
+
+
+<p>Starting Characteristics</p>
+	<ul>
+    <li>+10 HP</li>
+    <li>+50% duration for powerups</li>
+    <li>Advanced Trait: Badass</li>
+	</ul>
+
+<p>Master Traits</p>
+	<ul>
+    <li>Melee: Vampyre</li>
+    <li>Pistol: Bullet Dance</li>
+    <li>Shotgun: Army of the Dead</li>
+    <li>Burst: Ammochain</li>
+    <li>General: Survivalist</li>
+	</ul>
+	
+<table>
+	<tr>
+		<th colspan="19">Marine Masters: Prerequisites and Blocks</th>
+	</tr>
+	<tr>
+		<th rowspan="2">Master Trait</th>
+		<th colspan="9">Basic Traits</th>
+		<th colspan="9">Advanced Traits</th>
+	</tr>
+	<tr>
+		<th>Iro</th>
+		<th>Fin</th>
+		<th>HR</th>
+		<th>TaN</th>
+		<th>SoB</th>
+		<th>SoG</th>
+		<th>Rel</th>
+		<th>EE</th>
+		<th>Bru</th>
+		<th>Jug</th>
+		<th>Ber</th>
+		<th>DG</th>
+		<th>DM</th>
+		<th>Int</th>
+		<th>WK</th>
+		<th>Bad</th>
+		<th>SM</th>
+		<th>TH</th>
+	</tr>
+	<tr>
+		<th>Vampyre</th>
+		<td>O</td>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>O</td>
+		<td>X</td>
+		<td>2</td>
+		<td>O</td>
+		<td>1</td>
+		<td>O</td>
+		<td>X</td>
+		<td>X</td>
+		<td>O</td>
+		<td>1</td>
+		<td>O</td>
+		<td>O</td>
+	</tr>
+	<tr>
+		<th>Bullet Dance</th>
+		<td>O</td>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>2</td>
+		<td>2</td>
+		<td>O</td>
+		<td>X</td>
+		<td>X</td>
+		<td>O</td>
+		<td>X</td>
+		<td>1</td>
+		<td>X</td>
+		<td>X</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<th>Army of the Dead</th>
+		<td>O</td>
+		<td>X</td>
+		<td>X</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>2</td>
+		<td>X</td>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>O</td>
+		<td>X</td>
+		<td>X</td>
+		<td>X</td>
+		<td>1</td>
+		<td>1</td>
+		<td>O</td>
+	</tr>
+	<tr>
+		<th>Ammochain</th>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>X</td>
+		<td>2</td>
+		<td>X</td>
+		<td>2</td>
+		<td>X</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<th>Survivalist</th>
+		<td>3</td>
+		<td>O</td>
+		<td>X</td>
+		<td>2</td>
+		<td>X</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>O</td>
+		<td>1</td>
+		<td>O</td>
+		<td>X</td>
+	</tr>
+</table>
+
+<h4>Scout</h4>
+
+<p>The Scout is the swift and keen class, trying to make the best with speed and finesse before resorting to other tactics.</p>
+
+
+<p>Starting Characteristics</p>
+	<ul>
+    <li>All actions take .1s less per second they'd take normally. Minimum .1s less and .1s total.</li>
+    <li>Advanced trait: Intuition</li>
+	</ul>
+<p>Master Traits</p>
+	<ul>
+    <li>Melee: Blademaster</li>
+    <li>Pistol: Gun Kata</li>
+    <li>Shotgun: Shottyhead</li>
+    <li>Burst: Cateye</li>
+    <li>General: Gunrunner</li>
+	</ul>
+	
+<table>
+	<tr>
+		<th colspan="19">Scout Masters: Prerequisites and Blocks</th>
+	</tr>
+	<tr>
+		<th rowspan="2">Master Trait</th>
+		<th colspan="9">Basic Traits</th>
+		<th colspan="9">Advanced Traits</th>
+	</tr>
+	<tr>
+		<th>Iro</th>
+		<th>Fin</th>
+		<th>HR</th>
+		<th>TaN</th>
+		<th>SoB</th>
+		<th>SoG</th>
+		<th>Rel</th>
+		<th>EE</th>
+		<th>Bru</th>
+		<th>Jug</th>
+		<th>Ber</th>
+		<th>DG</th>
+		<th>DM</th>
+		<th>Int</th>
+		<th>WK</th>
+		<th>Bad</th>
+		<th>SM</th>
+		<th>TH</th>
+	</tr>
+	<tr>
+		<th>Blademaster</th>
+		<td>O</td>
+		<td>O</td>
+		<td>2</td>
+		<td>X</td>
+		<td>X</td>
+		<td>X</td>
+		<td>O</td>
+		<td>O</td>
+		<td>3</td>
+		<td>O</td>
+		<td>1</td>
+		<td>X</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>X</td>
+	</tr>
+	<tr>
+		<th>Gun Kata</th>
+		<td>O</td>
+		<td>O</td>
+		<td>2</td>
+		<td>X</td>
+		<td>X</td>
+		<td>2</td>
+		<td>O</td>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>X</td>
+		<td>1</td>
+		<td>1</td>
+		<td>O</td>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>X</td>
+	</tr>
+	<tr>
+		<th>Shottyhead</th>
+		<td>O</td>
+		<td>1</td>
+		<td>1</td>
+		<td>X</td>
+		<td>X</td>
+		<td>O</td>
+		<td>2</td>
+		<td>X</td>
+		<td>O</td>
+		<td>1</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>X</td>
+		<td>1</td>
+		<td>X</td>
+	</tr>
+	<tr>
+		<th>Cateye</th>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>X</td>
+		<td>2</td>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>O</td>
+		<td>1</td>
+		<td>O</td>
+		<td>X</td>
+		<td>X</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<th>Gunrunner</th>
+		<td>O</td>
+		<td>1</td>
+		<td>2</td>
+		<td>X</td>
+		<td>X</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>1</td>
+		<td>O</td>
+		<td>X</td>
+		<td>1</td>
+		<td>O</td>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>X</td>
+	</tr>
+</table>
+ 
+<h4>Technician</h4>
+
+<p>The Technician is the intelligent and resourceful class, shaping any and all tools into superior equipment and excelling in creative solutions.</p>
+
+
+<p>Starting Characteristics</p>
+	<ul>
+    <li>Instant item use (time is 0.1s)</li>
+    <li>Hacker tracking (Computer Maps show enemies, similar to Tracking Map)</li>
+    <li>Begins with technical mod pack</li>
+    <li>Only class that can modify unique items (where applicable)</li>
+    <li>Advanced trait: Whizkid</li>
+	</ul>
+
+<p>Master Traits</p>
+	<ul>
+    <li>Melee: Malicious Blades</li>
+    <li>Pistol: Sharpshooter</li>
+    <li>Shotgun: Fireangel</li>
+    <li>Burst: Entrenchment</li>
+    <li>General: Scavenger</li>
+	</ul>
+
+<table>
+	<tr>
+		<th colspan="19">Technician Masters: Prerequisites and Blocks</th>
+	</tr>
+	<tr>
+		<th rowspan="2">Master Trait</th>
+		<th colspan="9">Basic Traits</th>
+		<th colspan="9">Advanced Traits</th>
+	</tr>
+	<tr>
+		<th>Iro</th>
+		<th>Fin</th>
+		<th>HR</th>
+		<th>TaN</th>
+		<th>SoB</th>
+		<th>SoG</th>
+		<th>Rel</th>
+		<th>EE</th>
+		<th>Bru</th>
+		<th>Jug</th>
+		<th>Ber</th>
+		<th>DG</th>
+		<th>DM</th>
+		<th>Int</th>
+		<th>WK</th>
+		<th>Bad</th>
+		<th>SM</th>
+		<th>TH</th>
+	</tr>
+	<tr>
+		<th>Malicious Blades</th>
+		<td>O</td>
+		<td>1</td>
+		<td>2</td>
+		<td>X</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>X</td>
+		<td>2</td>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>1</td>
+		<td>X</td>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>O</td>
+	</tr>
+	<tr>
+		<th>Sharpshooter</th>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>X</td>
+		<td>X</td>
+		<td>3</td>
+		<td>O</td>
+		<td>3</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>X</td>
+	</tr>
+	<tr>
+		<th>Fireangel</th>
+		<td>O</td>
+		<td>O</td>
+		<td>2</td>
+		<td>O</td>
+		<td>X</td>
+		<td>X</td>
+		<td>2</td>
+		<td>X</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>X</td>
+		<td>1</td>
+		<td>X</td>
+		<td>O</td>
+		<td>O</td>
+		<td>1</td>
+		<td>X</td>
+	</tr>
+	<tr>
+		<th>Entrenchment</th>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>2</td>
+		<td>2</td>
+		<td>X</td>
+		<td>X</td>
+		<td>O</td>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>X</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>1</td>
+		<td>X</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<th>Scavenger</th>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>O</td>
+		<td>2</td>
+		<td>O</td>
+		<td>O</td>
+		<td>X</td>
+		<td>X</td>
+		<td>O</td>
+		<td>1</td>
+		<td>2</td>
+		<td>O</td>
+		<td>O</td>
+		<td>X</td>
+	</tr>
+</table>
+
+<h3>Traits</h3>
+
+<p>This is a technical list of all the traits and what they do. All effects stack additively (so that three ranks in Ironman will give 30 additional HP), unless said otherwise.</p>
+
+<p>Upon reaching level 12, all traits that have a standard max of 3 can be increased to a max of 5, and all traits that have a standard max of 2 can be increased to a max of 3.</p>
+
+<h4>Basic Traits</h4>
+
+<p>All basic traits can be picked from the start, IE they don't require anything.</p>
+
+<p>Ironman</p>
+
+<table><tr>
+	<td>Shorthand</td><td>Iro</td>
+	</tr><tr>
+	<td>Max. Rank:</td><td>3</td>
+	</tr><tr>
+	<td>Extended Max.</td><td>5</td>
+	</tr><tr>
+	<td>Unlocks</td><td>None</td>
+	</tr><tr>
+	<td>Effect</td><td>Max health and current health are increased by 10 per rank. With no points in Iro, a player begins with 50 HP.</td>
+</tr></table>
+
+<p>Finesse</p>
+
+<table><tr>
+	<td>Shorthand</td><td>Fin</td>
+	</tr><tr>
+	<td>Max. Rank:</td><td>2</td>
+	</tr><tr>
+	<td>Extended Max.</td><td>3</td>
+	</tr><tr>
+	<td>Unlocks</td><td>Juggler (1 rank), Whizkid (2 ranks)</td>
+	</tr><tr>
+	<td>Effect</td><td>Attack time is decreased by .1s</td>
+	</tr><tr>
+	<td>Effect</td><td>Attack time is decreased by an additional .1s for each .1s of firing time.</td>
+	</tr><tr>
+	<td colspan="2" style="text-align:center">For the purposes of this skill base attack speed is the resulting attack speed after mods but before all traits.</td>
+</tr></table>
+
+<p>Hellrunner</p>
+
+<table><tr>
+	<td>Shorthand</td><td>HR</td>
+	</tr><tr>
+	<td>Max. Rank:</td><td>2</td>
+	</tr><tr>
+	<td>Extended Max.</td><td>3</td>
+	</tr><tr>
+	<td>Unlocks</td><td>Dodgemaster (2 ranks)</td>
+	</tr><tr>
+	<td>Effect 1</td><td>Movement time is reduced by .1s per rank.</td>
+	</tr><tr>
+	<td>Effect 1</td><td>Movement time is reduced by an .1s per rank for every 1.0s of move speed.</td>
+	</tr><tr>
+	<td>Effect 2</td><td>Dodge rolls get +3 per rank.</td>
+</tr></table>
+
+<p>Tough as Nails</p>
+
+<table><tr>
+	<td>Shorthand</td><td>TaN</td>
+	</tr><tr>
+	<td>Max. Rank:</td><td>2</td>
+	</tr><tr>
+	<td>Extended Max.</td><td>3</td>
+	</tr><tr>
+	<td>Unlocks</td><td>Badass (2 ranks)</td>
+	</tr><tr>
+	<td>Effect</td><td>Armor is increased by one per rank (stacks with other sources of protection).</td>
+</tr></table>
+
+<p>Son of a Bitch</p>
+
+<table><tr>
+	<td>Shorthand</td><td>SoB</td>
+	</tr><tr>
+	<td>Max. Rank:</td><td>3</td>
+	</tr><tr>
+	<td>Extended Max.</td><td>5</td>
+	</tr><tr>
+	<td>Unlocks</td><td>Triggerhappy (2 ranks)</td>
+	</tr><tr>
+	<td>Effect</td><td>One extra damage is dealt per attack per rank. For a weapon with multiple shots, the effect is applied to each bullet.</td>
+</tr></table>
+
+<p>Son of a Gun</p>
+
+<table><tr>
+	<td>Shorthand</td><td>SoG</td>
+	</tr><tr>
+	<td>Max. Rank:</td><td>3</td>
+	</tr><tr>
+	<td>Extended Max.</td><td>5</td>
+	</tr><tr>
+	<td>Unlocks</td><td>Dualgunner (2 ranks)</td>
+	</tr><tr>
+	<td>Effect</td><td>Pistols (or pistol-type weapons) fire .2s faster and deal one more damage per shot, per rank. (Note that the minimum time weapon firing time is 0.1s, regardless of bonuses.)</td>
+</tr></table>
+
+<p>Reloader</p>
+
+<table><tr>
+	<td>Shorthand</td><td>Rel</td>
+	</tr><tr>
+	<td>Max. Rank:</td><td>2</td>
+	</tr><tr>
+	<td>Extended Max.</td><td>3</td>
+	</tr><tr>
+	<td>Unlocks</td><td>Shottyman (2 ranks)</td>
+	</tr><tr>
+	<td>Effect</td><td>Reload time of all weapons is reduced by .1s per rank.</td>
+	</tr><tr>
+	<td>Effect</td><td>Reload time is reduced by an addition .2s per rank for each second of reload time the weapon has.</td>
+</tr></table>
+
+<p>Eagle Eye</p>
+
+<table><tr>
+	<td>Shorthand</td><td>EE</td>
+	</tr><tr>
+	<td>Max. Rank:</td><td>3</td>
+	</tr><tr>
+	<td>Extended Max.</td><td>5</td>
+	</tr><tr>
+	<td>Unlocks</td><td>Intuition (2 ranks)</td>
+	</tr><tr>
+	<td>Effect</td><td>Your accuracy is increased by two points per rank.</td>
+</tr></table>
+
+<p>Brute</p>
+
+<table><tr>
+	<td>Shorthand</td><td>Bru</td>
+	</tr><tr>
+	<td>Max. Rank:</td><td>3</td>
+	</tr><tr>
+	<td>Extended Max.</td><td>5</td>
+	</tr><tr>
+	<td>Unlocks</td><td>Berserker (2 ranks)</td>
+	</tr><tr>
+	<td>Effect</td><td>Melee attacks (either with fists or a melee weapon) deal three more damage and melee accuracy is increased by two points, per rank.</td>
+</tr></table>
+
+<h4>Advanced Traits</h4>
+
+<p>Juggler</p>
+
+<table><tr>
+	<td>Shorthand</td><td>Jug</td>
+	</tr><tr>
+	<td>Max. Rank:</td><td>1</td>
+	</tr><tr>
+	<td>Prerequisite</td><td>Finesse (1 rank)</td>
+	</tr><tr>
+	<td>Effect</td><td>Swapping prepared weapons takes no time and can be declared at any point so long as nobody is resolving a turn.</td>
+</tr></table>
+
+<p>Berserker</p>
+
+<table><tr>
+	<td>Shorthand</td><td>Ber</td>
+	</tr><tr>
+	<td>Max. Rank:</td><td>1</td>
+	</tr><tr>
+	<td>Prerequisite </td><td>Brute (2 ranks)</td>
+	</tr><tr>
+	<td>Effect 1</td><td>Each successful melee hit adds to a berserk "counter". When the counter reaches four (or less, if there are other monsters within your vision) then you will gain 20 actions' worth of the berserk effect.</td>
+	</tr><tr>
+	<td>Effect 2</td><td>Whenever you are harmed by a single source of damage equal to at least 10 HP and one-third of your maximum health, you will gain 20 actions' worth of the berserk effect. Both effects' gain is less than twenty relative to the amount of berserk time you currently have (peaks at 100). This retroactively applies the berserk damage reduction effect to the hit</td>
+</tr></table>
+
+<p>Dualgunner</p>
+
+<table><tr>
+	<td>Shorthand</td><td>DG</td>
+	</tr><tr>
+	<td>Max. Rank:</td><td>1</td>
+	</tr><tr>
+	<td>Prerequisite </td><td>Son of a Gun (2 ranks)</td>
+	</tr><tr>
+	<td>Effect 1</td><td>If you have a pistol in both the weapon and prepared slots, you will fire both at the same time with .2s longer firing time. If wielded pistols have different firing speeds, the mean is used before addint the modifier.</td>
+	</tr><tr>
+	<td>Effect 2</td><td>Allows the reloading of pistols in both hands at once.</td>
+	</tr><tr>
+	<td>Effect 3</td><td>If your equipped and prepared weapons are both pistols, then swapping them takes zero time.</td>
+</tr></table>
+
+<p>Dodgemaster</p>
+
+<table><tr>
+	<td>Shorthand</td><td>DM</td>
+	</tr><tr>
+	<td>Max. Rank:</td><td>1</td>
+	</tr><tr>
+	<td>Prerequisite </td><td>Hellrunner (2 ranks)</td>
+	</tr><tr>
+	<td>Effect</td><td>The first dodge during a given action automatically succeeds.</td>
+</tr></table>
+
+<p>Intuition</p>
+
+<table><tr>
+	<td>Shorthand</td><td>Int</td>
+	</tr><tr>
+	<td>Max. Rank:</td><td>2</td>
+	</tr><tr>
+	<td>Prerequisite</td><td>Eagle Eye (2 ranks), or Scout class</td>
+	</tr><tr>
+	<td>Effect 1</td><td>Lever descriptions are added. The first rank gives a general description, and the second rank exactly tells you what it does.</td>
+	</tr><tr>
+	<td>Effect 2</td><td>Certain objects within 500ft are visible. The first rank reveals powerups, and the second rank reveals the position of enemies out of Vision within radius of sight +3.</td>
+</tr></table>
+
+<p>Whizkid</p>
+
+<table><tr>
+	<td>Shorthand</td><td>WK</td>
+	</tr><tr>
+	<td>Max. Rank:</td><td>2</td>
+	</tr><tr>
+	<td>Prerequisite</td><td>Finesse (2 ranks), or Technician class</td>
+	</tr><tr>
+	<td>Effect</td><td>Increases the number of available weapon mod slots by 2 per rank and armor mod slots by 1 per rank. This also allows advanced assemblies with the first rank and master assemblies with the second. The second rank of Whizkid additionally allows any assemblies made afterwards to be modded once.</td>
+</tr></table>
+
+<p>Badass</p>
+
+<table><tr>
+	<td>Shorthand</td><td>Bad</td>
+	</tr><tr>
+	<td>Max. Rank:</td><td>2</td>
+	</tr><tr>
+	<td>Prerequisite</td><td>Tough as Nails (2 rank), or Marine class</td>
+	</tr><tr>
+	<td>Effect</td><td>For each level, increases the maximum health before decay by 50% and reduces knockback by one tile.</td>
+</tr></table>
+
+<p>Shottyman</p>
+
+<table><tr>
+	<td>Shorthand</td><td>SM</td>
+	</tr><tr>
+	<td>Max. Rank:</td><td>1</td>
+	</tr><tr>
+	<td>Prerequisite</td><td>Reloader (2 ranks)</td>
+	</tr><tr>
+	<td>Effect</td><td>Shotgun-type and explosive-type weapons in the weapon slot can be reloaded by moving.</td>
+</tr></table>
+
+<p>Triggerhappy</p>
+
+<table><tr>
+	<td>Shorthand</td><td>TH</td>
+	</tr><tr>
+	<td>Max. Rank:</td><td>2</td>
+	</tr><tr>
+	<td>Prerequisite</td><td>Son of a Bitch (2 ranks)</td>
+	</tr><tr>
+	<td>Effect</td><td>Gives an extra shot per rank for all weapons that fire 3 or more shots per action.</td>
+</tr></table>
+
+<h4>Master Traits</h4>
+
+<p>Master traits have rather constraining requirements: in addition to needing a partcular set of basic and/or advanced traits, you also cannot have any of the "blocked" traits (listed before the prerequisites). Blocked traits cannot be chosen after choosing the master trait, nor can you choose any other master traits (even if they are technically inclusive of each other).</p>
+
+<p>All master traits have one rank.</p>
+
+<h4>Melee Masters</h4>
+
+<p>Vampyre - Marine Only</p>
+
+<table><tr>
+	<td>Shorthand</td><td>MVm</td>
+	</tr><tr>
+	<td>Prerequisites:</td><td>Berserker (1 rank), Badass (1 rank), must have at least five traits</td>
+	</tr><tr>
+	<td>Blocked Traits</td><td>Hellrunner, Son of a Bitch, Eagle Eye</td>
+	</tr><tr>
+	<td>Effect</td><td>Killing an enemy by melee attack gives you 1 health for every 10HP max they had.</td>
+</tr></table>
+
+<p>Blademaster - Scout Only</p>
+
+<table><tr>
+	<td>Shorthand</td><td>MBm</td>
+	</tr><tr>
+	<td>Prerequisites:</td><td>Hellrunner (2 ranks), Brute (3 ranks), Berserker(1 rank)</td>
+	</tr><tr>
+	<td>Blocked Traits</td><td>Tough as Nails, Son of a Gun, Son of a Bitch</td>
+	</tr><tr>
+	<td>Effect</td><td>Whenever you kill an opponent with a melee attack, your next combat action takes .1s.</td>
+</tr></table>
+
+<p>Malicious Blades - Technician Only</p>
+
+<table><tr>
+	<td>Shorthand</td><td>MMB</td>
+	</tr><tr>
+	<td>Prerequisites:</td><td>Finesse (1 rank), Dodgemaster (1 ranks), Brute (2 ranks)</td>
+	</tr><tr>
+	<td>Blocked Traits</td><td>Tough as Nails, Eagle Eye, Berserker</td>
+	</tr><tr>
+	<td>Effect 1</td><td>When carrying a blade-like weapon (such as a combat knife) in your prepared slot, you gain +5 resistance to bullet, shrapnel, and fire damage, and +7 resistance to melee damage.</td>
+	</tr><tr>
+	<td>Effect 2</td><td>When carrying a blade-like weapon in both the equipped and prepared slots, you attack with both weapons, each at half the attack time.</td>
+</tr></table>
+
+<h4>Pistol Masters</h4>
+
+<p>Bullet Dance - Marine Only</p>
+
+<table><tr>
+	<td>Shorthand</td><td>MBD</td>
+	</tr><tr>
+	<td>Prerequisites:</td><td>Dualgunner (1 rank), Triggerhappy (1 rank)</td>
+	</tr><tr>
+	<td>Blocked Traits</td><td>Hellrunner, Eagle Eye, Brute</td>
+	</tr><tr>
+	<td>Effect</td><td>For each rank of Triggerhappy invested, pistol-type weapons fire one extra bullet per pistol, at the cost of +50%(rounded up) the fire time per pistol. (Aimed shot is unaffected.)</td>
+</tr></table>
+
+<p>Gun Kata - Scout Only</p>
+
+<table><tr>
+	<td>Shorthand</td><td>MGK</td>
+	</tr><tr>
+	<td>Prerequisites:</td><td>Dualgunner (1 rank), Dodgemaster (1 rank)</td>
+	</tr><tr>
+	<td>Blocked Traits</td><td>Tough as Nails, Son of a Bitch, Brute</td>
+	</tr><tr>
+	<td>Effect 1</td><td>After each successful dodge, your pistols fire in 0.1s(0.2s when dual wielding).</td>
+	</tr><tr>
+	<td>Effect 2</td><td>When you kill an enemy at which you were specifically aiming, your pistols reload.</td>
+</tr></table>
+
+<p>Sharpshooter - Technician Only</p>
+
+<table><tr>
+	<td>Shorthand</td><td>MSs</td>
+	</tr><tr>
+	<td>Prerequisites:</td><td>Son of a Gun (3 ranks), Eagle Eye (3 ranks)</td>
+	</tr><tr>
+	<td>Blocked Traits</td><td>Tough as Nails, Son of a Bitch, Dualgunner</td>
+	</tr><tr>
+	<td>Effect</td><td>Pistol-type weapons always deal maximum damage.</td>
+</tr></table>
+
+<h4>Shotgun Masters</h4>
+
+<p>Army of the Dead - Marine Only</p>
+
+<table><tr>
+	<td>Shorthand</td><td>MAD</td>
+	</tr><tr>
+	<td>Prerequisites:</td><td>Badass (1 rank), Shottyman (1 rank), must have at least five traits</td>
+	</tr><tr>
+	<td>Blocked Traits</td><td>Finesse, Hellrunner, Eagle Eye</td>
+	</tr><tr>
+	<td>Effect</td><td>Any weapon with the shrapnel damage type is instead armor-piercing.</td>
+</tr></table>
+
+<p>Shottyhead - Scout Only</p>
+
+<table><tr>
+	<td>Shorthand</td><td>MSh</td>
+	</tr><tr>
+	<td>Prerequisites:</td><td>Hellrunner (1 rank), Juggler (1 rank), Shottyman (1 rank)</td>
+	</tr><tr>
+	<td>Blocked Traits</td><td>Tough as Nails, Son of a Bitch, Eagle Eye</td>
+	</tr><tr>
+	<td>Effect</td><td>Shotgun-type weapons fire at 1/3 of their normal firing time rounded up.</td>
+</tr></table>
+
+<p>Fireangel - Technician Only</p>
+
+<table><tr>
+	<td>Shorthand</td><td>MFa</td>
+	</tr><tr>
+	<td>Prerequisites:</td><td>Dodgemaster (1 rank), Shottyman (1 rank)</td>
+	</tr><tr>
+	<td>Blocked Traits</td><td>Son of a Bitch, Son of a Gun, Eagle Eye</td>
+	</tr><tr>
+	<td>Effect</td><td>You become immune to damage from explosions (this definition includes splash damage). Knockback from explosions will still apply.</td>
+</tr></table>
+
+<h4>Burst Masters</h4>
+
+<p>Ammochain - Marine Only</p>
+
+<table><tr>
+	<td>Shorthand</td><td>MAc</td>
+	</tr><tr>
+	<td>Prerequisites:</td><td>Reloader (2 ranks), Triggerhappy (2 ranks)</td>
+	</tr><tr>
+	<td>Blocked Traits</td><td>Tough as Nails, Son of a Gun, Eagle Eye</td>
+	</tr><tr>
+	<td>Effect</td><td>Any weapons with chain fire (chaingun, plasma rifle, etc) only take one ammo per volley.</td>
+</tr></table>
+
+<p>Cateye - Scout Only</p>
+
+<table><tr>
+	<td>Shorthand</td><td>MCe</td>
+	</tr><tr>
+	<td>Prerequisites:</td><td>Intuition (1 rank), Triggerhappy (1 rank), must have at least five traits</td>
+	</tr><tr>
+	<td>Blocked Traits</td><td>Tough as Nails, Reloader, Brute</td>
+	</tr><tr>
+	<td>Effect</td><td>Your vision is increased by two.</td>
+</tr></table>
+
+<p>Entrenchment - Technician Only</p>
+
+<table><tr>
+	<td>Shorthand</td><td>MEn</td>
+	</tr><tr>
+	<td>Prerequisites:</td><td>Badass (1 rank), Triggerhappy (1 rank)</td>
+	</tr><tr>
+	<td>Blocked Traits</td><td>Finesse, Son of a Gun, Reloader</td>
+	</tr><tr>
+	<td>Effect</td><td>Whenever attacking with chain fire, you receive +3 resistance to all damage types while doing so.</td>
+</tr></table>
+
+<h4>General Masters</h4>
+
+<p>Survivalist - Marine Only</p>
+
+<table><tr>
+	<td>Shorthand</td><td>MSv</td>
+	</tr><tr>
+	<td>Prerequisites:</td><td>Ironman (3 ranks), Tough as Nails (2 ranks), Badass (1 rank)</td>
+	</tr><tr>
+	<td>Blocked Traits</td><td>Hellrunner, Son of a Bitch, Berserker</td>
+	</tr><tr>
+	<td>Effect 1</td><td>If your protection and resistances would reduce damage taken to zero, you have a 50% chance to do so.</td>
+	</tr><tr>
+	<td>Effect 2</td><td>Med-packs no longer cap their healing at 100%. (Large med-packs only heal up to 50% more, if it passes 100%.)</td>
+</tr></table>
+
+<p>Gunrunner - Scout Only</p>
+
+<table><tr>
+	<td>Shorthand</td><td>MGr</td>
+	</tr><tr>
+	<td>Prerequisites:</td><td>Juggler (1 rank), Dodgemaster (1 rank)</td>
+	</tr><tr>
+	<td>Blocked Traits</td><td>Tough as Nails, Son of a Bitch, Whizkid</td>
+	</tr><tr>
+	<td>Effect 1</td><td>Running lasts 50% longer (45 actions).</td>
+	</tr><tr>
+	<td>Effect 2</td><td>While running, if you have a loaded, non-rapid-fire weapon equipped, you fire at the closest enemy you can see each time you move, without any extra time cost.</td>
+</tr></table>
+
+<p>Scavenger - Technician Only</p>
+
+<table><tr>
+	<td>Shorthand</td><td>MSc</td>
+	</tr><tr>
+	<td>Prerequisites:</td><td>Intuition (1 rank), Whizkid (2 ranks), must have at least five traits</td>
+	</tr><tr>
+	<td>Blocked Traits</td><td>Berserker, Dualgunner, Triggerhappy</td>
+	</tr><tr>
+	<td>Effect</td><td>You can unload an empty, ranged weapon that is modified, assembled, or special, and destroy it to receive a random mod.</td>
+	</tr><tr>
+	<td>For unique weapons:</td><td>1/6 chance of Nano, 1/6 Onyx, 1/3 Sniper, 1/3 Firestorm.</td>
+	</tr><tr>
+	<td>For exotic weapons:</td><td>1/6 Sniper, 1/6 Firestorm, 1/6 Agility, 1/6 Bulk, 1/6 Power, 1/6 Tech.</td>
+	</tr><tr>
+	<td>For assemblies:</td><td>1/4 Agility, 1/4 Bulk, 1/4 Power, 1/4 Tech.</td>
+	</tr><tr>
+	<td>For modified weapons:</td><td>One of the mods on the weapon at random.</td>
+	</tr><tr>
+	<td colspan="2" style="text-align:center">The BFG 10K, Railgun, Revenant's Launcher, and Trigun will always produce specific mods, check these weapon's pages for details.</td>
+</tr></table>
+
+<h2>Mechanics</h2>
+
+<h4>Speed</h4>
+
+<p>Everything you do takes time. This is so important the speeds are listed before anything else, including hit points. Since the world of D**m is an adrenaline fueled gorefest time is measured in tenths of seconds instead of seconds. Player characters all start with default movement values. Certain things can change the amount of time it takes to perform and action.</p>
+
+<table><tr>
+	<td>Move One Tile</td><td>1.0s</td>
+	</tr><tr>
+	<td colspan="2">Movement happens immediately, even when you dodge. This is generally the only exception to the rule where actions that require rolls happen after the time required is spent.</td>
+	</tr><tr>
+	<td colspan="2">This can be reduced by the Hellrunner trait.</td>
+	</tr><tr>
+	<td colspan="2">Boots and armor also apply modifiers to movement speed.</td>
+	</tr><tr>
+	<td>Opening and closing doors</td><td>1.0s</td>
+	</tr><tr>
+	<td>Firing</td><td>Weapon Dependant</td>
+	</tr><tr>
+	<td colspan="2">Firing time can be reduced by the Finesse trait, or by applying technical mod packs.</td>
+	</tr><tr>
+	<td colspan="2">Pistols' firing time can also be reduced by the Son of a Gun trait.</td>
+	</tr><tr>
+	<td>Reloading</td><td>Weapon Dependant</td>
+	</tr><tr>
+	<td colspan="2">These values can be reduced by the Reloader trait, or by applying bulk mod packs to clipless weapons.</td>
+	</tr><tr>
+	<td>Changing tactics to running</td><td>0.1s</td>
+	</tr><tr>
+	<td>Changing tactics to tired</td><td>Instant</td>
+	</tr><tr>
+	<td>Equipping and unequipping</td><td>1.0s</td>
+	</tr><tr>
+	<td>Swapping in prepared weapon</td><td>0.8s</td>
+	</tr><tr>
+	<td>Picking up items</td><td>1.0s</td>
+	</tr><tr>
+	<td colspan="2">Side effects of the action (e.g. recovered health from a Small Health Globe) are applied instantly.</td>
+	</tr><tr>
+	<td>Dropping something</td><td>0.5s</td>
+	</tr><tr>
+	<td>Using an item from the inventory</td><td>1.0s</td>
+	</tr><tr>
+	<td>Unloading</td><td>1.0s</td>
+	</tr><tr>
+	<td>Pushing a barrel</td><td>1.0s</td>
+	</tr><tr>
+	<td>Pulling a lever</td><td>1.0s</td>
+	</tr><tr>
+	<td>Using a teleporter</td><td>1.0s</td>
+</tr></table>
+
+<h4>Dodging</h4>
+
+<p>When a player moves, if a monster declared an attack against them, they can attempt to dodge it.</p>
+
+<p>To dodge, roll 1d20 and add any dodge bonuses for each attack targeting you. On a roll of 21 or higher you succeed. A roll of 1 on the d20 always misses.</p>
+
+<p>If you dodge successfully, then they target the space you were in before. Because bullets move in a line, this means that even if you dodge into a space behind where you were, the attack might still hit you. You might also expose another player, an enemy, or an explosive barrel. Be careful when you dodge!</p>
+
+<h4>Accuracy</h4>
+
+<p>Before you can hurt things with bullets, you have to hit them. Almost every attack, against the player or against the minions of Hell, has a chance of missing its target.</p>
+
+<p>Each attack has an accuracy bonus depending on parameters like the weapon's accuracy and the attacker's traits. To determine if an attack hits, roll 3d6. If you roll a total of 11 or higher, the attack hits. There is one exception to this rule: if the roll is 17 or 18 then the attack always hits, and if the roll is 3 or 4 then the attack always misses no matter how high the accuracy is.</p>
+
+<p>The following properties modify this accuracy:</p>
+
+<ul>
+	<li>Accuracy of the weapon (each weapon's page lists that weapon's accuracy bonus)</li>
+    <li>For the player, each level of the Eagle Eye trait provides a +2 bonus to all attacks </li>
+    <li>For each level of Brute, the player also receives an additional +2 bonus to melee attacks</li>
+    <li>Aimed shots receive a +3 bonus</li>
+    <li>If the attacker is running, it gets a -2 penalty</li>
+    <li>If the target is running, the attack receives a -4 penalty</li>
+</ul>
+
+<h4>Damage</h4>
+
+
+
+<h4>Health</h4>
+
+<table style="float:right"><tr>
+	<th>Health Descriptions</th>
+	</tr><tr>
+	<th>Percent</th><th>Description</th>
+	</tr><tr>
+	<td>1-10%</td><td>almost dead</td>
+	</tr><tr>
+	<td>11-20%</td><td>mortally wounded</td>
+	</tr><tr>
+	<td>21-35%</td><td>severely wounded</td>
+	</tr><tr>
+	<td>36-50%</td><td>heavily wounded</td>
+	</tr><tr>
+	<td>51-70%</td><td>wounded</td>
+	</tr><tr>
+	<td>71-80%</td><td>lightly wounded</td>
+	</tr><tr>
+	<td>81-90%</td><td>scratched</td>
+	</tr><tr>
+	<td>91-99%</td><td>almost unhurt</td>
+	</tr><tr>
+	<td>100%</td><td>unhurt</td>
+	</tr><tr>
+	<td>>100%</td><td>boosted</td>
+</tr></table>
+
+<p>The players and all other denizens of Phobos have health scores that represent how hard they are to kill. The player's maximum health is 50 at the start of the game. This value can be increased by the Ironman trait.</p>
+
+<p>When a creature is attacked, it receives some amount of damage. This damage is subtracted from the creature's health. If a creature's health is reduced to 0 or lower, then that creature dies.</p>
+
+<p>Each creature also has a maximum health score. This is the amount of health the creature has before it has been damaged. Unlike health, maximum health scores do not typically change.</p>
+
+<p>The health of monsters can be looked at. The GM reserves the right to guestimate instead of doing the math every time they're asked.</p>
+
+<p>There are many items that will restore the players health. Some items, like med-packs, cannot increase the player's health beyond its maximum. Others, like globes, can, but even these cannot increase the player's health past 200% of the maximum.</p>
+
+<p>When the player's health is greater than 100% of the maximum, then the player will lose 1 health every 5.0s. The health decay threshold is increased to 150% of maximum health for the first rank in the Badass trait, and 200% for the second rank.</p>
+
+<h4>Tactics</h4>
+
+<p>The tactics system allows the player to switch between three states: cautious, running, and tired. Players start as cautious. The player can switch from cautious to running, an action that takes 0.1s.</p>
+
+<table><tr>
+	<th>Cautious</th><td>Cautious is the default tactic, and applies neither penalties nor bonuses.</td>
+	</tr><tr>
+	<th>Running</th><td>The running tactic offers some benefits and some penalties.</td>
+	</tr><tr>
+	<td></td><td>The player moves 0.3s faster to a minimum of 0.1s</td>
+	</tr><tr>
+	<td></td><td>The player moves an additional 0.3 faster for each 1.0s their movement speed is.</td>
+	</tr><tr>
+	<td></td><td>The player gets a +4 bonus to dodge rolls.</td>
+	</tr><tr>
+	<td></td><td>Enemies receive a -4 attack penalty to all attacks against the player.</td>
+	</tr><tr>
+	<td></td><td>Damage from terrain (e.g. lava) is halved when running.</td>
+	</tr><tr>
+	<td></td><td>The player receives a -2 accuracy penalty to ranged attacks.</td>
+	</tr><tr>
+	<td></td><td>The player deals half melee damage.</td>
+	</tr><tr>
+	<td></td><td>Running lasts for 30 actions (including the switching tactics action) after which tactics change automatically to tired.</td>
+	</tr><tr>
+	<th>Tired</th><td>The tired tactic doesn't have any penalties or bonuses except that tactics can not be changed when the player is tired.</td>
+	</tr><tr>
+	<td></td><td>In order to change his tactics back to cautious, the player must either rest or use a health recovering item.</td>
+</tr></table>
+
+<h4>Experience</h4>
+
+<p>Honestly this is optional. Feel free to level the players up whenever. The player earns experience whenever enemies are killed. Different enemies are worth different amounts of experience (as listed on their individual pages).</p>
+
+<table><tr>
+	<th colspan="2">Experience Table</th>
+	</tr><tr>
+	<td>Level</td><td>Experience</td>
+	</tr><tr>
+	<td>1</td><td>0</td>
+	</tr><tr>
+	<td>2</td><td>500</td>
+	</tr><tr>
+	<td>3</td><td>1500</td>
+	</tr><tr>
+	<td>4</td><td>4000</td>
+	</tr><tr>
+	<td>5</td><td>7000</td>
+	</tr><tr>
+	<td>6</td><td>11000</td>
+	</tr><tr>
+	<td>7</td><td>16000</td>
+	</tr><tr>
+	<td>8</td><td>22000</td>
+	</tr><tr>
+	<td>9</td><td>30000</td>
+	</tr><tr>
+	<td>10</td><td>40000</td>
+	</tr><tr>
+	<td>11</td><td>50000</td>
+	</tr><tr>
+	<td>12</td><td>60000</td>
+	</tr><tr>
+	<td>13</td><td>70000</td>
+	</tr><tr>
+	<td>14</td><td>80000</td>
+	</tr><tr>
+	<td>15</td><td>10000</td>
+	</tr><tr>
+	<td>16</td><td>12000</td>
+	</tr><tr>
+	<td>17</td><td>14000</td>
+	</tr><tr>
+	<td>18</td><td>16000</td>
+	</tr><tr>
+	<td>19</td><td>20000</td>
+	</tr><tr>
+	<td>20</td><td>30000</td>
+	</tr><tr>
+	<td>21</td><td>40000</td>
+	</tr><tr>
+	<td>22</td><td>50000</td>
+	</tr><tr>
+	<td>23</td><td>60000</td>
+	</tr><tr>
+	<td>24</td><td>70000</td>
+	</tr><tr>
+	<td>25</td><td>90000</td>
+</tr></table>
+
 </body>
+</html>
+
