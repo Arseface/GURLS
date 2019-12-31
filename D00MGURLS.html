@@ -26,16 +26,17 @@ Sometimes a weapon's damage will be listed as (XdY)×Z. This means that the weap
 
 <p>Players have a sight radius of 8 tiles. They're probably 5 ft tiles, but maybe they're a meter or something.</p>
 
+<p>Players start with a loaded pistol, 24x 10mm ammo, and 2x Small Medpack</p>
+
 <h3>Classes</h3>
 
-<p>Classes subtly but drastically affect the ability of your character while playing through DoomRL. They come with their own unique strengths, as well as special traits from which only their class can choose. Currently there are no limitations, whether natural or artificial in construct, on what class you can choose for any reason.</p>
+<p>Classes subtly but drastically affect the ability of your character while playing D**MGURLS. They come with their own unique strengths, as well as special traits from which only their class can choose. Currently there are no limitations, whether natural or artificial in construct, on what class you can choose for any reason.</p>
 
 <p>All classes have special starting characteristics, an advanced trait they can use from the very beginning of the game (as opposed to needing other traits to unlock its selection), and five unique master traits that highlight the class's uses.</p>
 
 <h4>Marine</h4>
 
 <p>The Marine is the hardy and forceful class, preferring brute strength and sheer power over all else.</p>
-
 
 <p>Starting Characteristics</p>
 	<ul>
@@ -985,7 +986,7 @@ Sometimes a weapon's damage will be listed as (XdY)×Z. This means that the weap
 
 <h4>Speed</h4>
 
-<p>Everything you do takes time. This is so important the speeds are listed before anything else, including hit points. Since the world of D**m is an adrenaline fueled gorefest time is measured in tenths of seconds instead of seconds. Player characters all start with default movement values. Certain things can change the amount of time it takes to perform and action.</p>
+<p>Everything you do takes time. This is so important the speeds are listed before anything else, including hit points. Since the world of D**MGURLS is an adrenaline fueled gorefest time is measured in tenths of seconds instead of seconds. Player characters all start with default movement values. Certain things can change the amount of time it takes to perform and action.</p>
 
 <table><tr>
 	<td>Move One Tile</td><td>1.0s</td>
@@ -1058,9 +1059,105 @@ Sometimes a weapon's damage will be listed as (XdY)×Z. This means that the weap
     <li>If the target is running, the attack receives a -4 penalty</li>
 </ul>
 
+<p>An attack that hits multiple times like a chaingun or Malicious Blades user rolls for accuracy multiple times. You then roll damage for each hit separately.</p>
+
 <h4>Damage</h4>
 
+<p>Damage is how you measure how much pain you're bringing. Most damage sources roll for damage after a hit has been confirmed.</p>
 
+<p>Since you know whether or not you hit before your attack resolves, roll for damage before it's time to resolve the action. This means rolling for each attack and rolling for each instance of damage. Write the results down so they're easy to recall when it's your turn.</p>
+
+<b>Resistance</b>
+
+<p>Resistances are percentage modifiers to damage that only affects a certain type of damage.</p>
+
+<p>Resistence reduces the damage taken from a hit by one point per point of resistence, and an additional point for every 10 damage the hit would deal. Damage cannot be reduced to less than 1 point in this way.</p> 
+
+<p>Resistances are applied before protection. Multiple instances of resistence resolve one at a time from least to greatest. So say you were hit for 24 damage and were berserking(6 resistence)and had blue armor(2 plasma resistence). You'd reduce the damage by 6 from the armor to 18, then by 12 from berserking to 6. Then you'd apply protection.</p>
+
+<p>Armor resistance only prevents damage from enemy attacks, while boot resistance only applies to hazard tiles (i.e., Acid and Lava). Other items that provide resistance work with with damage from all sources.</p>
+
+<p>Armor resistances are capped at 9.</p>
+
+<p>Negative resistence adds damage instead of decreasing it.</p>
+
+<b>Protection</b>
+
+<p>Protection (often called armor) is a way for the player and his enemies to reduce the amount of damage they take.</p>
+
+<p>Each point of protection reduces the damage received by one. This rate may be doubled if the damage type is shrapnel, or halved (rounded down) it is plasma. Note that sometimes a single firing action can result in multiple attacks (e.g. firing a chaingun); protection is applied to each bullet separately. No matter how high protection is, it will never reduce the damage below 1.</p>
+
+<p>Protection from armor and boots does not apply to every source of damage. Protection from armor only applies to attacks from various weapons and explosions. Protection from boots only applies to the damage from hazardous tiles like acid and lava. There are a few sources of damage (kill levers and teleports) that don't use protection from either armor or boots. Other sources of protection, however, apply to all sources of damage.</p>
+
+<p>Armor and boots also lose durability whenever the player is damaged by a source that their protection could apply to. The amount of durability lost is equivalent to the amount of damage you take with the armor on (specifically, it is the difference between unarmored damage and the protection value of the armor, modified as necessary). Like damage, the durability lost in this way cannot be reduced below 1. Acid damage doubles the amount of durability lost (after the reduction).</p>
+
+<p>Sometimes the protection value of a piece of armor changes when it is damaged. In this case, the initial protection value before the armor is damaged is still applied against the damage from the same attack that damaged the armor.</p>
+
+<p>The most common sources of protection are:</p>
+
+<ul>
+	<li>Wearing armor (only against enemy attacks)</li>
+	<li>Wearing boots (only against hazardous terrain)</li>
+	<li>The Tough as Nails trait</li>
+</ul>
+
+<p><b>Damage Types</b></p>
+
+<p>Every damage source has a damage type associated with it. There are seven types of damage: melee, bullet, shrapnel, fire, plasma, acid, and piercing. Each is, of course, different from the others in some way, though some are more common than others. Also, resistances apply to each damage type separately.</p>
+
+<p><b>Melee Damage</b></p>
+
+<p>For every point of armor the target has, they take one less damage per hit. Melee damage cannot destroy walls. It is dealt by almost all melee attacks.</p>
+
+<p><b>Bullet Damage</b></p>
+
+<p>Bullet damage has the same technical properties as melee damage; protection applies normally and bullet damage cannot destroy walls. Bullet damage is generally dealt by weapons that use 10mm ammo.</p>
+
+<p><b>Shrapnel Damage</b></p>
+
+<p>For every point of armor the target has, they take two less damage per hit (although this goes to zero for the player if they have the Army of the Dead master trait). Shrapnel damage cannot destroy walls. It is limited to most shotguns.</p>
+
+<p><b>Fire Damage</b></p>
+
+<p>Fire damage treats protection normally (one less per point), but can destroy walls. Additionally, fire damage is the best for gibbing enemies.</p>
+
+<p><b>Plasma Damage</b></p>
+
+<p>Plasma Damage halves armor protection, rounded down. Gibbing is easier. Most weapons that use power cells do plasma damage. Additionally, several enemy projectiles cause plasma (even some you may not expect).</p>
+
+<p><b>Acid Damage</b></p>
+
+<p>Acid damage damages armor durability twice as much as other damage types. Gibbing is easier.</p>
+
+<p><b>Piercing Damage</b></p>
+
+<p>Piercing damage ignores all protection and resistances. However, it cannot destroy walls and is no better at gibbing than bullet damage.</p>
+
+<h4>About Shotguns</h4>
+
+<p>The weapons from the shotgun family of DoomRL all have an cone-shaped area of effect attack that makes them unique and powerful. Shotguns never miss any target in their affected area, and they always do at least one damage to each target. The size of the shotgun blast varies from weapon to weapon.</p>
+
+<p>Shotgun damage also diminishes over distance. Each shotgun has a reduction rating that determines how many dice rolled are removed from damage. First you roll damage for the area. Then for everything in the area, count the tiles between the shooter and the target. For each number of tiles equal to the reduction value of the weapon, remove a damage die for that target.</p>
+
+<p>For example: A player is shooting at a group of former humans with a normal shotgun. The former humans are 1, 4,5,6,6,and 10 spaces away respectively. She rolls 8d3 damage and gets 1,1,1,2,2,2,3,3. The former human 1 tile away gets hit with the full force of the attack, 15 damage. The former humans 4 and 5 spaces away remove 2 of the damage dice, so they get hit for 13 each because she chooses to remove the lowest dice. The former humans 6 spaces away remove 3 of the dice and are hit for 12 damage, and the former human 10 spaces away removes 5 dice, being hit for only 8 damage.</p>
+
+<p>If she had a teammate within the blast area, she could instead choose to remove the highest dice, or a mix.</p>
+
+<p>DoomRL uses shotguns with four different Area of Effect types:</p>
+
+<table><tr>
+	<th colspan=4>Shotgun Area of Effect Types</th>
+	</tr><tr>
+	<td>Name</td><td>Range</td><td>Spread</td><td>Reduction<td>
+	</tr><tr>
+	<td>normal</td><td>15</td><td>3</td><td>2<td>
+	</tr><tr>
+	<td>focused</td><td>15</td><td>2</td><td>3<td>
+	</tr><tr>
+	<td>wide</td><td>8</td><td>3</td><td>1<td>
+	</tr><tr>
+	<td>plasma</td><td>15</td><td>3</td><td>3<td>
+</tr></table>
 
 <h4>Health</h4>
 
@@ -1131,6 +1228,26 @@ Sometimes a weapon's damage will be listed as (XdY)×Z. This means that the weap
 	</tr><tr>
 	<td></td><td>In order to change his tactics back to cautious, the player must either rest or use a health recovering item.</td>
 </tr></table>
+
+<h4>Effects</h4>
+
+<p>There are a few items that give the player a temporary enhancement. These enhancements are shown in the game's heads-up display. The duration of these effects is based on the number of actions that the player takes rather than the standard measure of time. (Only actions that take at least 0.1s of game time count.)</p>
+
+<b>Berserk</b>
+
+<p>Being berserk gives 60% to all the player's resistances, increases the player's speed by 50% for all actions, doubles melee damage before armor reduction. The player can't run while berserking.</p>
+
+<b>Invulnerable</b>
+
+<p>Being invulnerable prevents the player or the player's equipment from taking any damage whatsoever. The player is also healed to max health as long as they aren't on a challenge that prevents healing. The player does still suffer from knockback.</p>
+
+<b>Envirosuit</b>
+
+<p>The envirosuit effect completely negates all acid and lava damage from affecting the player or his boots, and gives 25% acid & fire resistance.</p>
+
+<b>Light Amplification</b>
+
+<p>The light amplification effect increases the player's sight radius by 4 tiles.</p>
 
 <h4>Experience</h4>
 
