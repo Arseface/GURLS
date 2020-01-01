@@ -6,7 +6,7 @@
 
 <h2>Introduction</h2>
 
-<p>A shameless copy and conversion of the mechanics from DRL's wiki. Both a proof of concept and a completely playable RPG in its own right.</p>
+<p>A shameless copy and conversion of the mechanics from DRL's wiki. If it's not obviously D**MGURLS specific it's probably a direct copy/paste.</p>
 
 <h3>Dice Notation</h3>
 
@@ -1067,9 +1067,35 @@ Sometimes a weapon's damage will be listed as (XdY)×Z. This means that the weap
 
 <p>Since you know whether or not you hit before your attack resolves, roll for damage before it's time to resolve the action. This means rolling for each attack and rolling for each instance of damage. Write the results down so they're easy to recall when it's your turn.</p>
 
+<h4>About Shotguns</h4>
+
+<p>The weapons from the shotgun family of DoomRL all have an cone-shaped area of effect attack that makes them unique and powerful. Shotguns never miss any target in their affected area, and they always do at least one damage to each target. The size of the shotgun blast varies from weapon to weapon. The spread is the width of the cone at the end of the blast.</p>
+
+<p>Shotgun damage also diminishes over distance. Each shotgun has a reduction rating that determines how many dice rolled are removed from damage. First you roll damage for the area. Then for everything in the area, count the tiles between the shooter and the target. For each number of tiles equal to the reduction value of the weapon, remove a damage die for that target.</p>
+
+<p>For example: A player is shooting at a group of former humans with a normal shotgun. The former humans are 1, 4,5,6,6,and 10 spaces away respectively. She rolls 8d3 damage and gets 1,1,1,2,2,2,3,3. The former human 1 tile away gets hit with the full force of the attack, 15 damage. The former humans 4 and 5 spaces away remove 2 of the damage dice, so they get hit for 13 each because she chooses to remove the lowest dice. The former humans 6 spaces away remove 3 of the dice and are hit for 12 damage, and the former human 10 spaces away removes 5 dice, being hit for only 8 damage.</p>
+
+<p>If she had a teammate within the blast area, she could instead choose to remove the highest dice, or a mix.</p>
+
+<p>DoomRL uses shotguns with four different Area of Effect types:</p>
+
+<table><tr>
+	<th colspan=4>Shotgun Area of Effect Types</th>
+	</tr><tr>
+	<td>Name</td><td>Range</td><td>Spread</td><td>Reduction<td>
+	</tr><tr>
+	<td>Normal</td><td>15</td><td>7</td><td>2<td>
+	</tr><tr>
+	<td>Focused</td><td>15</td><td>5</td><td>3<td>
+	</tr><tr>
+	<td>Wide</td><td>8</td><td>7</td><td>1<td>
+	</tr><tr>
+	<td>Plasma</td><td>15</td><td>7</td><td>3<td>
+</tr></table>
+
 <b>Resistance</b>
 
-<p>Resistances are percentage modifiers to damage that only affects a certain type of damage.</p>
+<p>Resistances are modifiers to damage that only affects a certain type of damage.</p>
 
 <p>Resistence reduces the damage taken from a hit by one point per point of resistence, and an additional point for every 10 damage the hit would deal. Damage cannot be reduced to less than 1 point in this way.</p> 
 
@@ -1132,32 +1158,6 @@ Sometimes a weapon's damage will be listed as (XdY)×Z. This means that the weap
 <p><b>Piercing Damage</b></p>
 
 <p>Piercing damage ignores all protection and resistances. However, it cannot destroy walls and is no better at gibbing than bullet damage.</p>
-
-<h4>About Shotguns</h4>
-
-<p>The weapons from the shotgun family of DoomRL all have an cone-shaped area of effect attack that makes them unique and powerful. Shotguns never miss any target in their affected area, and they always do at least one damage to each target. The size of the shotgun blast varies from weapon to weapon.</p>
-
-<p>Shotgun damage also diminishes over distance. Each shotgun has a reduction rating that determines how many dice rolled are removed from damage. First you roll damage for the area. Then for everything in the area, count the tiles between the shooter and the target. For each number of tiles equal to the reduction value of the weapon, remove a damage die for that target.</p>
-
-<p>For example: A player is shooting at a group of former humans with a normal shotgun. The former humans are 1, 4,5,6,6,and 10 spaces away respectively. She rolls 8d3 damage and gets 1,1,1,2,2,2,3,3. The former human 1 tile away gets hit with the full force of the attack, 15 damage. The former humans 4 and 5 spaces away remove 2 of the damage dice, so they get hit for 13 each because she chooses to remove the lowest dice. The former humans 6 spaces away remove 3 of the dice and are hit for 12 damage, and the former human 10 spaces away removes 5 dice, being hit for only 8 damage.</p>
-
-<p>If she had a teammate within the blast area, she could instead choose to remove the highest dice, or a mix.</p>
-
-<p>DoomRL uses shotguns with four different Area of Effect types:</p>
-
-<table><tr>
-	<th colspan=4>Shotgun Area of Effect Types</th>
-	</tr><tr>
-	<td>Name</td><td>Range</td><td>Spread</td><td>Reduction<td>
-	</tr><tr>
-	<td>normal</td><td>15</td><td>3</td><td>2<td>
-	</tr><tr>
-	<td>focused</td><td>15</td><td>2</td><td>3<td>
-	</tr><tr>
-	<td>wide</td><td>8</td><td>3</td><td>1<td>
-	</tr><tr>
-	<td>plasma</td><td>15</td><td>3</td><td>3<td>
-</tr></table>
 
 <h4>Health</h4>
 
@@ -1308,6 +1308,1646 @@ Sometimes a weapon's damage will be listed as (XdY)×Z. This means that the weap
 	</tr><tr>
 	<td>25</td><td>90000</td>
 </tr></table>
+
+<h2>Gear</h2>
+
+<h3>Weapons</h3>
+
+<p>Weapons and their families are the staple of just about any RPG: D**MGURLS is no different. They are absolutely necessary to make any substantial progress in the game (save a certain exception) and will be what a player will base their entire game around. If you want to know how to play this game, you need to learn its weapons.</p>
+
+<p>There are a number of statistical variables on weapons, but the most important ones are as follows:</p>
+
+<ul>
+	<li>Damage: This is how much the weapon will hurt a target with HP, written in dice notation.</li>
+	<li>Damage type: This is how protection affects the weapon's damage. This is a hidden statistic, although it is often easily intuited what type of damage a weapon will deal (shotguns deal shrapnel damage, energy weapons deal plasma damage, etc).</li>
+	<li>Attack/Fire rate: This determines how much time it takes to use the weapon. Time spent using a weapon (and, for that matter, any action) is always rounded to the nearest game turn, or one tenth of a game second. Typically, a weapon takes one second to use.</li>
+	<li>Accuracy: This determines how likely you are to hit whatever you aim your weapon at. As a standard, a player with no modifiers to their accuracy has a 50% chance to hit their target from a point-blank range which will lower with an increased distance from the target.</li>
+</ul>
+
+<p>In addition to the stats mentioned above, ranged weapons also have the following:</p>
+
+<ul>
+	<li>Reload time: This is the time it takes to resupply the weapon with the ammo it uses. This is often a large number compared to the fire rate, and so should be taken into consideration as such from a tactical perspective.</li>
+	<li>Clip size: This is how much ammunition a weapon can contain at one time. Once all of the ammunition is depleted from the weapon, it must be reloaded.</li>
+	<li>Shots: This is how many shots the weapon can fire in a single action. If a weapon fires more than one shot per action, it will indicated in the damage value with a 'xZ', where Z is the number of shots (e.g., a chaingun's damage appears as '(1d6)x4'). Any weapon which shoots multiple shots has protection applied to each shot individually.</li>
+	<li>Shot cost: This is how much ammo a weapon uses per shot. This is very rarely anything larger than one.</li>
+</ul>
+
+<table style="float:right"><tr>
+	<th>Standard Weapons</th>
+	</tr><tr>
+	<td>fists</td>
+	</tr><tr>
+	<td>combat knife</td>
+	</tr><tr>
+	<td>chainsaw</td>
+	</tr><tr>
+	<td>pistol</td>
+	</tr><tr>
+	<td>shotgun</td>
+	</tr><tr>
+	<td>combat shotgun</td>
+	</tr><tr>
+	<td>double shotgun</td>
+	</tr><tr>
+	<td>chaingun</td>
+	</tr><tr>
+	<td>rocket launcher</td>
+	</tr><tr>
+	<td>plasma rifle</td>
+	</tr><tr>
+	<td>BFG 9000</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Fists - Melee Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>1d3</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Melee</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+0</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>NA</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Your hand set to punching mode.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>This encompases all unarmed attacks, though it can only be used when no other weapon is being wielded.</td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Hopefully, you were born with them.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Combat knife - Melee Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>2d5</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Melee</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+0</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Throw</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Not what you'd really like to use, but it's better than your fists.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>The combat knife is a blade, so it can be used with Malicious Blades. </td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Real life</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Chainsaw - Melee Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>4d6</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Melee</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+0</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>NA</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Chainsaw -- cuts through flesh like a hot knife through butter.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>You get a Berserk Pack effect when you pick this weapon up the first time. </td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Doom, a popular video game from the 90s.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Pistol - Pistol Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>2d4</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Bullet</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+4</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>1.2s</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>6</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>10mm</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Aimed Shot</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>Dual Reload</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Your trusty 10mm pistol. It may be nice, but better find something stronger.</td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Real Life</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Shotgun - Shotgun Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>8d3, normal shotgun blast</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Shrapnel</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>NA</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>1.0s</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>1</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>Shotgun Shell</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>None<td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>A 12g shotgun -- you gotta love its spread.</td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Real Life</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Combat shotgun - Shotgun Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>7d3, focused shotgun blast</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Shrapnel</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>NA</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>1.0s</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Pump - 0.2s</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>5</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>Shotgun Shell</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>Full reload</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Nothing beats the sound of pumping a combat shotgun.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>The combat shotgun must be pumped after shot in order to fire the next shell in the clip. You can pump the shotgun by moving or by reloading. When not pumping, reloading only reloads one shell at a time. The amount of time it takes to pump the shotgun isn't affected by reload time modifiers like mods and Reloader. </td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Real Life</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Double Shotgun - Shotgun Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>(9d3)x2, wide shotgun blast</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Shrapnel</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>NA</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>2.0s</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>2</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>Shotgun Shell</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Single Shot</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>Single Reload</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Double barreled shotgun -- the perfect weapon for a desperado.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>This weapon fires two shots. Note that the shots are sequential, so knockback and terrain damage from the first blast are applied before the second blast occurs.</td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Real Life</td>
+</tr></table>
+	
+<table><tr>
+	<th colspan=2 style="text-align:left">Chaingun - Rapid-fire Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>(1d6)x4</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Bullet</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+2</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>2.5s</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>40</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>10mm ammo</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Chain fire</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Chaingun directs heavy firepower onto your opponent making him do the chaingun cha-cha.</td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>There are chain guns in real life. However, in the original Doom game, the chaingun looked more like a gatling gun (of which this game also has).</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Rocket Launcher - Explosive Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>6d6, radius 4</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Fire</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+4</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>1.5s</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>1</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>Rocket</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Rocket Jump</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>The rocket launcher is the most standard way of blowing things up.</td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Real life. Please kids, do not try the rocket jump at home. </td>
+</tr></table>
+	
+<table><tr>
+	<th colspan=2 style="text-align:left">Plasma rifle - Rapid-fire Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>(1d7)x6</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Plasma</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+2</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>2.0s</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>40</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>Power Cell</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Chain Fire</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>Overcharge</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>A plasma rifle shoots multiple rounds of plasma energy -- frying some demon butt!</td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Doom </td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">BFG 9000 - Big Gun Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>10d6, radius 8 </td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Plasma</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+5</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>2.0s</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>100(consumes 40 per shot)</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>Power Cell</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>Overcharge</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>The Big Fucking Gun. Hell wouldn't be so fun without it.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>It deals half the normal amount of explosive knockback and doesn't harm the wielder.</td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Doom</td>
+</tr></table>
+
+<h3>Armor</h3>
+
+<p>Armor is the last line of defense between you and anything that wants to kill you.</p>
+
+<p>Primarily, armor is used as a way to prevent damage, but there are other statistics. The most important ones are as follows:</p>
+
+<ul>
+    <li>Protection: This is the amount of damage that is absorbed by the armor. Typically, you subtract the protection value from damage taken and the difference is how much damage the player takes, although damage types can change this result.</li>
+    <li>Resistances: This is an additional source of damage reduction that applies differently to each damage type.</li> 
+</ul>
+
+<p>There are separate resistances for body and legs - almost exclusively these are granted by body armors for body and by boots for legs. As with armor and boots protection, respective resistances are only applied according to the source of damage - legs resistance is applied against hazardous terrain only, body resistances are applied against any other source of damage. Another source is being berserk, which grants 6 resistance to everything while active.</p>
+
+<ul>
+    <li>Movespeed modifier: This is how much the armor affects your movespeed. It can be a positive number, meaning that you move faster while wearing the armor, or a negative number, meaning that you move slower instead.</li>
+    <li>Knockback modifier: This affects how much by which the player is knocked back from damage sources. It can be a positive number, meaning you will get knocked back farther than normal, or a negative number, meaning you will get knocked back less. </li>
+</ul>
+
+<p>Similarly to player's health, armor and boots also have a Durability stat that is subject to damage taken. Durability drops by 1 for each 1HP of damage the player takes, after the armor's/boots' resistances and protection are applied (i.e. the durability loss is not dependent upon the damage the armor or boots prevent). It the damage type is Acid, then the durability loss is doubled. When armor is damaged enough, it starts to become less effective:</p>
+
+<ul>
+    <li>When durability drops below 50%, the item is damaged. It's protection and all resistances are cut in half and rounded down. There's an exception - if the item original protection value was at least 1 (e.g. green armor), the reduced protection would stay at least 1.</li>
+    <li>When durability drops below 25%, the item is severely damaged, and it's protection and all resistances are cut in half and rounded down again. The same exception as above applies here.</li>
+    <li>When durability drops to 0%, the armor/boots are destroyed and disappear from your equipment slot, leaving it empty. In case of certain unique armors and boots, they are not destroyed, but their protection and resistances all drop to 0.</li>
+    <li>Movespeed and knockback modifiers are not affected by low durability.</li>
+</ul>
+
+<p>Armors with base durability higher than 100% (e.g. gothic armor) do not become damaged when durability drops to one half of their maximum durability - and armor with 200% base durability is at full efficiency all the way down to 50%. Durability can be restored primarily by armor shards or a Megasphere (restores all durability). This also restores protection and resistances according to the previous paragraph. Certain armors cannot be repaired. Other armors do not have a durability stat - they cannot be destroyed or damaged.</p>
+
+<table style="float:right"><tr>
+	<th>Standard Body Armor</th>
+	</tr><tr>
+	<td>green armor</td>
+	</tr><tr>
+	<td>blue armor</td>
+	</tr><tr>
+	<td>red armor</td>
+	</tr><tr>
+	<th>Standard Boots</th>
+	</tr><tr>
+	<td>steel boots</td>
+	</tr><tr>
+	<td>protective boots</td>
+	</tr><tr>
+	<td>plasteel boots </td>
+</tr></table>
+
+<h4>Body Armor</h4>
+
+<p>Wearing body armor provides protection against most sources of damage: enemy attacks, splash damage, and explosions. Note that body armor has no effect on damage from hazardous terrain.</p>
+	
+<h4>Foot Armor (Boots)</h4>
+
+<p>Wearing boots provides protection against hazardous terrain. They are also a source of reducing knockback or increasing movespeed of a player with the help of mods.</p>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Green Armor</th>
+	</tr><tr>
+	<td style="text-align:right">Protection</td><td>1</td>
+	</tr><tr>
+	<td style="text-align:right">Resistances</td><td>1 Bullet, 1 Shrapnel</td>
+	</tr><tr>
+	<td style="text-align:right">Durability</td><td>100</td>
+	</tr><tr>
+	<td style="text-align:right">Move Speed</td><td>+0.0s</td>
+	</tr><tr>
+	<td style="text-align:right">Knockback</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Offers little protection, but probably better than none.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Blue Armor</th>
+	</tr><tr>
+	<td style="text-align:right">Protection</td><td>2</td>
+	</tr><tr>
+	<td style="text-align:right">Resistances</td><td>2 Plasma</td>
+	</tr><tr>
+	<td style="text-align:right">Durability</td><td>100</td>
+	</tr><tr>
+	<td style="text-align:right">Move Speed</td><td>+0.1s</td>
+	</tr><tr>
+	<td style="text-align:right">Knockback</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Better than green armor, but it might not be enough.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Red Armor</th>
+	</tr><tr>
+	<td style="text-align:right">Protection</td><td>4</td>
+	</tr><tr>
+	<td style="text-align:right">Resistances</td><td>2 Fire</td>
+	</tr><tr>
+	<td style="text-align:right">Durability</td><td>100</td>
+	</tr><tr>
+	<td style="text-align:right">Move Time</td><td>+0.2s</td>
+	</tr><tr>
+	<td style="text-align:right">Knockback</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Nice, red and shiny. Look out for it, because if it's gone, you're gone.</td>
+</tr></table>
+
+<h3>Items</h3>
+
+<table style="float:right"><tr>
+	<th>Ammunition</th>
+	</tr><tr>
+	<td>10mm ammo</td>
+	</tr><tr>
+	<td>shotgun shell</td>
+	</tr><tr>
+	<td>rocket</td>
+	</tr><tr>
+	<td>power cell</td>
+	</tr><tr>
+	<th>Ammo Packs</th>
+	</tr><tr>
+	<td>10mm ammo chain</td>
+	</tr><tr>
+	<td>shell box</td>
+	</tr><tr>
+	<td>rocket box</td>
+	</tr><tr>
+	<td>power battery</td>
+	</tr><tr>
+	<th>Consumables </th>
+	</tr><tr>
+	<td>small med-pack</td>
+	</tr><tr>
+	<td>large med-pack</td>
+	</tr><tr>
+	<td>phase device</td>
+	</tr><tr>
+	<td>homing phase device</td>
+	</tr><tr>
+	<td>envirosuit pack</td>
+	</tr><tr>
+	<td>blood skull</td>
+	</tr><tr>
+	<td>fire skull</td>
+	</tr><tr>
+	<td>hatred skull</td>
+	</tr><tr>
+	<td>shockwave pack</td>
+	</tr><tr>
+	<td>Hellwave Pack</td>
+	</tr><tr>
+	<td>lava element</td>
+	</tr><tr>
+	<td>thermonuclear bomb</td>
+	</tr><tr>
+	<th>Relics</th>
+	</tr><tr>
+	<td>Hell Staff</td>
+	</tr><tr>
+	<td>Arena Master's Staff</td>
+	</tr><tr>
+	<th>Powerups</th>
+	</tr><tr>
+	<td>armor shard</td>
+	</tr><tr>
+	<td>Small Health Globe</td>
+	</tr><tr>
+	<td>Large Health Globe</td>
+	</tr><tr>
+	<td>Supercharge Globe</td>
+	</tr><tr>
+	<td>Invulnerability Globe</td>
+	</tr><tr>
+	<td>Berserk Pack</td>
+	</tr><tr>
+	<td>Computer Map</td>
+	</tr><tr>
+	<td>Tracking Map</td>
+	</tr><tr>
+	<td>Megasphere</td>
+	</tr><tr>
+	<td>Backpack</td>
+	</tr><tr>
+	<td>Light-Amp Goggles</td>
+	</tr><tr>
+	<th>Mod Packs</th>
+	</tr><tr>
+	<td>agility mod pack</td>
+	</tr><tr>
+	<td>bulk mod pack</td>
+	</tr><tr>
+	<td>power mod pack</td>
+	</tr><tr>
+	<td>technical mod pack</td>
+	</tr><tr>
+	<td>firestorm weapon pack</td>
+	</tr><tr>
+	<td>sniper weapon pack</td>
+	</tr><tr>
+	<td>Nano Pack</td>
+	</tr><tr>
+	<td>Onyx Armor Pack</td>
+</tr></table>
+
+<p>Items are anything in the game that isn't already a weapon or a piece of armor, but is something you can pick up. Most items are stored in your inventory, though some are used immediately upon picking them up.</p>
+
+<h4>Ammunition</h4>
+
+<p>Ammunition (or ammo) is used in the various ranged weapons found throughout the game. No ammo, no attack.</p>
+
+
+<table><tr>
+	<th colspan=2 style="text-align:left">10mm ammo</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Used to fuel a variety of weapons. </td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>10mm ammo, the backbone of your firepower.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>10mm ammo is stackable. The amount found depends on the source, but it generally comes in stacks of 24. The maximum stack size is 100. </td>
+</tr></table>
+   
+<table><tr>
+	<th colspan=2 style="text-align:left">Shotgun shell</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Used to fuel most of the game's various shotguns. </td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Food for your trusty shotguns.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Shotgun shells are stackable. The amount found depends on the source, but it generally comes in stacks of 8. The maximum stack size is 50. </td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Rocket</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Used to fuel most of the game's various explosive weapons. </td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Rockets -- heavy, big and go boom.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Rockets are stackable. The amount found depends on the source, but it generally comes in stacks of 3. The maximum stack size is 10. </td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Power cell</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Used to fuel a variety of weapons. </td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Power cells, the peak of monster frying technology.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td> 	Power cells are stackable. The amount found depends on the source, but it generally comes in stacks of 20. The maximum stack size is 50.</td>
+</tr></table>
+
+<p>All types of ammo can also be found in ammunition packages (or ammo packs). Ammo packs contain a larger quantity of ammo than usual, and equipping an ammo pack in the prepared slot allows the wielder to reload from the pack taking only a fifth of the normal reload time.</p>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">10mm ammo chain</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>This is an ammo pack for 10mm ammo.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>That reminds you about action films you've seen long ago.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Fresh ammo chains are loaded with 250 ammo.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Shell box</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>This is an ammo pack for shotgun shells. </td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Packed shells, like sardines!</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>An unopened shell box comes with 100 shells. </td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Rocket box</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>This is an ammo pack for rockets. </td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Now this is a REAL 'boombox'!</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>An unopened rocket box comes with 20 rockets.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Power battery</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>This is an ammo pack for power cells.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Ampere-hours of pure energy!</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>A fresh power battery contains 120 cells.</td>
+</tr></table>
+
+<h4>Consumables</h4>
+
+<p>Consumable items can be carried and used one each, at the discretion of the user. No consumable items stack; each take up one inventory slot per item.</p>
+
+<b>Standard</b>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Small med-pack</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Heals 2 health plus 25% of the user's maximum health. Will not raise the user's health beyond 100%.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Great to treat a few burns, for major injuries better find its larger cousin.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Round Down</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Large med-pack</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Heals the user to 100% health. With Survivalist, heals 50% of the player's health (affected by the difficulty powerup bonus but not the Marine bonus) or up to 100% -- whichever is more.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Your savior in times of need.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Round Down</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Phase device</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Teleports the user to a random empty location.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Experimental technology -- might save you from a tight spot. Not always, though.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>The teleport destination will never be acid or lava. Also, phase devices will never teleport into vaults. The GM rolls to see where you go.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Homing phase device</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Teleports the user to the exit to the next area.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>This upgraded phase device will definitively save your skin.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>This item won't teleport the user to red stairs. If there are no exits, the item will work as a normal phase device. If there are several exits, one will be chosen randomly. If the chosen exit is blocked, the user will be teleported to a nearby location instead.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Envirosuit pack</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Gives 70 turns of envirosuit.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Planning a lava bath? You'll definitively need this.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>NA</td>
+</tr></table>
+
+<b>Special</b>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Blood skull</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Gibs all corpses within a radius of 8 around the player; gives 5 health for each gib. </td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>This skull gives you the shivers... Like it would lust for blood.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>The blood skull can restore health past 100% (but not past 200%). If at least one corpse is gibbed, tactics are restored to cautious. </td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Fire skull</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Gibs all corpses within a radius of 8 around the player, causing an 7d7 fire damage explosion of radius 3 centered at each corpse. </td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>This skull gives you the shivers... You feel instability.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>The explosions won't harm you. Note that the earlier explosions can gib corpses that would have otherwise created additional explosions. </td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Hatred skull</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Gibs all corpses within a radius of 8 around the player; gives 5 turns of berserk for each gib.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>This skull gives you the shivers... As if it were filled with hatred.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>NA</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Shockwave pack</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Deals a 10d10 of damage in a radius of 6 around the player. </td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Woah, what a useful device. Just wait for them to surround you...</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>NA</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Hellwave Pack</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Deals 20d10 fire damage in a radius of 15 around the player. </td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>I've got a hell-wave and I'm not afraid to surf it!</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>NA</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Lava element</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Gives 9 turns of invulnerable.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>A strange ball of shimmering light.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>The lava element cannot be destroyed.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Thermonuclear bomb</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Drops an activated bomb to the floor with a timer of 10 seconds. When the timer expires, everything in the level is destroyed except for the stairs and unique items.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Cool firepower, but how will you save yourself?</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>If the player is invincible, he can survive the explosion. If the player leaves the level before the timer expires, then he will be safe, but he won't be awarded the kills from the bomb. If the player dies while the timer is still counting down, then the bomb will go off and the player will be awarded kills for the remaining monsters. Against the Spider Mastermind, dying to/with an active thermonuclear bomb counts only as a partial win.</td>
+</tr></table>
+
+<h4>Relics</h4>
+
+<p>Relics are extremely rare and powerful items that act like consumables, but can be used as many times as you want (so long as you meet the requirements to use them).</p>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Hell Staff</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Acts as phase device if the user is not tired. Causes fatigue. </td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Now this is a interesting piece of equipment...</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Can be picked up and used multiple times. </td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Arena Master's Staff</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Strikes all enemies in sight with a 10d1 1-radius fire attack, identical to an Arch-vile's. Causes fatigue.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>You wonder what this was used for...</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>The staff can be activated while at The Vaults to break open all three vaults: doing so will expend the Staff entirely. </td>
+</tr></table>
+
+<h4>Powerups</h4>
+
+<p>Powerups are immediately used when picked up.</p>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Armor shard</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Repairs durability for any armor currently equipped: 25% for body armor and 10% for boots. </td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Small Health Globe</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Heals 10 HP. Restores fatigue.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Large Health Globe</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Adds 10 HP, then sets your health to 100% if it's still below that. Restores fatigue.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Invulnerability Globe</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Sets HP to 200%. Restores fatigue. </td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Supercharge Globe</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Increases health up to 100% and increases the invulnerability counter by 50. Restores fatigue. </td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Berserk Pack</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Increases HP up to 100% and increases the berserk counter by 50. Restores fatigue. </td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Computer Map</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Reveals the location of items and level objects on the map.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Tracking Map</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Reveals the location of items, level objects, and enemies on the map. </td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Enemy positions are updated every turn.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Megasphere</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Sets HP to 200%; repairs any armor currently equipped to its maximum durability, including those that cannot be repaired regularly (shields, Lava Armor, etc). Restores fatigue.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Backpack!</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Permanently increases stack size of ammo in your inventory by 40%</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>You can only carry one backpack</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Light-Amp Goggles</th>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Extends the user's sight range by 14 squares for 50 turns.</td>
+</tr></table>
+
+<h4>Modification Packs (Mods)</h4>
+
+<p>Mods amplify the various equipment collected in the game. Under normal circumstances, only one mod can be added to a piece of equipment (including normal and ranged weapons, armor, and boots). With the Whizkid advanced trait, this limit can be expanded (see trait for details).</p>
+
+<p>Standard and exotic ranged weapons can hold a maximum of three mods per mod type, and normal and exotic armor and melee weapons can hold only one mod per mod type (unless you're adding the last mod to an assembly). Modification of unique equipment varies: see the appropriate page for details.</p>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Agility mod pack</th>
+	</tr><tr>
+	<td style="text-align:right">Shorthand</td><td>A</td>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Weapons: Increases accuracy by 1</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Armor: Decreases move time by .1s and another .1s for each second it takes you to move.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Armor: Decreases move time by .1s and another .1s for each second it takes you to move.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Agility modification kit -- increases weapon accuracy or reduces/increases move speed modifier.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>NA</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Bulk mod pack</th>
+	</tr><tr>
+	<td style="text-align:right">Shorthand</td><td>B</td>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Magazine Weapons: Increases magazine by 30%</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Single-shot Weapons: Decreases reload time by .2s and another .2s for each second it takes to reload.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Melee Weapons: Increases damage dice by 1 </td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Armor and Boots: Increases max and current durability by 100 and increases move speed penalty by .1s and another .1s for each second it takes you to move.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Bulk modification kit -- increases weapon magazine for magazine weapons, decreases reload time for single-shot weapons, or increases armor durability. For melee weapons it increases the damage done.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>For the purposes of this mod, magazine weapons are those with a magazine of at least 3. </td>
+</tr></table>
+	
+<table><tr>
+	<th colspan=2 style="text-align:left">Power mod pack</th>
+	</tr><tr>
+	<td style="text-align:right">Shorthand</td><td>P</td>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Ranged Weapons: Increases the larger of damage dice or sides by 1. (If dice and sides are equal, sides are increased.) </td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Melee Weapons: Increases damage sides by 1</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Armor: Increases protection by 2</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Boots: Doubles protection</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Power modification kit -- increases weapon damage or armor protection.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>NA</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Technical mod pack</th>
+	</tr><tr>
+	<td style="text-align:right">Shorthand</td><td>T</td>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Weapons: Decreases firing time by .1s and another .1s for each second it takes you to shoot.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Armor and Boots: Reduces knockback by 1 for every 4 squares you'd travel.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Technical modification kit -- decreases fire time for weapons, or increases armor knockback resistance.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>NA</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Firestorm weapon pack</th>
+	</tr><tr>
+	<td style="text-align:right">Shorthand</td><td>F</td>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Rapid-fire weapons: Gives 2 more shots per burst </td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Explosive weapons: Increases blast radius by 2 </td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>A modification for rapid or explosive weapons -- increases shots by 2 for rapid, and blast radius by 2 for explosive weapons.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>For the purposes of the firestorm weapon pack, rapid-fire weapons are those with at least 3 shots per burst and explosive weapons are those with a blast radius of at least 3. For a weapon that would qualify as both, preference is given to rapid-fire.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Sniper weapon pack</th>
+	</tr><tr>
+	<td style="text-align:right">Shorthand</td><td>S</td>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>A single pack added to a weapon removes accuracy penalties due to distance.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>A second pack added to the same weapon also removes the penalty against hitting a target you cannot see. </td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>A high-tech modification for ranged weapons -- implements an advanced auto-hit mechanism.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>NA</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Nano Pack</th>
+	</tr><tr>
+	<td style="text-align:right">Shorthand</td><td>N</td>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Modifies a weapon to regenerate its own ammo and armor to regenerate its own durability, at 1 ammo or 2% durability per action, starting after 5 actions without taking damage or firing. </td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Nanotechnology -- modified weapon reconstructs shot ammo, modified armor/boots reconstruct itself.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Nano Packs are used in a rather large number of assemblies. Weapons modified by a Nano Pack cannot be reloaded normally or unloaded.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Onyx Armor Pack</th>
+	</tr><tr>
+	<td style="text-align:right">Shorthand</td><td>O</td>
+	</tr><tr>
+	<td style="text-align:right">Effect</td><td>Sets any armor's durability to infinite.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>A modification for armors -- makes them indestructible.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>If the modified armor was damaged, it won't be damaged after being modified. </td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Shields are not armor and cannot be modified.</td>
+</tr></table>
+
+<h3>Assemblies</h3>
+
+<table style="float:right"><tr>
+	<th>Mod type</th><th>Shorthand</th>
+	</tr><tr>
+	<td>Power</td><td>P</th>
+	</tr><tr>
+	<td>Agility</td><td>A</th>
+	</tr><tr>
+	<td>Bulk</td><td>B</th>
+	</tr><tr>
+	<td>Technical</td><td>T</th>
+	</tr><tr>
+	<td>Firestorm</td><td>F</th>
+	</tr><tr>
+	<td>Sniper</td><td>S</th>
+	</tr><tr>
+	<td>Onyx</td><td>O</th>
+	</tr><tr>
+	<td>Nano</td><td>N </th>
+</tr></table>
+
+<p>Assemblies are the finished product of combining standard Weapons/Armor or Special equipment with a particular set of mod packs. Some assemblies can only be made with a particular piece of equipment, while others can take a variety of different weapons, armors, or boots. There are three types of assemblies: Basic, Advanced and Master.</p>
+
+<p>You may choose not to assemble when prompted. If you do so, you will instead have a normal modified piece of equipment that can be modified further (if your Whizkid level allows it). The latter is particularly useful to remember if you're trying to figure out basic assembly combinations or when trying to assemble a higher rank assembly the recipe for which partially matches a lower rank assembly recipe (for example, the power armor and the nanofiber skin armor).</p>
+
+<p>Modpacks can be added in any order, with the exception: second mod of the same type can be added to armor/boots/melee weapon only when completing an assembly, since those can only accept one mod of a kind at once. Ranged weapons don't have this limitation.</p>
+
+<p>Assemblies can also be modded in limited circumstances. If the player has the second level of Whizkid before the assembly is finished, they may then add a single mod to that assembled item.</p>
+
+<table><tr>
+	<th colspan=3>Basic</th>
+	</tr><tr>
+	<td colspan=3>Basic assemblies require two mod packs and can be built at any point in the game. Current list of basic assemblies:</td>
+	</tr><tr>
+	<th>Assembly</th><th>Base</th><th>Mods</th>
+	</tr><tr>
+	<td>chainsword</td><td>combat knife</td><td>PB</td>
+	</tr><tr>
+	<td>piercing blade</td><td>any melee weapon</td><td>AP</td>
+	</tr><tr>
+	<td>speedloader pistol</td><td>pistol</td><td>AT</td>
+	</tr><tr>
+	<td>elephant gun</td><td>shotgun</td><td>PP</td>
+	</tr><tr>
+	<td>gatling gun</td><td>chaingun</td><td>BB</td>
+	</tr><tr>
+	<td>micro launcher</td><td>rocket launcher</td><td>TT</td>
+	</tr><tr>
+	<td>tactical armor</td><td>green armor</td><td>AA</td>
+	</tr><tr>
+	<td>tactical boots</td><td>tactical boots</td><td>AA</td>
+	</tr><tr>
+	<td>nanofiber armor</td><td>any armor</td><td>BP</td>
+	</tr><tr>
+	<td>high power weapon</td><td>any non-shotgun, clip > 5</td><td>PB</td>
+	</tr><tr>
+	<td>power armor</td><td>any common armor</td><td>PN</td>
+	</tr><tr>
+	<td>tactical shotgun</td><td>combat shotgun</td><td>PT</td>
+	</tr><tr>
+	<td>tower shield</td><td>red armor</td><td>PO</td>
+	</tr><tr>
+	<td>fireproof armor</td><td>any armor</td><td>BT</td>
+	</tr><tr>
+	<td>fireproof boots</td><td>any boots</td><td>BT</td>
+	</tr><tr>
+	<td>ballistic armor</td><td>any armor</td><td>AT</td>
+	</tr><tr>
+	<td>plasmatic shrapnel</td><td>any shotgun</td><td>PS</td>
+	</tr><tr>
+	<td>grappling boots</td><td>any boots</td><td>TT</td>
+	</tr><tr>
+	<td>lava boots</td><td>any boots</td><td>TO</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=3>Advanced</th>
+	</tr><tr>
+	<td colspan=3>Advanced assemblies require three mod packs and require the first level of Whizkid to be built. Current list of advanced assemblies:</td>
+	</tr><tr>
+	<th>Assembly</th><th>Base</th><th>Mods</th>
+	</tr><tr>
+	<td>double chainsaw</td><td>chainsaw</td><td>PPB</td>
+	</tr><tr>
+	<td>tactical rocket launcher</td><td>rocket launcher</td><td>BBB</td>
+	</tr><tr>
+	<td>storm bolter pistol</td><td>any pistol</td><td>TBB</td>
+	</tr><tr>
+	<td>assault rifle</td><td>any rapid fire weapon</td><td>AAA</td>
+	</tr><tr>
+	<td>energy pistol</td><td>any pistol</td><td>PPT</td>
+	</tr><tr>
+	<td>burst cannon</td><td>any rapid fire weapon</td><td>PBB</td>
+	</tr><tr>
+	<td>VBFG9000</td><td>any BFG 9000</td><td>PPP</td>
+	</tr><tr>
+	<td>enviromental boots</td><td>any boots</td><td>PBT</td>
+	</tr><tr>
+	<td>fireshield</td><td>red armor</td><td>BTO</td>
+	</tr><tr>
+	<td>nanofiber skin armor</td><td>any armor</td><td>PPN</td>
+	</tr><tr>
+	<td>antigrav boots</td><td>any boots</td><td>AAN</td>
+	</tr><tr>
+	<td>nano-shrapnel</td><td>any shotgun</td><td>PPN</td>
+	</tr><tr>
+	<td>hyperblaster</td><td>plasma rifle</td><td>ATT</td>
+	</tr><tr>
+	<td>focused double shotgun</td><td>double shotgun</td><td>PAT</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=3>Master</th>
+	</tr><tr>
+	<td colspan=3>Master assemblies require four mod packs and require both levels of Whizkid to be built. Current list of master assemblies:</td>
+	</tr><tr>
+	<th>Assembly</th><th>Base</th><th>Mods</th>
+	</tr><tr>
+	<td>nanomanufacture ammo</td><td>any ranged non-shotgun, non-BFG</td><td>BBBN</td>
+	</tr><tr>
+	<td>demolition ammo</td><td>any 10mm-based weapon</td><td>PTTF</td>
+	</tr><tr>
+	<td>cybernano armor</td><td>any armor</td><td>PPON</td>
+	</tr><tr>
+	<td>biggest fucking gun</td><td>any BFG 9000</td><td>BBFF</td>
+	</tr><tr>
+	<td>ripper</td><td>chainsaw</td><td>TPPB</td>
+	</tr><tr>
+	<td>cerberus boots</td><td>any boots</td><td>PPTA</td>
+	</tr><tr>
+	<td>cerberus armor</td><td>any armor</td><td>PPTA</td>
+</tr></table>
+
+<h4>Melee</h4>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Chainsword - Melee Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>8d2</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Melee</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+2</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>combat knife + PB</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Unlike the combat knife, this has no thrown alternate fire. However, it counts as an acceptable weapon for knife-based achievements and as a blade for Malicious Blades.</td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Warhammer 40K</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Double chainsaw - Melee Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>8d6</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Melee</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>-2</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>chainsaw + PPB</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>NA</td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Doom</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Piercing blade - Melee Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>Original + 1 side </td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Melee</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>melee weapon + AP </td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Blades that are modded to piercing are still blades (counts for Malicious Blades trait.)</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Ripper - Melee Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>6d6</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Melee</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>-4</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>chainsaw + PPBT</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>This weapon has a 0.5s attack time.</td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Jack the Ripper</td>
+</tr></table>
+
+<h4>Generic</h4>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Assault rifle</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>Original +1 die, -1 sides per die, 0.5 times original Shots</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>Original+2</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>Original*0.5</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>Original (consumes the same ammo as the original for half the shots) </td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Chain fire</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>any rapid fire weapon + AAA</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Assault rifle with Ammochain will consume only 2 ammo per volley </td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Real Life</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Burst cannon</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>Original +2 sides per die (+2 shots)</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>Original-2</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>Original*1.5</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>Original*2</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Chain fire</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>any rapid fire weapon + BBP</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Demolition ammo</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>Xd2, X is Original + 2 dice, radius 1</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>10mm weapon + PTTF </td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>1dN weapons (even the Minigun) are too weak to really clear your path even with additional P mod. But Combat pistol, having 3d3, becomes 5d2 / 6d2, easily making holes of necessary size. </td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">High power weapon</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>Original + 2 sides</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>Original*.65</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>magazine > 5, non-shotgun + PB</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>If the weapon being modded is fully loaded, half of the ammo will vanish. Attention! Assembling of high power nuclear BFG will make it unable to shoot! </td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Nano-shrapnel</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>Original -3 dice, Original shotgun blast</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Piercing</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>any shotgun + PPN</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Never needs reloading, doesn't use ammo.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Note: Adds "nano" to the front of weapon name (example: "shotgun" will become "nano shotgun")</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Nanomanufacture ammo</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>non-shotgun/non-bfg ranged weapon + BBBN</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Never needs reloading, doesn't use ammo.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>The weapon is called "nanomachic Old-Weapon-Name".</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Plasmatic Shrapnel</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>Original, Original shotgun blast</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Plasma</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>any shotgun + PS</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Adds "plasmatic" to the front of weapon name (example: "shotgun" will become "plasmatic shotgun")</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Main properties of this assemblies are that plasma damage suffer less from armor, can gib corpses, and destroy walls (take care of your covers !) </td>
+</tr></table> 
+
+<h4>Pistol</h4>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Energy pistol</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>Original + 1 Sides per die</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Plasma</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>Power cell</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>any pistol + PPT</td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Classic SF weapon</td>
+</tr></table> 
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Speedloader pistol - Pistol Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>2d4</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Bullet</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+4</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>1.0 seconds</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>0.6 seconds</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>6</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>10mm ammo</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Aimed shot</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>Dual reload</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>pistol + AT</td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Real life</td>
+</tr></table> 
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Energy pistol</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>1d(Original Sides * Original Dice)x2</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>Original-2</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>Original*0.85(round up)</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>Original*1.5</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>any pistol + TBB </td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Warhammer 40,000</td>
+</tr></table>
+
+<h4>Shotgun</h4>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Elephant gun</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>12d3, normal shotgun blast</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Shrapnel</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>NA</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>2.5s</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>1</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>Shotgun shell</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>NA</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>NA</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>shotgun + PP</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Real life</td>
+</tr></table> 
+
+<h4>Combat Shotgun</h4>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Tactical shotgun</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>8d3, focused shotgun blast</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Shrapnel</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>NA</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>1.0s</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>5</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>Shotgun shell</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>NA</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>Full Reload</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>combat shotgun + PT</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Unlike the combat shotgun, the tactical shotgun doesn't require pumping. </td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Real life</td>
+</tr></table> 
+
+<h4>Double Shotgun</h4>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Focused double shotgun</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>(8d4)x2, normal shotgun blast</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Shrapnel</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>NA</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>2.0s</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>2</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>Shotgun shell</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Single shot</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>Single reload</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>double shotgun + PAT</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>This weapon fires two shots. Note that the shots are sequential, so knockback and terrain damage from the first blast are applied before the second blast occurs. </td>
+</tr></table> 
+
+Chaingun
+
+    gatling gun 
+
+Rocket Launcher
+
+    micro launcher
+    tactical rocket launcher 
+
+Plasma Rifle
+
+    hyperblaster 
+
+BFG 9000
+
+    biggest fucking gun
+    VBFG9000 
+	
+Body Armor
+
+    ballistic armor (any)
+    cerberus armor (any)
+    cybernano armor (any)
+    fireproof armor (any)
+    fireshield (red)
+    nanofiber armor (any)
+    nanofiber skin armor (any)
+    tower shield (red)
+    power armor (any)
+    tactical armor (green) 
+
+Boots
+
+    antigrav boots (any)
+    cerberus boots (any)
+    environmental boots (any)
+    fireproof boots (any)
+    grappling boots (any)
+    lava boots (any)
+    tactical boots (steel) 
+
+Special
+
+Specials are the collective grouping of exotics, uniques, and artifacts. They are harder to find than the more standard equipment and items, for that reason, are far more useful and/or powerful.
+
+Each type of special is differentiated thusly:
+
+
+	Exotics are the most common of specials. They are fully moddable and can appear multiple times over the course of a single game.
+	Uniques are, just as the name says, unique. They only appear once, and can only be modded by Technicians (though this depends on the unique, see below). Uniques are normally indestructible by normal means (explosions, including nuking a level), but will be lost if an enemy carries them, and is gibbed.
+	Artifacts are the rarest special, or at least in the broader sense. Whereas exotics and uniques are discovered randomly, artifacts can only appear in particular places. They can be gained each time, of course, although the requirements to get them are often quite dangerous. 
+
+Due to the vast number of special ranged weapons, they are further categorized by type.
+
+Special Melee
+
+    Butcher's Cleaver
+    Dragonslayer
+    Mjollnir
+    Subtle Knife
+    Azrael's Scythe
+    Longinus Spear 
+
+Special Pistol
+
+    blaster
+    combat pistol
+    Anti-Freak Jackal
+    Grammaton Cleric Beretta
+    Trigun 
+
+Special Shotgun
+
+    assault shotgun
+    plasma shotgun
+    super shotgun
+    Frag Shotgun
+    Jackhammer 
+
+Special Rapid-Fire
+
+    laser rifle
+    minigun
+    nuclear plasma rifle
+    BFG 10K
+    Mega Buster 
+
+Special Explosive
+
+    missile launcher
+    napalm launcher
+    Revenant's Launcher 
+
+Special Miscellaneous
+
+    combat translocator
+    nuclear BFG 9000
+    tristar blaster
+    Acid Spitter
+    Railgun
+    Charch's Null Pointer
+	
+Special Body Armor
+
+    ballistic shield
+    ballistic vest
+    bullet-proof vest
+    duelist armor
+    energy-shielded vest
+    energy shield
+    gothic armor
+    medical armor
+    phaseshift armor
+    plasma shield
+    onyx armor
+    Berserker Armor
+    Cybernetic Armor
+    Lava Armor
+    Malek's Armor
+    Medical Powerarmor
+    Necroarmor
+    Shielded Armor
+    Angelic Armor
+	
+Special Boots
+
+	acid-proof boots
+	gothic boots
+	phaseshift boots
+	Enviroboots
+	Nyarlaptotep's Boots 
 
 </body>
 </html>
