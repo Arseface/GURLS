@@ -1093,7 +1093,7 @@ Sometimes a weapon's damage will be listed as (XdY)×Z. This means that the weap
 	<td>Plasma</td><td>15</td><td>7</td><td>3<td>
 </tr></table>
 
-<b>Resistance</b>
+<h4>Resistance</h4>
 
 <p>Resistances are modifiers to damage that only affects a certain type of damage.</p>
 
@@ -1107,7 +1107,7 @@ Sometimes a weapon's damage will be listed as (XdY)×Z. This means that the weap
 
 <p>Negative resistence adds damage instead of decreasing it.</p>
 
-<b>Protection</b>
+<h4>Protection</h4>
 
 <p>Protection (often called armor) is a way for the player and his enemies to reduce the amount of damage they take.</p>
 
@@ -1127,35 +1127,35 @@ Sometimes a weapon's damage will be listed as (XdY)×Z. This means that the weap
 	<li>The Tough as Nails trait</li>
 </ul>
 
-<p><b>Damage Types</b></p>
+<h4>Damage Types</h4>
 
 <p>Every damage source has a damage type associated with it. There are seven types of damage: melee, bullet, shrapnel, fire, plasma, acid, and piercing. Each is, of course, different from the others in some way, though some are more common than others. Also, resistances apply to each damage type separately.</p>
 
-<p><b>Melee Damage</b></p>
+<p>Melee Damage</p>
 
 <p>For every point of armor the target has, they take one less damage per hit. Melee damage cannot destroy walls. It is dealt by almost all melee attacks.</p>
 
-<p><b>Bullet Damage</b></p>
+<p>Bullet Damage</p>
 
 <p>Bullet damage has the same technical properties as melee damage; protection applies normally and bullet damage cannot destroy walls. Bullet damage is generally dealt by weapons that use 10mm ammo.</p>
 
-<p><b>Shrapnel Damage</b></p>
+<p>Shrapnel Damage</p>
 
 <p>For every point of armor the target has, they take two less damage per hit (although this goes to zero for the player if they have the Army of the Dead master trait). Shrapnel damage cannot destroy walls. It is limited to most shotguns.</p>
 
-<p><b>Fire Damage</b></p>
+<p>Fire Damage</p>
 
 <p>Fire damage treats protection normally (one less per point), but can destroy walls. Additionally, fire damage is the best for gibbing enemies.</p>
 
-<p><b>Plasma Damage</b></p>
+<p>Plasma Damage</p>
 
 <p>Plasma Damage halves armor protection, rounded down. Gibbing is easier. Most weapons that use power cells do plasma damage. Additionally, several enemy projectiles cause plasma (even some you may not expect).</p>
 
-<p><b>Acid Damage</b></p>
+<p>Acid Damage</p>
 
 <p>Acid damage damages armor durability twice as much as other damage types. Gibbing is easier.</p>
 
-<p><b>Piercing Damage</b></p>
+<p>Piercing Damage</p>
 
 <p>Piercing damage ignores all protection and resistances. However, it cannot destroy walls and is no better at gibbing than bullet damage.</p>
 
@@ -1233,27 +1233,67 @@ Sometimes a weapon's damage will be listed as (XdY)×Z. This means that the weap
 
 <p>There are a few items that give the player a temporary enhancement. These enhancements are shown in the game's heads-up display. The duration of these effects is based on the number of actions that the player takes rather than the standard measure of time. (Only actions that take at least 0.1s of game time count.)</p>
 
-<b>Berserk</b>
+<p>Berserk</p>
 
 <p>Being berserk gives 60% to all the player's resistances, increases the player's speed by 50% for all actions, doubles melee damage before armor reduction. The player can't run while berserking.</p>
 
-<b>Invulnerable</b>
+<p>Invulnerable</p>
 
 <p>Being invulnerable prevents the player or the player's equipment from taking any damage whatsoever. The player is also healed to max health as long as they aren't on a challenge that prevents healing. The player does still suffer from knockback.</p>
 
-<b>Envirosuit</b>
+<p>Envirosuit</p>
 
 <p>The envirosuit effect completely negates all acid and lava damage from affecting the player or his boots, and gives 25% acid & fire resistance.</p>
 
-<b>Light Amplification</b>
+<p>Light Amplification</p>
 
 <p>The light amplification effect increases the player's sight radius by 4 tiles.</p>
 
-<h4>Experience</h4>
+<h4>Alternate fire</h4>
 
-<p>Honestly this is optional. Feel free to level the players up whenever. The player earns experience whenever enemies are killed. Different enemies are worth different amounts of experience (as listed on their individual pages).</p>
+<p>Many weapons in the game have an alternate fire mode.</p>
 
-<table><tr>
+<p>Aimed shot</p>
+
+<p>An aimed shot has a +3 accuracy bonus, but takes twice as long as normal to fire. The doubling of firing time takes place after the firing time floor, so even with Son of a Gun level 5, an aimed shot will take at least 0.2s.</p>
+
+<p>Single shot</p>
+
+<p>The single shot alternate fire allows the player to fire only a single shot from a multi-shot weapon. The firing time is the same, so the only advantage is ammo conservation.</p>
+
+<p>Rocket jump</p>
+
+<p>The rocketjump shoots a rocket that will travel only one square before exploding. The explosion has significantly increased knockback, and deals only half damage to the player. (The knockback calculation uses the full damage, not the halved damage.)</p>
+
+<p>Chain fire</p>
+
+<p>Chainfire allows rapid-fire weapons to build up their shot count by firing consecutively for several turns. The first consecutive turn of chainfiring gives only 2/3 (rounded up) the normal number of shots. The second turn gives the normal number of shots. Every subsequent turn gives 3/2 the normal number of shots (rounded down). Chainfiring always starts aiming at the previously targeted square (except for the first turn of chainfiring) and pans to the newly targeted square.</p>
+
+<p>Throw</p>
+
+<p>Throwing allows the combat knife to be used as a ranged weapon. Throwing has a maximum range: the projectile won't leave an 11 by 11 square around the player. This will cause the knife to become unequipped, but the knife can later be picked up again from wherever it landed. Throwing ignores attack speed bonuses and always takes 1.0s. Despite being a ranged attack, throwing accepts melee-only damage bonuses.</p>
+
+<p>Whirlwind</p>
+
+<p>Whirlwind requires that the player's tactics are cautious, and it tires the player out. Attacking with whirlwind gives the player a normal melee attack against each of the eight surrounding spaces. The total time cost is the cost of 8 melee attacks minus 5.0s.</p>
+
+<h4>Alternate reload</h4>
+
+<p>Some weapons have alternate reload modes. Generally, alternate reload modes really do involve reloading the weapon, but sometimes they are used for miscellaneous activities.</p>
+
+<p>Full reload</p>
+
+<p>Full reload will reload the weapon's entire magazine. The amount of time taken is 0.2s plus the time it would take to normally reload the amount of missing ammo. For the combat shotgun, the weapon will also be pumped.</p>
+
+<p>Single reload</p>
+
+<p>Single reload will reload only a single ammo into the weapon's magazine. This time taken is the same as a normal reload.</p>
+
+<p>Dual reload</p>
+
+<p>If the player has the Dualgunner trait and has a pistol-type weapon in the prepared slot, then dual reload will reload the wielded weapon and the prepared weapon. Each of these reloads takes the normal amount of time, but either one may be skipped if the weapon is already full.</p>
+
+<table style="float:right"><tr>
 	<th colspan="2">Experience Table</th>
 	</tr><tr>
 	<td>Level</td><td>Experience</td>
@@ -1308,6 +1348,22 @@ Sometimes a weapon's damage will be listed as (XdY)×Z. This means that the weap
 	</tr><tr>
 	<td>25</td><td>90000</td>
 </tr></table>
+
+<p>Overcharge</p>
+
+<p>Overcharging enhances the weapon, but causes it to be destroyed after firing a single shot. A weapon can only be overcharged if it is fully loaded.</p>
+
+<p>For the plasma rifle and derivatives, overcharging doubles the number of shots and increases the size of the damage dice by 1. (The maximum clip size is reduced to the new number of shots.)</p>
+
+<p>For the BFG 9000 and derivatives, overcharging doubles the blast radius and increases the number of damage dice by 2.</p>
+
+<p>Nuclear overcharge</p>
+
+<p>Overcharging nuclear plasma weapons creates an active nuke with a 10.0s timer. This works the same as using a thermonuclear bomb. The weapon is lost, and the wielder is left without a weapon equipped. This overcharge actions is instantaneous.</p>
+
+<h4>Experience</h4>
+
+<p>Honestly this is optional. Feel free to level the players up whenever. The player earns experience whenever enemies are killed. Different enemies are worth different amounts of experience (as listed on their individual pages).</p>
 
 <h2>Gear</h2>
 
@@ -2062,7 +2118,7 @@ Sometimes a weapon's damage will be listed as (XdY)×Z. This means that the weap
 </tr></table>
 
 <table><tr>
-	<th colspan=2 style="text-align:left">Arena Master's Staff</th>
+	<th colspan=2 style="text-align:left">Arena Master's Staff - Artifact</th>
 	</tr><tr>
 	<td style="text-align:right">Effect</td><td>Strikes all enemies in sight with a 10d1 1-radius fire attack, identical to an Arch-vile's. Causes fatigue.</td>
 	</tr><tr>
@@ -2756,7 +2812,7 @@ Sometimes a weapon's damage will be listed as (XdY)×Z. This means that the weap
 	</tr><tr>
 	<td style="text-align:right">Assembly</td><td>shotgun + PP</td>
 	</tr><tr>
-	<td style="text-align:right"></td><td>Real life</td>
+	<td style="text-align:right">Source</td><td>Real life</td>
 </tr></table> 
 
 <h4>Combat Shotgun</h4>
@@ -2786,7 +2842,7 @@ Sometimes a weapon's damage will be listed as (XdY)×Z. This means that the weap
 	</tr><tr>
 	<td style="text-align:right">Comments/Special</td><td>Unlike the combat shotgun, the tactical shotgun doesn't require pumping. </td>
 	</tr><tr>
-	<td style="text-align:right"></td><td>Real life</td>
+	<td style="text-align:right">Source</td><td>Real life</td>
 </tr></table> 
 
 <h4>Double Shotgun</h4>
@@ -2817,70 +2873,609 @@ Sometimes a weapon's damage will be listed as (XdY)×Z. This means that the weap
 	<td style="text-align:right">Comments/Special</td><td>This weapon fires two shots. Note that the shots are sequential, so knockback and terrain damage from the first blast are applied before the second blast occurs. </td>
 </tr></table> 
 
-Chaingun
+<h4>Chaingun</h4>
 
-    gatling gun 
+<table><tr>
+	<th colspan=2 style="text-align:left">Gatling Gun - Rapid-fire Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>(1d7)x6</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Bullet</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+2 </td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>3.0s</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>60</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>10mm ammo</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Chain fire</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>NA</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>chaingun + BB</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Watch your ammo. It's now consumed at 1.5 rate.</td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Real life</td>
+</tr></table> 
 
-Rocket Launcher
+<h4>Rocket Launcher</h4>
 
-    micro launcher
-    tactical rocket launcher 
+<table><tr>
+	<th colspan=2 style="text-align:left">Micro launcher - Explosive Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>5d5, radius 3</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Fire</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+7</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>0.8s</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>0.8s</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>1</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>Rocket</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Rocket jump</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>NA</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>rocket launcher + TT</td>
+</tr></table> 
 
-Plasma Rifle
+<table><tr>
+	<th colspan=2 style="text-align:left">Tactical rocket launcher - Explosive Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>6d6, radius 2</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Fire</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+4</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>0.8s</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>5</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>Rocket</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Rocket jump</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>NA</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>rocket launcher + BBB</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>The tactical rocket launcher reloads its entire clip at once. </td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Unknown. The attributes "tactical" and "strategic" are usually attached to nuclear weaponry. </td>
+</tr></table> 
 
-    hyperblaster 
+<h4>Plasma Rifle</h4>
 
-BFG 9000
+<table><tr>
+	<th colspan=2 style="text-align:left">Hyperblaster - Rapid-fire Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>(2d4)x3</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Plasma</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+4</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>0.5s</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>2.5s</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>40</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>Power cell</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Chain fire</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>Overcharge</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>plasma rifle + ATT</td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Quake 2</td>
+</tr></table> 
 
-    biggest fucking gun
-    VBFG9000 
+<h4>BFG 9000</h4>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Biggest fucking gun - Big Gun Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>Original *2 dice, *2 sides per die, radius 16</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Plasma</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>Original*2.5(consumes 2.5 times original per shot) </td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>Power cell</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>Overcharge</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>any BFG 9000 + BBFF </td>
+</tr></table> 
+
+<table><tr>
+	<th colspan=2 style="text-align:left">VBFG9000 - Big Gun Family</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>Original +2 sides per die, radius +2</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Plasma</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Base Fire Time</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Base Reload Time</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Clip Size</td><td>Original*1.5 (consumes 1.5 times original per shot)</td>
+	</tr><tr>
+	<td style="text-align:right">Ammunition</td><td>Power cell</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>NA</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Reload</td><td>Overcharge</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>Any BFG 9000 + PPP</td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Modelled on the good ol' Doom BFG 9000 </td>
+</tr></table> 
 	
-Body Armor
+<h4>Body Armor</h4>
 
-    ballistic armor (any)
-    cerberus armor (any)
-    cybernano armor (any)
-    fireproof armor (any)
-    fireshield (red)
-    nanofiber armor (any)
-    nanofiber skin armor (any)
-    tower shield (red)
-    power armor (any)
-    tactical armor (green) 
+<table><tr>
+	<th colspan=2 style="text-align:left">Ballistic armor</th>
+	</tr><tr>
+	<td style="text-align:right">Protection</td><td>Original </td>
+	</tr><tr>
+	<td style="text-align:right">Resistances</td><td>Original + 3 bullet, 3 shrapnel, 3 melee, -3 fire</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>0 plasma, 0 acid</td>
+	</tr><tr>
+	<td style="text-align:right">Durability</td><td>100</td>
+	</tr><tr>
+	<td style="text-align:right">Move Speed</td><td>Original </td>
+	</tr><tr>
+	<td style="text-align:right">Knockback</td><td>Original </td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>any armor + AT </td>
+</tr></table>
 
-Boots
+<table><tr>
+	<th colspan=2 style="text-align:left">Cerberus armor</th>
+	</tr><tr>
+	<td style="text-align:right">Protection</td><td>Original </td>
+	</tr><tr>
+	<td style="text-align:right">Resistances</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>7 fire, 5 plasma, 7 acid </td>
+	</tr><tr>
+	<td style="text-align:right">Durability</td><td>100</td>
+	</tr><tr>
+	<td style="text-align:right">Move Speed</td><td>+0.3s</td>
+	</tr><tr>
+	<td style="text-align:right">Knockback</td><td>Reduces knockback by 1 for every 4 squares you'd travel.</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>any armor + PPAT</td>
+</tr></table>
 
-    antigrav boots (any)
-    cerberus boots (any)
-    environmental boots (any)
-    fireproof boots (any)
-    grappling boots (any)
-    lava boots (any)
-    tactical boots (steel) 
+<table><tr>
+	<th colspan=2 style="text-align:left">Cybernano armor</th>
+	</tr><tr>
+	<td style="text-align:right">Protection</td><td>Original + 4</td>
+	</tr><tr>
+	<td style="text-align:right">Resistances</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Durability</td><td>Infinite</td>
+	</tr><tr>
+	<td style="text-align:right">Move Speed</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Knockback</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>any armor + PPON</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Cannot be unequipped. If this assembly is applied to a damaged armor, the armor will recover its durability.</td>
+</tr></table>
 
-Special
+<table><tr>
+	<th colspan=2 style="text-align:left">Fireproof armor</th>
+	</tr><tr>
+	<td style="text-align:right">Protection</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Resistances</td><td>Original + 3 fire -3 melee</td>
+	</tr><tr>
+	<td style="text-align:right">Durability</td><td>100</td>
+	</tr><tr>
+	<td style="text-align:right">Move Speed</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Knockback</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>any armor + BT</td>
+</tr></table>
 
-Specials are the collective grouping of exotics, uniques, and artifacts. They are harder to find than the more standard equipment and items, for that reason, are far more useful and/or powerful.
+<table><tr>
+	<th colspan=2 style="text-align:left">Fireshield</th>
+	</tr><tr>
+	<td style="text-align:right">Protection</td><td>4</td>
+	</tr><tr>
+	<td style="text-align:right">Resistances</td><td>9 fire</td>
+	</tr><tr>
+	<td style="text-align:right">Durability</td><td>200</td>
+	</tr><tr>
+	<td style="text-align:right">Move Speed</td><td>+0.2s</td>
+	</tr><tr>
+	<td style="text-align:right">Knockback</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>any armor + BT</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>This assembly is a shield, so it (like all other shields, assembled or not) can be neither repaired nor modded even with Whizkid 2.</td>
+</tr></table>
 
-Each type of special is differentiated thusly:
+<table><tr>
+	<th colspan=2 style="text-align:left">Nanofiber armor</th>
+	</tr><tr>
+	<td style="text-align:right">Protection</td><td>Original * .5</td>
+	</tr><tr>
+	<td style="text-align:right">Resistances</td><td>Original * .5</td>
+	</tr><tr>
+	<td style="text-align:right">Durability</td><td>Infinite</td>
+	</tr><tr>
+	<td style="text-align:right">Move Speed</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Knockback</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>any armor + BP</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Adds "nanofiber" in front of armor name (example: "red armor" will become "nanofiber red armor") </td>
+</tr></table>
 
+<table><tr>
+	<th colspan=2 style="text-align:left">Nanofiber skin armor</th>
+	</tr><tr>
+	<td style="text-align:right">Protection</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Resistances</td><td>Original + 2 all</td>
+	</tr><tr>
+	<td style="text-align:right">Durability</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Move Speed</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Knockback</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>any armor + PPN</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Regenerates 1 durability on each of the wearer's actions, starting after 5 actions without taking damage; cannot be unequipped or destroyed.</td>
+</tr></table>
 
-	Exotics are the most common of specials. They are fully moddable and can appear multiple times over the course of a single game.
-	Uniques are, just as the name says, unique. They only appear once, and can only be modded by Technicians (though this depends on the unique, see below). Uniques are normally indestructible by normal means (explosions, including nuking a level), but will be lost if an enemy carries them, and is gibbed.
-	Artifacts are the rarest special, or at least in the broader sense. Whereas exotics and uniques are discovered randomly, artifacts can only appear in particular places. They can be gained each time, of course, although the requirements to get them are often quite dangerous. 
+<table><tr>
+	<th colspan=2 style="text-align:left">Tower shield</th>
+	</tr><tr>
+	<td style="text-align:right">Protection</td><td>12</td>
+	</tr><tr>
+	<td style="text-align:right">Resistances</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Durability</td><td>150</td>
+	</tr><tr>
+	<td style="text-align:right">Move Speed</td><td>+0.5s</td>
+	</tr><tr>
+	<td style="text-align:right">Knockback</td><td>For every 10 spaces you are knocked back, you only get knocked back 1.</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>red armor + PO</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>This assembly is a shield, so it (like all other shields, assembled or not) can be neither repaired nor modded even with Whizkid 2. But, having protection 12, it lasts really long.</td>
+</tr></table>
 
-Due to the vast number of special ranged weapons, they are further categorized by type.
+<table><tr>
+	<th colspan=2 style="text-align:left">Power armor</th>
+	</tr><tr>
+	<td style="text-align:right">Protection</td><td>original+1</td>
+	</tr><tr>
+	<td style="text-align:right">Resistances</td><td>original*2, +2 melee</td>
+	</tr><tr>
+	<td style="text-align:right">Durability</td><td>100</td>
+	</tr><tr>
+	<td style="text-align:right">Move Speed</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Knockback</td><td>Reduces knockback by 1 for every 4 squares you'd travel.</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>any common armor + PN</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Regenerates 5% durability on each of the wearer's actions, starting after 5 actions without taking damage.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>The new armor will be called "powered ___ armor", where the blank is the color of the armor.</td>
+</tr></table>
 
-Special Melee
+<table><tr>
+	<th colspan=2 style="text-align:left">Tactical armor</th>
+	</tr><tr>
+	<td style="text-align:right">Protection</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Resistances</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Durability</td><td>100</td>
+	</tr><tr>
+	<td style="text-align:right">Move Speed</td><td>-0.1</td>
+	</tr><tr>
+	<td style="text-align:right">Knockback</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>green armor + AA</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Regenerates 2% durability on each of the wearer's actions, starting after 5 actions without taking damage.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Grants +10% dodge chance.</td>
+</tr></table>
 
-    Butcher's Cleaver
-    Dragonslayer
-    Mjollnir
-    Subtle Knife
-    Azrael's Scythe
-    Longinus Spear 
+<h4>Boots</h4>
 
-Special Pistol
+<table><tr>
+	<th colspan=2 style="text-align:left">Antigrav boots</th>
+	</tr><tr>
+	<td style="text-align:right">Protection</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Resistances</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Durability</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Move Speed</td><td>-0.5s</td>
+	</tr><tr>
+	<td style="text-align:right">Knockback</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>any boots + AAN</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Regenerates 2% durability on each of the wearer's actions, starting after 5 actions without taking damage.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Cannot be destroyed.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Cerberus boots</th>
+	</tr><tr>
+	<td style="text-align:right">Protection</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Resistances</td><td>10 acid, 10 fire</td>
+	</tr><tr>
+	<td style="text-align:right">Durability</td><td>100</td>
+	</tr><tr>
+	<td style="text-align:right">Move Speed</td><td>+0.3s</td>
+	</tr><tr>
+	<td style="text-align:right">Knockback</td><td>Reduces knockback by 1 for every 3 squares you'd travel.</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>any boots + AAN</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Normally resistances cannot go about 9. This it an exception, you are immune to lava and acid terrain.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Environmental boots</th>
+	</tr><tr>
+	<td style="text-align:right">Protection</td><td>Original (but see below)</td>
+	</tr><tr>
+	<td style="text-align:right">Resistances</td><td>+7 acid, +7 fire (caps at +9 each) </td>
+	</tr><tr>
+	<td style="text-align:right">Durability</td><td>Original (but see below)</td>
+	</tr><tr>
+	<td style="text-align:right">Move Speed</td><td>+0.2s</td>
+	</tr><tr>
+	<td style="text-align:right">Knockback</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>any boots + BPT</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Has +100 Durability unless bulk pack was added last, has +2 Protection unless Power Mod was added last.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Fireproof boots</th>
+	</tr><tr>
+	<td style="text-align:right">Protection</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Resistances</td><td>Original + 3 fire</td>
+	</tr><tr>
+	<td style="text-align:right">Durability</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Move Speed</td><td>+0.2s</td>
+	</tr><tr>
+	<td style="text-align:right">Knockback</td><td>Reduces knockback by 1 for every 5 squares you'd travel.</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>any boots + BT</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Grappling boots</th>
+	</tr><tr>
+	<td style="text-align:right">Protection</td><td>Original+1</td>
+	</tr><tr>
+	<td style="text-align:right">Resistances</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Durability</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Move Speed</td><td>+0.1s</td>
+	</tr><tr>
+	<td style="text-align:right">Knockback</td><td>Reduces knockback by 1 for every 2 squares you'd travel.</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>any boots + TT</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Lava boots</th>
+	</tr><tr>
+	<td style="text-align:right">Protection</td><td>Original</td>
+	</tr><tr>
+	<td style="text-align:right">Resistances</td><td>Original + 10 fire</td>
+	</tr><tr>
+	<td style="text-align:right">Durability</td><td>Infinite</td>
+	</tr><tr>
+	<td style="text-align:right">Move Speed</td><td>+0.3s</td>
+	</tr><tr>
+	<td style="text-align:right">Knockback</td><td>Reduces knockback by 1 for every 3 squares you'd travel.</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>any boots + TO</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Tactical boots</th>
+	</tr><tr>
+	<td style="text-align:right">Protection</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Resistances</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Durability</td><td>100</td>
+	</tr><tr>
+	<td style="text-align:right">Move Speed</td><td>-0.1s</td>
+	</tr><tr>
+	<td style="text-align:right">Knockback</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Assembly</td><td>steel boots + TT</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Regenerates 2% durability on each of the wearer's actions, starting after 5 actions without taking damage.</td>
+</tr></table>
+
+<h3>Special</h3>
+
+<p>Specials are the collective grouping of exotics, uniques, and artifacts. They are harder to find than the more standard equipment and items, for that reason, are far more useful and/or powerful.</p>
+
+<p>Each type of special is differentiated thusly:</p>
+
+<ul>
+	<li>Exotics are the most common of specials. They are fully moddable and can appear multiple times over the course of a single game.</li>
+	<li>Uniques are, just as the name says, unique. They only appear once, and can only be modded by Technicians (though this depends on the unique, see below). Uniques are normally indestructible by normal means (explosions, including nuking a level), but will be lost if an enemy carries them, and is gibbed.</li>
+	<li>Artifacts are the rarest special, or at least in the broader sense. Whereas exotics and uniques are discovered randomly, artifacts can only appear in particular places. The requirements to get them are often quite dangerous.</li>
+</ul>
+
+<p>Due to the vast number of special ranged weapons, they are further categorized by type.</p>
+
+<h4>Special Melee</h4>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Butcher's Cleaver - Melee Family - Unique</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>5d6</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Melee</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+0</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>NA</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Now that is a big cleaver. Butcher them!</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>While wielded, this weapon halves knockback dealt to you and grants the use of the Blademaster trait. The Butcher's Cleaver is a blade, so it can be used with the Malicious Blades trait. </td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Diablo the Video Game</td>
+</tr></table> 
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Dragonslayer - Melee Family - Unique</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>9d9</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Melee</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+0</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Whirlwind</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>It was called the Dragonslayer, because no human could wield it...</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>The Dragonslayer cannot be picked up without fulfilling special conditions.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>If the conditions are satisfied, the weapon goes straight into your hands and cannot be unequipped or swapped out. Picking up this item causes the player to go berserk immediately and permanently. Also, this weapon halves knockback while wielded. The Dragonslayer is a blade and can be used with Malicious Blades. If you wear both the Dragonslayer and Berserker Armor, nightmare demons will continuously spawn in the map at night. You CANNOT stop spawning of these nightmare demons</td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Berserk (manga)</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Mjollnir - Melee Family - Unique</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>1d15</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Melee</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+0</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Throw</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Forged by the dwarves Eitri and Brokk, in response to Loki's challenge, Mjollnir is an indestructible war hammer.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>When using its altfire to throw the Mjollnir, it'll remain in your hands and equipped after throwing, unlike when you throw a Combat knife.</td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Norse Mythology</td>
+</tr></table> 
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Subtle Knife - Melee Family - Unique</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>3d5</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>BFG Plasma</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+0</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Invoke</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>A weapon that can cut the very fabric of reality. Too bad it's only eight inches long...</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Using invoke will deal 10 BFG Plasma damage to all enemies you can see, at the cost of making you tired and reducing your max health by 2 points. Takes 1 second to activate.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>The Subtle Knife is a blade, so it can be used with Malicious Blades.</td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Norse Mythology</td>
+</tr></table> 
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Azrael's Scythe - Melee Family - Artifact</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>9d9</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Plasma</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+0</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>Whisper of Death: Deals 20 plasma damage to every living creature on the map (other than you). Causes fatigue and permanently drains 5 max HP from you.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>You don't want to know whose scythe this is...</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Using invoke will deal 10 BFG Plasma damage to all enemies you can see, at the cost of making you tired and reducing your max health by 2 points. Takes 1 second to activate.</td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>In folklore, Azrael is precisely the Angel of Death. </td>
+</tr></table> 
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Longinus Spear - Melee Family - Artifact</th>
+	</tr><tr>
+	<td style="text-align:right">Damage</td><td>8d8</td>
+	</tr><tr>
+	<td style="text-align:right">Damage Type</td><td>Plasma</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+0</td>
+	</tr><tr>
+	<td style="text-align:right">Alternate Fire</td><td>: 	Holy Fire: Explodes a radius 3 area around you for 10d10 fire damage; causes fatigue and takes 1.0 second.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Legend says that no one wielding the Spear of Destiny can ever be defeated.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Part of the Angelic Attire set: using it together with the Angelic Armor grants an additional +4 to protection to the armor.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Halves knockback while wielded.</td>
+	</tr><tr>
+	<td style="text-align:right">Source</td><td>Spear of Destiny (Wolfenstein 3D expansion)</td>
+</tr></table> 
+
+<h4>Special Pistol</h4>
 
     blaster
     combat pistol
@@ -2888,7 +3483,7 @@ Special Pistol
     Grammaton Cleric Beretta
     Trigun 
 
-Special Shotgun
+<h4>Special Shotgun</h4>
 
     assault shotgun
     plasma shotgun
@@ -2896,7 +3491,7 @@ Special Shotgun
     Frag Shotgun
     Jackhammer 
 
-Special Rapid-Fire
+<h4>Special Rapid-Fire</h4>
 
     laser rifle
     minigun
@@ -2904,13 +3499,13 @@ Special Rapid-Fire
     BFG 10K
     Mega Buster 
 
-Special Explosive
+<h4>Special Explosive</h4>
 
     missile launcher
     napalm launcher
     Revenant's Launcher 
 
-Special Miscellaneous
+<h4>Special Miscellaneous</h4>
 
     combat translocator
     nuclear BFG 9000
@@ -2919,7 +3514,7 @@ Special Miscellaneous
     Railgun
     Charch's Null Pointer
 	
-Special Body Armor
+<h4>Special Body Armor</h4>
 
     ballistic shield
     ballistic vest
@@ -2941,7 +3536,7 @@ Special Body Armor
     Shielded Armor
     Angelic Armor
 	
-Special Boots
+<h4>Special Boots</h4>
 
 	acid-proof boots
 	gothic boots
@@ -2949,6 +3544,1228 @@ Special Boots
 	Enviroboots
 	Nyarlaptotep's Boots 
 
+<h1>WARNING!!! THIS SECTION IS MOSTLY CONSIDERED SPOILERS AND SHOULD ONLY BE VIEWED BY THE GM!!!</h1>
+
+<h2>Enemies</h2>
+
+<h3>Overview</h3>
+
+<p>Enemies (or monsters) are the obstacles to sweet, sweet victory. They have stats in the same way that players do (see Mechanics for details), but contrast in that their movements are governed by the GM. The difficulty of these monsters depends on their stats and their intelligence.</p>
+
+<p>The statistics listed here are intended to be used for groups of enemies against a single player. Feel free to increase HP significantly against groups of players, and damage a bit.</p>
+
+<h3>Statistics</h3>
+
+<p>Every enemy comes with an array of stats, but these are the most important ones:</p>
+
+<ul>
+    <li>HP: The lifeblood of anything that moves. When something has zero HP, it is dead.</li>
+    <li>Armor: The shield of anything that moves. Armor for enemies is directly proportional to protection.</li>
+    <li>Accuracy: How likely an enemy will hit its target. This counts both for melee and ranged attacks on enemies.</li>
+    <li>Melee Damage: How much an adjacent attack will hurt. For enemies, this is governed by a 1d3+X, where X varies from enemy to enemy.</li>
+    <li>Projectile Damage: How much attacks at a distance will hurt. Enemies can hurt each other.</li>
+    <li>Speed: How quickly the enemy moves.</li>
+    <li>Special abilities: If the enemy has a particular trait, it will be mentioned here. Things like teleportation, resurrection, regeneration, and resistances count as special abilities.</li>
+</ul>
+
+<p>All lists are sorted by room depth (although unique bosses get to stay at the bottom of their list).</p>
+
+<table style="float:right"><tr>
+	<th>Basic Enemies</th>
+	</tr><tr>
+	<td>former human</td>
+	</tr><tr>
+	<td>imp</td>
+	</tr><tr>
+	<td>former sergeant</td>
+	</tr><tr>
+	<td>demon</td>
+	</tr><tr>
+	<td>former captain</td>
+	</tr><tr>
+	<td>lost soul</td>
+	</tr><tr>
+	<td>hell knight</td>
+	</tr><tr>
+	<td>cacodemon</td>
+	</tr><tr>
+	<td>former commando</td>
+	</tr><tr>
+	<td>pain elemental</td>
+	</tr><tr>
+	<td>baron of hell</td>
+	</tr><tr>
+	<td>arachnotron</td>
+	</tr><tr>
+	<td>revenant</td>
+	</tr><tr>
+	<td>mancubus</td>
+	</tr><tr>
+	<td>arch-vile</td>
+	
+	</tr><tr>
+	<th>Nightmare Enemies</th>
+	</tr><tr>
+	<td>nightmare imp</td>
+	</tr><tr>
+	<td>nightmare demon</td>
+	</tr><tr>
+	<td>nightmare cacodemon</td>
+	</tr><tr>
+	<td>nightmare arachnotron</td>
+	</tr><tr>
+	<td>nightmare arch-vile</td>
+	</tr><tr>
+	<td>elite former human</td>
+	</tr><tr>
+	<td>elite former sergeant</td>
+	</tr><tr>
+	<td>elite former captain</td>
+	</tr><tr>
+	<td>elite former commando</td>
+	
+	
+	</tr><tr>
+	<th>Boss Enemies</th>
+	</tr><tr>
+	<td>shambler</td>
+	</tr><tr>
+	<td>bruiser brother</td>
+	</tr><tr>
+	<td>agony elemental</td>
+	</tr><tr>
+	<td>lava elemental</td>
+	</tr><tr>
+	<td>Angel of Death</td>
+	</tr><tr>
+	<td>Arena Master</td>
+	</tr><tr>
+	<td>Cyberdemon</td>
+	</tr><tr>
+	<td>Spider Mastermind</td>
+	</tr><tr>
+	<td>JC</td>
+	</tr><tr>
+	<td>Apostle</td>
+</tr></table>
+
+<h3>Basic Enemies</h3>
+
+<p>Most enemies you will encounter are considered basic.</p>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Former human</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>10</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>-4 melee, +0 ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3-1, minimum 1</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>Attacks with a pistol: 2d4 bullet</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>+0.1s</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>0-12</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>23</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>Pistol, 10mm ammo (x24)</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Items, Uses Doors, Attacks 7/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>none</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Your fellow soldiers who went crazy because of the demonic influence. There's no hope for them anymore... Only lead can heal their corrupted souls....</td>
+</tr></table> 
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Imp</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>12</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+3 melee, +3 ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+2</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>2d5, fire, radius 1</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>0-17</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>32</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Doors, Attacks 4/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Has 2 fire resistance.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Brown demonic servants from hell, imps can cast fireballs at you. They're tough, mean and strong, and think only about sending you into oblivion...</td>
+</tr></table> 
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Former sergeant</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>10</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>-2 melee, N/A ranged (see below)</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3-1, minimum 1</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>Attacks with a shotgun: 8d3</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>+0.3s</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>2-15</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>32</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>Shotgun, Shotgun shell (x30)</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Items, Uses Doors, Attacks 7/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Same as former human soldiers, but meaner and tougher. They'll provide you with an extra hole if you're not careful. They always carry a shotgun, so be on your guard!</td>
+</tr></table> 
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Demon(Pinkie)</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>25</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>2</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+3 melee</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+5</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>-0.3s</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>4-20</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>68</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>None, always moves towards closes enemy and attacks</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>You thought pink is cute? You won't anymore after meeting one of those bastards -- they are strong, tough and eager to rip your head off...</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Will run through lava and acid to reach players</td>
+</tr></table> 
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Former captain</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>10</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+0 melee, +2 ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>Attacks with a chaingun: 1d6x4</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>+0.2s</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>5-15</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>47</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>Chaingun, 10mm ammo (x100)</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Items, Uses Doors, Attacks 7/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Those were once really hardened marines, the tough fighting force of Earth. Now they're on the demonic side. They're really eager to make Swiss cheese out of you with their rapid fire chainguns...</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Lost soul</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>10</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+12 melee</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+4</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>varies</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>6-16</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>47</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>None, always moves towards closes enemy and attacks</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Takes no damage from fluids.td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Has 50% bullet and 75% fire resistance.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Quick, flying, fiery skull. These are the souls lost in hell. Let them rest in peace. Or rather, in pieces...</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Leaves no corpse on death.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Will run through any fluid to reach the players(and is safe from them).</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Normally moves slowly(1.5s), but becomes very fast(.2s) when it charges to attack.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Players can move out of the way of a charging Lost Soul, and when it charges it will keep flying in a straight line until it hits the player, another monster, or a wall.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>A Lost Soul will additionally stop charging if it is hit.</td>
+</tr></table> 
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Hell knight</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>50</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>1</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+6 melee, +6 ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+6</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>2d6 plasma damage, radius 1 </td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>-0.1s</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>9-15</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>128</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>none</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Items, Uses Doors, Attacks 4/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Has 5 acid resistance</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>These are hell's warlords. They command hellish armies to battle. Not as tough as Barons but still a pain in the ass...</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Cacodemon</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>40</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>1</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+4 melee, +4 ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+6</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>2d6 plasma damage, radius 1</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>10-50</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>128</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>none</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Items, Uses Doors, Attacks 4/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Takes no damage from walking over lawa and acid</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Big, flying, red, horned heads. They spit huge explosive plasma balls. If you don't have the weapon to handle them, better run...</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Will run through any fluid to reach the player.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Former commando</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>20</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>2</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+1 melee, +3 ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+2</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>Attacks with a plasma rifle: 1d7x6</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>12-17</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>167</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>plasma rifle</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Items, Uses Doors, Attacks 7/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>These guys were evil to begin with. Being warped by hell's power has only made them worse. Wielding a deadly plasma weapon they should be treated with care... and lead.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Pain elemental</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>40</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>1</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+2 melee </td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+6</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>12-20</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>128</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Avoids player as much as possible, but will use its melee attack when in range.</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Takes no damage from fluids.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Spawns lost souls (x3) (25% chance per action)</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Pain, pain, pain - this is the only thing these monsters live by, and the only thing they deliver. Wait, look again - they also deliver lost souls!</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Will move through any fluid without hesitation.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Spawns more lost souls if the player shoots it from outside of its visual range.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Baron of hell</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>60</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>2</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+5 melee, +5 ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+8</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>4d5 acid damage, radius 2 </td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>12+</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>320</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Items, Uses Doors, Attacks 7/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Has 5 acid resistance.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Huge, almost humanoid, acid ball hurling monsters from your worst nightmares. They are the nobility of hell.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Not to be confused with the boss enemies of Hellgate, the Bruiser Brothers.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Arachnotron</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>50</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>2</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+3 melee, +3 ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+2</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>(1d5)x5 plasma damage</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>13-50</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>263</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>Power cell (x20)</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Attacks 6/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Takes double damage from melee</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Evil can't get much purer. Spiderdemons equipped with a rapid-fire plasma cannon. Machine and flesh combined, kill on sight...</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Revenant</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>30</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>2</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+4 melee, +4 ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+6</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>5d5 fire damage, radius 1</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>-0.2s</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>13+</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>452</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>Rocket (x3)</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Doors, Attacks 5/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Ranged attack is homing: it always hits its target tile.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Has 5 bullet and 2 fire resistance. </td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Apparently when a demon dies, they pick him up, dust him off, wire him some combat gear, and send him back into battle. No rest for the wicked, eh? You wish your missiles did what his can do.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Mancubus</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>60</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>2</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+3 melee, +3 ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+8</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>4d6 fire damage, radius 2</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>+0.2s</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>15+</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>452</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>Rocket (x3)</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Doors, Attacks 5/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Ranged attack fires 3 projectiles: 1 down the middle and one at each side.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>It's big, it's mean, and it has two rocket launchers. What could be worse?</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Shortly after firing a barrage of 3 projectiles, it will fire a second barrage, whether it can see the players or not.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Arch-vile</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>70</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>2</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+2 melee, NA ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+6</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>20 fire damage, radius 2</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>-0.5s</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>16+</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>608</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Doors, Attacks 5/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Resurrects closest dead monsters(25% chance per action). Resurrected monsters take 4.0 game seconds to "activate", or become active in combat or other actions.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Arch-viles are additionally immune to damaging fluids.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>The worst thing you could encounter. With some unholy power far beyond your grasp they attack you with hellish flame, and are able to summon back the enemies you've worked so hard to banish!</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Avoids player as much as possible, but will use its melee attack when in range.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Even though they're immune to fluids, Arch-viles will avoid them and immediately step out of a fluid tile if knocked into one.</td>
+</tr></table>
+
+<h3>Nightmare Enemies</h3>
+
+<p>Upgraded versions of their basic counterparts.</p>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Nightmare imp</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>35</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+4 melee, +4 ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+6</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>2d6 plasma, radius 1</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>30-60</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>128</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Doors, Attacks 5/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Has 5 fire resistance.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Are you seeing things? What's with the color change? And why is it taking so much longer to kill these things!?</td>
+</tr></table> 
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Nightmare demon</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>80</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>3</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+5 melee</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+10</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>-0.4s</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>40+</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>95</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>None, always moves towards closes enemy and attacks</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>You liked it better when these guys were pink. Meet the stronger, tougher, more resilient way to meet your death.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Will run through lava and acid to reach players</td>
+</tr></table> 
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Nightmare cacodemon</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>80</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>2</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+6 melee, +6 ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+8</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>2d7 plasma damage, radius 1</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>-0.2s</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>51+</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>320</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>none</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Items, Uses Doors, Attacks 5/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Takes no damage from walking over lawa and acid</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Hell's latest improvement on demonic warfare - they're stronger, tougher, and angrier than ever.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/Special</td><td>Will run through any fluid to reach the player.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Nightmare arachnotron</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>80</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>2</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+4 melee, +4 ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+3</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>(1d6)x6 plasma damage</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>-0.5s</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>50+</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>452</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>Power cell (x20)</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Attacks 6/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Pure nightmare spiders. You'd wish they weren't there...</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Shortly after firing a volley of 6 shots, it will fire a second volley of 6 shots, even if it can't see the player. (The same way the Mancubus behaves) </td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Nightmare arch-vile</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>150</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>3</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+4 melee, NA ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+8</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>25 fire damage, radius 1</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>-0.8s</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>90+</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>1220</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Doors, Attacks 6/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Ranged attack always hits its target tile and has no projectile.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Resurrects dead monsters (33% chance per action).</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Oh God... *WHY* do they come in the nightmare version too?</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Avoids player as much as possible, but will use its melee attack when in range.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Elite former human</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>20</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>2 (+1 from equipped green armor, total 3)</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td></td>-2 melee, +5 ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+1</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>Attacks with a combat pistol: 3d3</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>40-80</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>167</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>10mm ammo (x72), green armor (equipped)</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Items, Uses Doors, Attacks 7/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>15% bullet and shrapnel resist from green armor.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Elite formers never drop their weapon.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>These are the elite among the former humans. As stupid as their regular counterparts, but more resilient and packing quite a punch. Too bad their weapons are set to self-destruct on death.</td>
+</tr></table> 
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Elite former sergeant</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>25</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>2 (+1 from equipped green armor, total 3)</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+0 melee, +0 ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+1</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>Attacks with an assault shotgun: 7d3</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>OR</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Attacks with a plasma shotgun: 7d3</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>OR</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Attacks with a super shotgun: (8d4)x2</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>60-90</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>320</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>Assault Shotgun/Super Shotgun: shotgun shell (x60), green armor (equipped)</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Plasma Shotgun: power cell (x60), green armor (equipped)</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Items, Uses Doors, Attacks 7/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>15% bullet and shrapnel resist from green armor.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Weapon is picked randomly for each elite former sergeant.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Elite formers never drop their weapon.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>These are the elite among the former sergeants. And they carry firepower to boot! Too bad their weapons are set to self-destruct on death.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Elite former captain</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>25</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>2 (+2 from equipped blue armor, total 4)</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+1 melee, +1 (minigun) OR +8 (laser rifle) ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+1</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>Attacks with a laser rifle: (1d7)x5</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>OR</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Attacks with a minigun: (1d6)x8 = 8-48 = 28 avg</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>-0.1s</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>70+</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>452</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>Minigun: 10mm ammo (x200), blue armor (equipped)</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Laser Rifle: power cell (x50), blue armor (equipped)</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Items, Uses Doors, Attacks 7/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>20% plasma resist from blue armor.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Weapon is picked randomly for each elite former captain.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Elite formers never drop their weapon.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>These are the elite among the former captains. Beware of the superior firepower! Too bad their weapons are set to self-destruct on death.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Elite former commando</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>40</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>2 (+2 from equipped blue armor, total 4) </td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+3 melee, +5 (tristar blaster) or +10 (missile launcher, napalm launcher) ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+3</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>Attacks with an missile launcher: 6d6</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>OR</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Attacks with a napalm launcher: 7d7</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>OR</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Attacks with a tristar blaster: (4d5)x3</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>80+</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>608</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>Missile Launcher: rocket (x20), blue armor (equipped) </td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Napalm Launcher: rocket (x12), blue armor (equipped)</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Tristar Blaster: power cell (x60), blue armor (equipped)</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Items, Uses Doors, Attacks 7/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>20% plasma resist from blue armor. </td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Weapon is picked randomly for each elite former sergeant.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Takes no damage from fluids.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Elite formers never drop their weapon.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>As expected, these ex-human soldiers are the best of the best! Armored, resilient and with superior firepower! Too bad their weapons are set to self-destruct on death.</td>
+</tr></table>
+
+<h3>Boss Enemies</h3>
+
+<p>Bosses are the masters of special levels.</p>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Shambler</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>80+5×difficulty^2</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>3</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+4 melee, +4 ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+8</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>4d5 plasma damage</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>Hell's Armory, Deimos Lab, or 80+</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>608</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Doors, Attacks 3/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Takes no damage from fluids.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Teleport to a random spot 2/10 chance per action</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>health regeneration +1 HP per action</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Even other monsters fear him, so expect a clobbering. He shrugs off explosions. Good luck.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Will run through any fluid to reach players.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Bruiser brother</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>60+3×difficulty^2</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>2</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+5 melee, +5 ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+8</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>4d5 acid damage, radius 2</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>Phobos Hellgate or 50+</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>608</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Items, Uses Doors, Attacks 4/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Takes no damage from fluids.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Has 5 acid resistance.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Tough as a dump truck and nearly as big, these Goliaths are the worst thing on two legs since Tyrannosaurus rex.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Hunts player precisely</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Will run through any fluid to reach player.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Agony elemental</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>150 + 5 × difficulty^2</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>4</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+2</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+6</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>City of Skulls or 80+</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>1220</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Avoids player as much as possible, but will use melee attack if in range.</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Takes no damage from fluids.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Spawns a pain elemental or 3 lost souls (1/4 chance per action) when visible</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>On death, spawns 2 pain elementals and 6 lost souls.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Tough as a dump truck and nearly as big, these Goliaths are the worst thing on two legs since Tyrannosaurus rex.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Will run through any fluid to reach player.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>On death, randomly drops three random combinations of the following items: blood skull, fire skull, hatred skull.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Lava elemental</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>80+5×difficulty^2</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>5</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+4 melee, +4 ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+8</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>5d4 fire damage, radius 2 </td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>The Lava Pits, or 70+</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>788</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Doors, Attacks 3/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Takes no damage from fluids.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Ranged attack may leave behind lava.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Teleports randomly 1/20 chance per action</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>regeneration (+1 HP per action)</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>10 fire resist</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Big ball of fire...</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Drops a lava element when killed.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Angel of Death</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>250 + 10×difficulty^2</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>10</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+8 melee</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+15</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>-0.5s</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>Unholy Cathedral</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>1000 </td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Moves towards closest player</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Takes no damage from fluids.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Why doesn't a BFG work when you really need it? As if from a half forgotten nightmare, you encounter the harbinger of death...</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Hunts player precisely.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Will run through any fluid to reach player.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Ranged attacks do not work in its presense</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Arena Master</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>100+5×difficulty^2</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>2</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+2 melee, N/A ranged (see below)</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+6</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>15 fire damage, radius 2</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>-0.6s</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>The Chained Court</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>608</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Doors, Attacks 5/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Ranged attack is instant: it always hits its target tile and has no projectile.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Resurrects dead monsters 1/3 chance per action</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>The meanest, ugliest and strongest Arch-Vile you have ever seen...</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Drops the Arena Master's Staff upon death.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Angel of Death</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>200+10×difficulty^2</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>4</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+8 melee, +12 ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+15</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>Attacks with a rocket launcher: 6d6</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>-0.1s</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>Tower of Babel, or 80+</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>2720</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>Rocket launcher, rocket (x30)</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Items, Uses Doors, Attacks 7/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Takes no damage from fluids or its own attacks.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Immune to knockback in the Tower of Babel.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>Monster and machine, combined. Equipped with a rocket launcher, this nightmare is the worst thing you can find in Hell. Or at least that is what you hope...</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Hunts players precisely.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Spider Mastermind</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>250+10×difficulty^2</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>2</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+4 melee, +4 ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+3</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>(3d5)x4 plasma damage</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>-0.5s</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>Dis</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Attacks 6/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Takes no damage from fluids or its own attacks.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Immune to knockback.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>If she takes 20 or more damage from a single hit, she flinches. When this happens, she cannot attack (but can move randomly) for one action for each full 20 damage of that single hit. The effects are cumulative - if a player manages to score more than one 20+ damage hits before the staggering effect ends, then the duration from all those hits stacks. </td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>You guess the Arachnotrons had to come from somewhere. Hi, mom.  She has a super-chaingun.</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Only found at Dis.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">John Carmack</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>250+10×difficulty^2</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>5</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+8 melee, +12 ranged</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+15</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>Attacks with a rocket launcher: 6d6</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>Hell Fortress</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>Rocket launcher, Rocket (x30)</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Items, Uses Doors, Attacks 7/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Takes no damage from fluids or its own attacks.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>John Carmack periodically summons extra creatures to fight you, eight at a time. Which ones he summons depends on how damaged he is. (None of them give you experience)</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>If he's unhurt, almost unhurt, or scratched, Lost Souls.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>If he's lightly wounded or wounded, Cacodemons.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>If he's heavily wounded, Hell Knights.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>f he's severely wounded, Barons of Hell.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>If he's mortally wounded or almost dead, Revenants.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>If you damage John Carmack before he sees you, he will summon extra Barons of Hell around you.</td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>You knew it. This is the true EVIL behind the invasion! This is the true mastermind of Hell! Kill him for he knows not the meaning of mercy! Kill him NOW!!!</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Hunts player precisely.</td>
+</tr></table>
+
+<table><tr>
+	<th colspan=2 style="text-align:left">Apostle</th>
+	</tr><tr>
+	<td style="text-align:right">Health</td><td>255</td>
+	</tr><tr>
+	<td style="text-align:right">Armor</td><td>30</td>
+	</tr><tr>
+	<td style="text-align:right">Accuracy</td><td>+2 melee, N/A ranged (see below)</td>
+	</tr><tr>
+	<td style="text-align:right">Melee Damage</td><td>1d3+12</td>
+	</tr><tr>
+	<td style="text-align:right">Projectile Damage</td><td>40 plasma damage, radius 3</td>
+	</tr><tr>
+	<td style="text-align:right">Speed</td><td>-0.6s</td>
+	</tr><tr>
+	<td style="text-align:right">Standard Depth</td><td>Hell Fortress</td>
+	</tr><tr>
+	<td style="text-align:right">Experience Value</td><td>0</td>
+	</tr><tr>
+	<td style="text-align:right">Inventory</td><td>None</td>
+	</tr><tr>
+	<td style="text-align:right">Intelligence</td><td>Uses Doors, Attacks 6/10</td>
+	</tr><tr>
+	<td style="text-align:right">Special Abilities</td><td>Takes no damage from fluids or its own attacks.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Ranged attack is instant: it always hits its target tile and has no projectile.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Heals itself.</td>
+	</tr><tr>
+	<td style="text-align:right"></td><td>Teleports and resurrects dead monsters. </td>
+	</tr><tr>
+	<td style="text-align:right">Description</td><td>This seems so unreal, as though from another story...</td>
+	</tr><tr>
+	<td style="text-align:right">Comments/special</td><td>Appears instead of John Carmack if you are wielding Dragonslayer and Berserker Armor.</td>
+</tr></table>
+
 </body>
 </html>
-
