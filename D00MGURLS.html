@@ -86,11 +86,11 @@
 
 <p>Mary: I'm going to dodge back out of the way of that pistol hit! Moving takes me 1.2s because of my armor.</p>
 
-<p>(Mary then rolls her dodge roll and waits for Ginger to say she's attacking. Mary rolled a 21, just barely enough to dodge!)</p>
+<p>(Mary then rolls her dodge roll and waits for Ginger to say she's attacking. Mary rolled a 15, just barely enough to dodge!)</p>
 
 <p>Ginger: ONE, TWO, THREE, FOUR, the human takes a shot at Mary!</p>
 
-<p>Mary: I just barely managed to dodge it! Rolled a 21.</p>
+<p>Mary: I just barely managed to dodge it! Rolled a 15.</p>
 
 <p>Ginger: The former human aims right at the head, and Mary quickly ducks back outside as he pulls the trigger, narrowly missing what was surely a massive hit.</p>
 
@@ -278,7 +278,7 @@
 <p>Starting Characteristics</p>
 	
 <ul>
-    <li>All actions take .1s less per second they'd take normally. Minimum .1s less and .1s total.</li>
+    <li>All actions take .1s less per second they'd take normally. Minimum .1s total.</li>
     <li>Advanced trait: Intuition</li>
 </ul>
 
@@ -428,7 +428,7 @@
 <p>Starting Characteristics</p>
 
 <ul>
-    <li>Instant item use (time is 0.1s)</li>
+    <li>Item use time is 0.1s</li>
     <li>Hacker tracking (Computer Maps show enemies, similar to Tracking Map)</li>
     <li>Begins with technical mod pack</li>
     <li>Only class that can modify unique items (where applicable)</li>
@@ -809,7 +809,7 @@
 		<td>Each successful melee hit adds to a berserk "counter". When the counter reaches four (or less, if there are other monsters within your vision) then you will gain 20 actions' worth of the berserk effect.</td></tr>
 	<tr>
 		<td style="text-align: right; padding: 0 2ex 0 0">Effect 2</td>
-		<td>Whenever you are harmed by a single source of damage equal to at least 10 HP and one-third of your maximum health, you will gain 20 actions' worth of the berserk effect. Both effects' gain is less than twenty relative to the amount of berserk time you currently have (peaks at 100). This retroactively applies the berserk damage reduction effect to the hit</td></tr>
+		<td>Whenever you are harmed by a single source of damage equal to at least 10 HP and one-third of your maximum health, you will gain 10s worth of the berserk effect(peaks at 50). This retroactively applies the berserk damage reduction effect to the hit</td></tr>
 </table>
 
 <p>Dualgunner</p>
@@ -1292,9 +1292,9 @@
 
 <h4>Dodging</h4>
 
-<p>When a player moves, if a monster declared an attack against them, they can attempt to dodge it.</p>
+<p>Dodging is moving to avoid an attack, as opposed to just normal movement which doesn't involve any rolling. When a player moves, if a monster declared an attack against them, they can attempt to dodge it.</p>
 
-<p>To dodge, roll 1d20 and add any dodge bonuses for each attack targeting you. On a roll of 21 or higher you succeed. A roll of 1 on the d20 always misses.</p>
+<p>To dodge, roll 1d20 and add any dodge bonuses for each attack targeting you. On a roll of 15 or higher you succeed. A roll of 1 on the d20 always misses.</p>
 
 <p>If you dodge successfully, then they target the space you were in before. Because bullets move in a line, this means that even if you dodge into a space behind where you were, the attack might still hit you. You might also expose another player, an enemy, or an explosive barrel. Be careful when you dodge!</p>
 
@@ -1371,7 +1371,7 @@
 
 <p>Resistances are modifiers to damage that only affects a certain type of damage.</p>
 
-<p>Resistence reduces the damage taken from a hit by one point per point of resistence, and an additional point for every 10 damage the hit would deal. Damage cannot be reduced to less than 1 point in this way.</p> 
+<p>Resistence reduces the damage taken from a hit by one point per point of resistence. Damage cannot be reduced to less than 1 point in this way.</p>
 
 <p>Resistances are applied before protection. Multiple instances of resistence resolve one at a time from least to greatest. So say you were hit for 24 damage and were berserking(6 resistence)and had blue armor(2 plasma resistence). You'd reduce the damage by 6 from the armor to 18, then by 12 from berserking to 6. Then you'd apply protection.</p>
 
@@ -1400,6 +1400,22 @@
 	<li>Wearing boots (only against hazardous terrain)</li>
 	<li>The Tough as Nails trait</li>
 </ul>
+
+<h4>Massive Damage</h4>
+
+<p>When you would take over 10 damage from an attack, this is considered massive damage.</p>
+
+<p>When a player would take massive damage from an attack, they reduce it by a further point for the lower of the two values.</p>
+
+<h4>Damage Example</h4>
+
+<p>Mary was atttacked by an Arch-vile for 20 fire damage. She's wearing red armor, which has 2 fire resistance and 4 protection.</p>
+
+<p>First, mary reduces the damage by 2 for the resistance, bringing the total to 18.</p>
+
+<p>Next, Mary reduces the damage by 4 because of her protection. Down to 14.</p>
+
+<p>The attack is doing Massive Damage. Her resistance is lower than her protection at 2 points, so she reduces the damage by her resistance, which is 2 points of damage. The final damage result taken from her hit points and armor durability is 12.</p>
 
 <h4>Damage Types</h4>
 
@@ -1525,16 +1541,16 @@
 <table style="background: black">
 	<tr>
 		<td style="text-align: right; padding: 0 2ex 0 0">Berserk</th>
-		<td>Cautious is the default tactic, and applies neither penalties nor bonuses.</td></tr>
+		<td>Being berserk gives 6 to all the player's resistances, increases the player's speed by 50% for all actions, and doubles melee damage before armor reduction. The player can't run while berserking.</td></tr>
 	<tr>
 		<td style="text-align: right; padding: 0 2ex 0 0">Invulnerable</th>
-		<td>The running tactic offers some benefits and some penalties.</td></tr>
+		<td>Being berserk gives 60% to all the player's resistances, increases the player's speed by 50% for all actions, doubles melee damage before armor reduction. The player can't run while berserking.</td></tr>
 	<tr>
 		<td style="text-align: right; padding: 0 2ex 0 0">Envirosuit</td>
-		<td>The player moves 0.3s faster to a minimum of 0.1s</td></tr>
+		<td>The envirosuit effect completely negates all acid and lava damage from affecting the player or his boots, and gives 25% acid & fire resistance.</td></tr>
 	<tr>
 		<td style="text-align: right; padding: 0 2ex 0 0">Light Amplification</td>
-		<td>The player moves an additional 0.3 faster for each 1.0s their movement speed is.</td></tr>
+		<td>The light amplification effect increases the player's sight radius by 4 tiles.</td></tr>
 </table>
 
 <h4>Alternate fire</h4>
@@ -1678,6 +1694,29 @@
 <h4>Experience</h4>
 
 <p>Honestly this is optional. Feel free to level the players up whenever. The player earns experience whenever enemies are killed. Different enemies are worth different amounts of experience (as listed on their individual pages).</p>
+
+<h4>Corpses</h4>
+
+Most enemies leave behind corpses when they die. The exceptions are lost souls and pain elementals. Additionally, arch-viles and nightmare arch-viles leave behind a bloody corpse that cannot be resurrected but can still be consumed by skulls.
+
+<h4>Gibbing</h4>
+
+<p>Gibbing a monster prevents it from leaving a corpse and from dropping items. This can be useful if arch-viles are present.</p>
+
+<p>To gib a monster you must kill it by dealing a large amount of damage. The amount of damage depends on the maximum health of the monster and the damage type of your weapon. Melee, bullet, shrapnel, and piercing weapons must deal 400% of the monster's maximum health to cause a gib. Plasma and acid weapons must deal 200% of maximum health to gib. Fire weapons are the best at gibbing; they only need to deal 150% of maximum health.</p>
+
+<p>It is also possible to gib corpses after the monster has already died. Any area of effect damage other than shrapnel will destroy corpses in the area.</p>
+
+<p>There are a few other ways to dispose of corpses: </p>
+
+<ul>
+	<li>An enemy killed on top of a corpse will ruin the corpse in its death throes. Particularly useful for open areas with no doors, like Hell's Arena.</li>
+	<li>An enemy killed on a door will be crushed, and won't leave a corpse.</li>
+	<li>An enemy killed in a fluid will sink or dissolve.</li>
+	<li>An enemy killed on stairs, or a teleporter, will have its body parts split apart as well. </li>
+</ul>
+
+<p>These techniques don't technically "gib" the corpse, thus, they don't prevent it from dropping useful items or ammo. Enemies killed over acid or lava will still drop their items in them when they die.</p>
 
 <h2>Gear</h2>
 
@@ -2585,7 +2624,7 @@
 		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Hatred skull</th></tr>
 	<tr>
 		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Effect</td>
-		<td>Gibs all corpses within a radius of 8 around the player; gives 5 turns of berserk for each gib.</td></tr>
+		<td>Gibs all corpses within a radius of 8 around the player; gives 3s of berserk for each gib.</td></tr>
 	<tr style="background: #333;">
 		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
 		<td>This skull gives you the shivers... As if it were filled with hatred.</td></tr>
@@ -2704,7 +2743,7 @@
 		<td>Increases health up to 100% and increases the invulnerability counter by 50. Restores fatigue. </td></tr>
 	<tr>
 		<th style="text-align: right; padding: 0 2ex 0 0">Berserk Pack</th>
-		<td>Increases HP up to 100% and increases the berserk counter by 50. Restores fatigue. </td></tr>
+		<td>Increases HP up to 100% and increases the berserk counter by 25s. Restores fatigue. </td></tr>
 	<tr>
 		<th style="text-align: right; padding: 0 2ex 0 0">Computer Map</th>
 		<td>Reveals the location of items and level objects on the map.</td></tr>
