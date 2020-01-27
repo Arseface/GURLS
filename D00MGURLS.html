@@ -1405,13 +1405,13 @@
 
 <p>When you would take over 10 damage from an attack, this is considered massive damage.</p>
 
-<p>When a player would take massive damage from an attack, they reduce it by a further point for the lower of the two values.</p>
+<p>When a player would take massive damage from an attack, they reduce the damage again by either their protection or resistence, whichever is lower.</p>
 
 <h4>Damage Example</h4>
 
 <p>Mary was atttacked by an Arch-vile for 20 fire damage. She's wearing red armor, which has 2 fire resistance and 4 protection.</p>
 
-<p>First, mary reduces the damage by 2 for the resistance, bringing the total to 18.</p>
+<p>First, Mary reduces the damage by 2 for the resistance, bringing the total to 18.</p>
 
 <p>Next, Mary reduces the damage by 4 because of her protection. Down to 14.</p>
 
@@ -1488,7 +1488,7 @@
 
 <p>When a creature is attacked, it receives some amount of damage. This damage is subtracted from the creature's health. If a creature's health is reduced to 0 or lower, then that creature dies.</p>
 
-<p>Each creature also has a maximum health score. This is the amount of health the creature has before it has been damaged. Unlike health, maximum health scores do not typically change. The health of monsters can be looked at. The GM reserves the right to guestimate instead of doing the math every time they're asked.</p>
+<p>Each creature also has a maximum health score. This is the amount of health the creature has before it has been damaged. Unlike health, maximum health scores do not typically change. The health of monsters can be described by the GM with a recomended table provided.. The GM should guestimate instead of doing the math every time they're asked, and they can spice up the descriptions if they feel like it.</p>
 
 <p>There are many items that will restore the players health. Some items, like med-packs, cannot increase the player's health beyond its maximum. Others, like globes, can, but even these cannot increase the player's health past 200% of the maximum. When the player's health is greater than 100% of the maximum, then the player will lose 1 health every 5.0s. The health decay threshold is increased to 150% of maximum health for the first rank in the Badass trait, and 200% for the second rank.</p>
 
@@ -4542,84 +4542,85 @@ Most enemies leave behind corpses when they die. The exceptions are lost souls a
 
 <h3>Special</h3>
 
-<table style="float:right"><tr>
-	<th>Special Melee</th>
-	</tr><tr>
-	<td>Butcher's Cleaver</td>
-	</tr><tr>
-	<td>Dragonslayer</td>
-	</tr><tr>
-	<td>Mjollnir</td>
-	</tr><tr>
-	<td>Subtle Knife</td>
-	</tr><tr>
-	<td>Azrael's Scythe</td>
-	</tr><tr>
-	<td>Longinus Spear</td>
-	</tr><tr>
+<table style="float:right; border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th style="background: darkred; color: yellow; font-size: 120%; text-align: center">Special Melee</th></tr>
+	<tr>
+		<td>Butcher's Cleaver</td></tr>
+	<tr style="background: #333;">
+		<td>Dragonslayer</td></tr>
+	<tr>
+		<td>Mjollnir</td></tr>
+	<tr style="background: #333;">
+		<td>Subtle Knife</td></tr>
+	<tr>
+		<td>Azrael's Scythe</td></tr>
+	<tr style="background: #333;">
+		<td>Longinus Spear</td></tr>
 	
-	<th>Special Pistol</th>
-	</tr><tr>
-	<td>blaster</td>
-	</tr><tr>
-	<td>combat pistol</td>
-	</tr><tr>
-	<td>Anti-Freak Jackal</td>
-	</tr><tr>
-	<td>Grammaton Cleric Beretta</td>
-	</tr><tr>
-	<td>Trigun</td>
-	</tr><tr>
+	<tr>
+		<th style="background: darkred; color: yellow; font-size: 120%; text-align: center">Special Pistol</th></tr>
+	<tr>
+		<td>blaster</td></tr>
+	<tr style="background: #333;">
+		<td>combat pistol</td></tr>
+	<tr>
+		<td>Anti-Freak Jackal</td></tr>
+	<tr style="background: #333;">
+		<td>Grammaton Cleric Beretta</td></tr>
+	<tr>
+		<td>Trigun</td></tr>
 	
-	<th>Special Shotgun</th>
-	</tr><tr>
-	<td>assault shotgun</td>
-	</tr><tr>
-	<td>plasma shotgun</td>
-	</tr><tr>
-	<td>super shotgun</td>
-	</tr><tr>
-	<td>Frag Shotgun</td>
-	</tr><tr>
-	<td>Jackhammer</td>
-	</tr><tr>
+	<tr>
+		<th style="background: darkred; color: yellow; font-size: 120%; text-align: center">Special Shotgun</th></tr>
+	<tr>
+		<td>assault shotgun</td></tr>
+	<tr style="background: #333;">
+		<td>plasma shotgun</td></tr>
+	<tr>
+		<td>super shotgun</td></tr>
+	<tr style="background: #333;">
+		<td>Frag Shotgun</td></tr>
+	<tr>
+		<td>Jackhammer</td></tr>
+
+	<tr>
+		<th style="background: darkred; color: yellow; font-size: 120%; text-align: center">Special Rapid-Fire </th></tr>
+	<tr>
+		<td>laser rifle</td></tr>
+	<tr style="background: #333;">
+		<td>minigun</td></tr>
+	<tr>
+		<td>nuclear plasma rifle</td>	</tr>
+	<tr style="background: #333;">
+		<td>BFG 10K</td></tr>
+	<tr>
+		<td>Mega Buster</td></tr>
 	
-	<th>Special Rapid-Fire </th>
-	</tr><tr>
-	<td>laser rifle</td>
-	</tr><tr>
-	<td>minigun</td>
-	</tr><tr>
-	<td>nuclear plasma rifle</td>	
-	</tr><tr>
-	<td>BFG 10K</td>
-	</tr><tr>
-	<td>Mega Buster</td>
-	</tr><tr>
-	
-	<th>Special Explosive</th>
-	</tr><tr>
-	<td>missile launcher</td>
-	</tr><tr>
-	<td>napalm launcher</td>
-	</tr><tr>
-	<td>Revenant's Launcher</td>
-	</tr><tr>
-	
-	<th>Special Miscellaneous</th>
-	</tr><tr>
-	<td>combat translocator</td>
-	</tr><tr>
-	<td>nuclear BFG 9000</td>
-	</tr><tr>
-	<td>tristar blaster</td>
-	</tr><tr>
-	<td>Acid Spitter</td>
-	</tr><tr>
-	<td>Railgun</td>
-	</tr><tr>
-	<td>Charch's Null Pointer</td>
-</tr></table>
+	<tr>
+		<th style="background: darkred; color: yellow; font-size: 120%; text-align: center">Special Explosive</th></tr>
+	<tr>
+		<td>missile launcher</td></tr>
+	<tr style="background: #333;">
+		<td>napalm launcher</td></tr>
+	<tr>
+		<td>Revenant's Launcher</td></tr>
+
+	<tr>
+		<th style="background: darkred; color: yellow; font-size: 120%; text-align: center">Special Miscellaneous</th></tr>
+	<tr>
+		<td>combat translocator</td></tr>
+	<tr style="background: #333;">
+		<td>nuclear BFG 9000</td></tr>
+	<tr>
+		<td>tristar blaster</td></tr>
+	<tr style="background: #333;">
+		<td>Acid Spitter</td></tr>
+	<tr>
+		<td>Railgun</td></tr>
+	<tr style="background: #333;">
+		<td>Charch's Null Pointer</td></tr>
+</table>
 
 <p>Specials are the collective grouping of exotics, uniques, and artifacts. They are harder to find than the more standard equipment and items, for that reason, are far more useful and/or powerful.</p>
 
@@ -4635,825 +4636,1201 @@ Most enemies leave behind corpses when they die. The exceptions are lost souls a
 
 <h4>Special Melee</h4>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Butcher's Cleaver - Melee Family - Unique</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>5d6</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Melee</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+0</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>NA</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>Now that is a big cleaver. Butcher them!</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>While wielded, this weapon halves knockback dealt to you and grants the use of the Blademaster trait. The Butcher's Cleaver is a blade, so it can be used with the Malicious Blades trait. </td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>Diablo the Video Game</td>
-</tr></table> 
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Butcher's Cleaver - Melee Family - Unique</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>5d6</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Melee</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+0</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>NA</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>Now that is a big cleaver. Butcher them!</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>While wielded, this weapon halves knockback dealt to you and grants the use of the Blademaster trait. The Butcher's Cleaver is a blade, so it can be used with the Malicious Blades trait. </td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>Diablo the Video Game</td></tr>
+</table> 
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Dragonslayer - Melee Family - Unique</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>9d9</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Melee</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+0</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>Whirlwind</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>It was called the Dragonslayer, because no human could wield it...</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>The Dragonslayer cannot be picked up without fulfilling special conditions.</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>If the conditions are satisfied, the weapon goes straight into your hands and cannot be unequipped or swapped out. Picking up this item causes the player to go berserk immediately and permanently. Also, this weapon halves knockback while wielded. The Dragonslayer is a blade and can be used with Malicious Blades. If you wear both the Dragonslayer and Berserker Armor, nightmare demons will continuously spawn in the map at night. You CANNOT stop spawning of these nightmare demons</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>Berserk (manga)</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Dragonslayer - Melee Family - Unique</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>9d9</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Melee</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+0</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>Whirlwind</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>It was called the Dragonslayer, because no human could wield it...</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>The Dragonslayer cannot be picked up without fulfilling special conditions.</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>If the conditions are satisfied, the weapon goes straight into your hands and cannot be unequipped or swapped out. Picking up this item causes the player to go berserk immediately and permanently. Also, this weapon halves knockback while wielded. The Dragonslayer is a blade and can be used with Malicious Blades. If you wear both the Dragonslayer and Berserker Armor, nightmare demons will continuously spawn in the map at night. You CANNOT stop spawning of these nightmare demons</td></tr>
+	<tr>
+	<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+	<td>Berserk (manga)</td></tr>
+</table>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Mjollnir - Melee Family - Unique</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>1d15</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Melee</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+0</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>Throw</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>Forged by the dwarves Eitri and Brokk, in response to Loki's challenge, Mjollnir is an indestructible war hammer.</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>When using its altfire to throw the Mjollnir, it'll remain in your hands and equipped after throwing, unlike when you throw a Combat knife.</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>Norse Mythology</td>
-</tr></table> 
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Mjollnir - Melee Family - Unique</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>1d15</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Melee</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+0</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>Throw</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>Forged by the dwarves Eitri and Brokk, in response to Loki's challenge, Mjollnir is an indestructible war hammer.</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>When using its altfire to throw the Mjollnir, it'll remain in your hands and equipped after throwing, unlike when you throw a Combat knife.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>Norse Mythology</td></tr>
+</table> 
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Subtle Knife - Melee Family - Unique</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>3d5</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>BFG Plasma</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+0</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>Invoke</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>A weapon that can cut the very fabric of reality. Too bad it's only eight inches long...</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>Using invoke will deal 10 BFG Plasma damage to all enemies you can see, at the cost of making you tired and reducing your max health by 2 points. Takes 1 second to activate.</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>The Subtle Knife is a blade, so it can be used with Malicious Blades.</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>Norse Mythology</td>
-</tr></table> 
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Subtle Knife - Melee Family - Unique</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>3d5</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>BFG Plasma</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+0</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>Invoke</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>A weapon that can cut the very fabric of reality. Too bad it's only eight inches long...</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>Using invoke will deal 10 BFG Plasma damage to all enemies you can see, at the cost of making you tired and reducing your max health by 2 points. Takes 1 second to activate.</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>The Subtle Knife is a blade, so it can be used with Malicious Blades.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>Norse Mythology</td></tr>
+</table> 
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Azrael's Scythe - Melee Family - Artifact</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>9d9</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Plasma</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+0</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>Whisper of Death: Deals 20 plasma damage to every living creature on the map (other than you). Causes fatigue and permanently drains 5 max HP from you.</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>You don't want to know whose scythe this is...</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>Using invoke will deal 10 BFG Plasma damage to all enemies you can see, at the cost of making you tired and reducing your max health by 2 points. Takes 1 second to activate.</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>In folklore, Azrael is precisely the Angel of Death. </td>
-</tr></table> 
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Azrael's Scythe - Melee Family - Artifact</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>9d9</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Plasma</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+0</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>Whisper of Death: Deals 20 plasma damage to every living creature on the map (other than you). Causes fatigue and permanently drains 5 max HP from you.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>You don't want to know whose scythe this is...</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>Using invoke will deal 10 BFG Plasma damage to all enemies you can see, at the cost of making you tired and reducing your max health by 2 points. Takes 1 second to activate.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>In folklore, Azrael is precisely the Angel of Death. </td></tr>
+</table> 
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Longinus Spear - Melee Family - Artifact</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>8d8</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Plasma</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+0</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>: 	Holy Fire: Explodes a radius 3 area around you for 10d10 fire damage; causes fatigue and takes 1.0 second.</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>Legend says that no one wielding the Spear of Destiny can ever be defeated.</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>Part of the Angelic Attire set: using it together with the Angelic Armor grants an additional +4 to protection to the armor.</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>Halves knockback while wielded.</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>Spear of Destiny (Wolfenstein 3D expansion)</td>
-</tr></table> 
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Longinus Spear - Melee Family - Artifact</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>8d8</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Plasma</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+0</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>Holy Fire: Explodes a radius 3 area around you for 10d10 fire damage; causes fatigue and takes 1.0 second.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>Legend says that no one wielding the Spear of Destiny can ever be defeated.</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>Part of the Angelic Attire set: using it together with the Angelic Armor grants an additional +4 to protection to the armor.</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>Halves knockback while wielded.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>Spear of Destiny (Wolfenstein 3D expansion)</td></tr>
+</table> 
 
 <h4>Special Pistol</h4>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Blaster - Pistol Family - Exotic</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>2d4</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Plasma</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+3</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>0.9s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>10</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>Aimed Shot</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>This is the standard issue rechargeable energy side-arm. Cool!</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>The blaster regenerates 1 ammo on each of the wielder's actions after 2 actions of ceasing fire(for actions that takes at least 0.1s).</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>Quake II (computer game)</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Blaster - Pistol Family - Exotic</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>2d4</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Plasma</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+3</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>0.9s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>None</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>10</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>None</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>Aimed Shot</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>None</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>This is the standard issue rechargeable energy side-arm. Cool!</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>The blaster regenerates 1 ammo on each of the wielder's actions after 2 actions of ceasing fire(for actions that takes at least 0.1s).</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>Quake II (computer game)</td></tr>
+</table>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Combat Pistol - Pistol Family - Exotic</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>3d3</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Bullet</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+5</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>1.8s</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>15</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>10mm ammo</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>Aimed Shot</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>Dual reload</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>This is the kind of handgun given to your superiors. Doesn't look like they're using it right now...</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>Real life</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Combat Pistol - Pistol Family - Exotic</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>3d3</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Bullet</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+5</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>1.0s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>1.8s</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>15</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>10mm ammo</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>Aimed Shot</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>Dual reload</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>This is the kind of handgun given to your superiors. Doesn't look like they're using it right now...</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>Real life</td></tr>
+</table>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Anti-Freak Jackal - Pistol Family - Unique</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>5d3 radius 1</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Fire</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+4</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>2.0s</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>6</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>10mm ammo</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>Aimed Shot</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>Dual reload</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>In the name of God, impure souls of the living dead shall be banished into eternal damnation. Amen.</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>Hellsing (Anime/Manga)</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Anti-Freak Jackal - Pistol Family - Unique</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>5d3 radius 1</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Fire</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+4</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>1.0s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>2.0s</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>6</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>10mm ammo</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>Aimed Shot</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>Dual reload</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>In the name of God, impure souls of the living dead shall be banished into eternal damnation. Amen.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>Hellsing (Anime/Manga)</td>
+</tr>
+</table>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Grammaton Cleric Beretta - Pistol Family - Unique</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>single: 2d6</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>semi-auto: (1d8)x3</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>full-auto: (1d7)x6</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Bullet</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>single: +5</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>semi-auto: +3</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>full-auto: +1</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>2.0s</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>18</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>10mm ammo</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>Fire mode: switches between single, semi-auto and full-auto (see above for stats). Takes 0.2 seconds.</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>Not without incident.</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>This weapon benefits from Triggerhappy on semi-auto or full-auto.</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>It counts as a pistol regardless of firing mode.</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>Equilibrium (film)</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Grammaton Cleric Beretta - Pistol Family - Unique</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>single: 2d6</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>semi-auto: (1d8)x3</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>full-auto: (1d7)x6</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Bullet</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>single: +5</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>semi-auto: +3</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>full-auto: +1</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>1.0s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>2.0s</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>18</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>10mm ammo</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>None</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>Fire mode: switches between single, semi-auto and full-auto (see above for stats). Takes 0.2 seconds.</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>Not without incident.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>This weapon benefits from Triggerhappy on semi-auto or full-auto.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>It counts as a pistol regardless of firing mode.</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>Equilibrium (film)</td></tr>
+</table>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Trigun - Pistol Family - Unique</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>3d6</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Bullet</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+6</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>0.7s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>2.0s</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>6</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>10mm ammo</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>Aimed shot</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>Angel Arm: Nukes the entire level immediately. Permanently drains 5 HP from you. </td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>One of the deadliest weapons ever made. Nyooo </td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>Scavenging the Trigun will always result in a Nano Pack.</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>Trigun (anime/manga)</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Trigun - Pistol Family - Unique</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>3d6</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Bullet</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+6</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>0.7s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>2.0s</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>6</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>10mm ammo</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>Aimed shot</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>Angel Arm: Nukes the entire level immediately. Permanently drains 5 HP from you. </td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>One of the deadliest weapons ever made. Nyooo </td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>Scavenging the Trigun will always result in a Nano Pack.</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>Trigun (anime/manga)</td></tr>
+</table>
 
 <h4>Special Shotgun</h4>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Assault shotgun - Shotgun Family - Exotic</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>7d3, focused shotgun blast</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Shrapnel</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>NA</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>1.0s</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>6</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>Shotgun shell</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>Full reload</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>Big, bad and ugly.</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>The assault shotgun doesn't require pumping between shots. However, it only loads one shell at a time (unless the alternate reload is used).</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>Real life, basically a type of combat shotgun.</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Assault shotgun - Shotgun Family - Exotic</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>7d3, focused shotgun blast</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Shrapnel</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>NA</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>1.0s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>1.0s</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>6</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>Shotgun shell</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>None</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>Full reload</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>Big, bad and ugly.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>The assault shotgun doesn't require pumping between shots. However, it only loads one shell at a time (unless the alternate reload is used).</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>Real life, basically a type of combat shotgun.</td></tr>
+</table>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Plasma shotgun - Shotgun Family - Exotic</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>7d3, plasma shotgun blast</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Plasma</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>NA</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>2.0s</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>30(consumes 3 per shot)</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>Power cell</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>Plasma Shotgun, the best of both worlds!</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>Although the plasma shotgun is indeed a shotgun, it is unaffected by Army of the Dead, because it's original damage is not the Shrapnel type.</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>Ufo: Aftermath.</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Plasma shotgun - Shotgun Family - Exotic</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>7d3, plasma shotgun blast</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Plasma</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>NA</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>1.0s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>2.0s</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>30(consumes 3 per shot)</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>Power cell</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>None</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>None</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>Plasma Shotgun, the best of both worlds!</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>Although the plasma shotgun is indeed a shotgun, it is unaffected by Army of the Dead, because it's original damage is not the Shrapnel type.</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>Ufo: Aftermath.</td></tr>
+</table>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Frag Shotgun - Shotgun Family - Unique</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>7d3 focused shotgun blast</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Shrapnel</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>NA</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>1.5s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>2.5s</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>16 (consumes 4 per shot)</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>10mm ammo</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>Advanced pulverization technology converts bullets into shrapnel.</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Frag Shotgun - Shotgun Family - Unique</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>7d3 focused shotgun blast</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Shrapnel</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>NA</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>1.5s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>2.5s</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>16 (consumes 4 per shot)</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>10mm ammo</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>None</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>None</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>Advanced pulverization technology converts bullets into shrapnel.</td></tr>
+</table>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Jackhammer - Shotgun Family - Unique</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>(8d3)x3 focused shotgun blast</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Shrapnel</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>NA</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>2.5s</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>9</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>Shotgun shell</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>The Pancor Corporation Jackhammer is a 12 gauge, gas-operated automatic weapon.</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>works with Triggerhappy</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>Real Life</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Jackhammer - Shotgun Family - Unique</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>(8d3)x3 focused shotgun blast</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Shrapnel</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>NA</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>1.0s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>2.5s</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>9</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>Shotgun shell</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>None</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>None</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>The Pancor Corporation Jackhammer is a 12 gauge, gas-operated automatic weapon.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>works with Triggerhappy</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>Real Life</td></tr>
+</table>
 
 <h4>Special Rapid-Fire</h4>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Laser rifle - Rapid-fire Family - Exotic</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>(1d7)x5</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Plasma</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+8</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>1.5s</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>40</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>Power cell</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>Chain fire</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>With no recoil and pinpoint accuracy, it takes a world-class moron to miss while using a laser rifle.</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>works with Triggerhappy</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>Classic SF weapon.</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Laser rifle - Rapid-fire Family - Exotic</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>(1d7)x5</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Plasma</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+8</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>1.0s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>1.5s</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>40</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>Power cell</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>Chain fire</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>None</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>With no recoil and pinpoint accuracy, it takes a world-class moron to miss while using a laser rifle.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>works with Triggerhappy</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>Classic SF weapon.</td></tr>
+</table>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Minigun - Rapid-fire Family - Exotic</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>(1d6)x8</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Bullet</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+1</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>1.2s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>3.5s</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>200</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>10mm ammo</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>Chain fire</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>Spits enough lead into the air to be considered an environmental hazard.</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>works with Triggerhappy</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>Real life</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Minigun - Rapid-fire Family - Exotic</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>(1d6)x8</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Bullet</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+1</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>1.2s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>3.5s</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>200</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>10mm ammo</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>Chain fire</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>None</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>Spits enough lead into the air to be considered an environmental hazard.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>works with Triggerhappy</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>Real life</td></tr>
+</table>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Nuclear plasma rifle - Rapid-fire Family - Exotic</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>(1d7)x6</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Plasma</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+2</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>NA</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>24</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>Chain fire</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>Nuclear overcharge</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>A self-charging plasma rifle -- too bad it can't be manually reloaded.</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>The nuclear plasma rifle automatically recharges 4 ammo on each of the wielder's actions after 4 actions of ceasing fire. It cannot be otherwise reloaded or unloaded. </td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>The original Plasma Rifle is from Doom. The nuclear version appears to be unique to DoomRL.</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Nuclear plasma rifle - Rapid-fire Family - Exotic</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>(1d7)x6</td></tr>
+	<tr style="background: #333"
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Plasma</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+2</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>1.0s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>NA</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>24</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>None</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>Chain fire</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>Nuclear overcharge</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>A self-charging plasma rifle -- too bad it can't be manually reloaded.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>The nuclear plasma rifle automatically recharges 4 ammo on each of the wielder's actions after 4 actions of ceasing fire. It cannot be otherwise reloaded or unloaded. </td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>The original Plasma Rifle is from Doom. The nuclear version appears to be unique to DoomRL.</td></tr>
+</table>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">BFG 10K - Rapid-fire Family, Big Gun Family - Unique</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>(6d4)x5 radius 2</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Plasma</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+3</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>2.0s</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>50 (consumes 5 per shot, 25 per burst) </td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>Power cell</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>Chain fire</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>The Ultimate Big Fucking Gun. Redefines the word "wallpaper".</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>The BFG 10K's projectile hits precisely where you aim, rather than until it hits a solid object.</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>The weapon also scatters its shot randomly and can lead to damaging yourself, even if aimed far from you.</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>Also, the BFG 10K can be modded by Technicians with a single mod (and/or a basic assembly), regardless of any Whizkid ranks.</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>Scavenging the BFG 10K will always produce a Nano Pack.</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>Quake series (computer game)</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">BFG 10K - Rapid-fire Family, Big Gun Family - Unique</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>(6d4)x5 radius 2</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Plasma</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+3</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>1.0s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>2.0s</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>50 (consumes 5 per shot, 25 per burst) </td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>Power cell</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>Chain fire</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>None</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>The Ultimate Big Fucking Gun. Redefines the word "wallpaper".</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>The BFG 10K's projectile hits precisely where you aim, rather than until it hits a solid object.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>The weapon also scatters its shot randomly and can lead to damaging yourself, even if aimed far from you.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>Also, the BFG 10K can be modded by Technicians with a single mod (and/or a basic assembly), regardless of any Whizkid ranks.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>Scavenging the BFG 10K will always produce a Nano Pack.</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>Quake series (computer game)</td></tr>
+</table>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Mega Buster - Rapid-Fire Family - Unique</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>(1d8)x3 (Bullet mode)</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>(4d2)x3/12-24, radius 1 (Acid Mode, Fire Mode)</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>(1d10)x3/3-30 (Plasma Mode)</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Bullet (Bullet mode)</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>Fire (Fire mode)</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>Acid (Acid mode)</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>Plasma (Plasma mode)</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+2 (Bullet mode)</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>+1 (Plasma mode)</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>+0 (Fire mode, Acid mode)</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>3.5s</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>60 (consumes 5 per shot)</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>10mm ammo</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>You suddenly wish to slaughter the forces of Hell to 8-bit chiptune music.</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>This weapon changes modes when an enemy is killed by it. The new mode depends on what type of damage the killed enemy deals.</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td> The weapon starts in bullet mode.</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td> Killing shrapnel-damage dealing enemies (like former sergeants) or weaponless melee-damage dealing enemies (like Demons) will revert the gun to bullet mode.</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>Mega Man (video game series)</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Mega Buster - Rapid-Fire Family - Unique</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>(1d8)x3 (Bullet mode)</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>(4d2)x3/12-24, radius 1 (Acid Mode, Fire Mode)</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>(1d10)x3/3-30 (Plasma Mode)</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Bullet (Bullet mode)</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>Fire (Fire mode)</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>Acid (Acid mode)</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>Plasma (Plasma mode)</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+2 (Bullet mode)</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>+1 (Plasma mode)</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>+0 (Fire mode, Acid mode)</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>1.0s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>3.5s</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>60 (consumes 5 per shot)</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>10mm ammo</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>None</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>None</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>You suddenly wish to slaughter the forces of Hell to 8-bit chiptune music.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>This weapon changes modes when an enemy is killed by it. The new mode depends on what type of damage the killed enemy deals.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td> The weapon starts in bullet mode.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td> Killing shrapnel-damage dealing enemies (like former sergeants) or weaponless melee-damage dealing enemies (like Demons) will revert the gun to bullet mode.</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>Mega Man (video game series)</td></tr>
+</table>
 
 <h4>Special Explosive</h4>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Missile launcher - Explosive Family - Exotic</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>6d6 radius 3 </td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Fire</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+10</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>0.8s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>1.2s</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>4</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>Rocket</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>Full Reload</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>A definitive upgrade to the rocket launcher.</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>The missile launcher's standard reload only loads one rocket at a time. </td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>Real life, though it didn't use explosive rockets.</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Missile launcher - Explosive Family - Exotic</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>6d6 radius 3 </td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Fire</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+10</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>0.8s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>1.2s</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>4</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>Rocket</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>None</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>Full Reload</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>A definitive upgrade to the rocket launcher.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>The missile launcher's standard reload only loads one rocket at a time. </td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>Real life, though it didn't use explosive rockets.</td></tr>
+</table>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Napalm launcher - Explosive Family - Exotic</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>7d7 radius 2</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Fire</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+10</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>0.8s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>1.2s</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>1</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>Rocket</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>This will surely make a mess!</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>The explosion from this weapon has a 9/10 chance to replace floor and wall tiles with lava.</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>Quake 4 (computer game) </td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Napalm launcher - Explosive Family - Exotic</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>7d7 radius 2</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Fire</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+10</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>0.8s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>1.2s</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>1</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>Rocket</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>None</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>None</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>This will surely make a mess!</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>The explosion from this weapon has a 9/10 chance to replace floor and wall tiles with lava.</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>Quake 4 (computer game) </td></tr>
+</table>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Revenant's Launcher - Explosive Family - Unique</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>7d6 radius 3</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Fire</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+6</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>0.8s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>1.2s</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>1</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>Rocket</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>Two can play the homing missile game.</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>Projectiles land precisely on the tile at which you aim, rather than continuing on until they hit a solid object.</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>Scavenging the Revenant's Launcher will always produce a sniper weapon pack.</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>A rocket launcher from a revenant. What did you think?</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Revenant's Launcher - Explosive Family - Unique</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>7d6 radius 3</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Fire</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+6</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>0.8s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>1.2s</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>1</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>Rocket</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>None</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>None</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>Two can play the homing missile game.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>Projectiles land precisely on the tile at which you aim, rather than continuing on until they hit a solid object.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>Scavenging the Revenant's Launcher will always produce a sniper weapon pack.</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>A rocket launcher from a revenant. What did you think?</td></tr>
+</table>
 
 <h4>Special Miscellaneous</h4>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Combat translocator - Miscellaneous Family - Exotic</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>0d0</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+4</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>1.5s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>2.0s</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>60 (consumes 10 per shot)</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>Power cell</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>Now this is a weird piece of technology, wonder how it works?</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>Any enemy that gets hit is randomly teleported, as though it used a phase device.</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>This weapon can't be modded even though no assemblies can make 0d0 cause any damage.</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>Could be inspired by the Unreal Tournament series. </td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Combat translocator - Miscellaneous Family - Exotic</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>0d0</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>None</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+4</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>1.5s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>2.0s</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>60 (consumes 10 per shot)</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>Power cell</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>None</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>None</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>Now this is a weird piece of technology, wonder how it works?</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>Any enemy that gets hit is randomly teleported, as though it used a phase device.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>This weapon can't be modded even though no assemblies can make 0d0 cause any damage.</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>Could be inspired by the Unreal Tournament series. </td></tr>
+</table>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Nuclear BFG 9000 - Big Gun Family - Exotic</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>8d6 radius 8</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Plasma</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+5</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>1.5s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>NA</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>40 (consumes 40 per shot)</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>Nuclear overcharge</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>A self-charging BFG9000! How much more lucky can you get?</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>The nuclear BFG 9000 automatically recharges 1 ammo on each of the wielder's actions.</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>It cannot be otherwise reloaded or unloaded.</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>The original BFG 9000 is, of course, from Doom. The nuclear version appear from DoomRL. Imbalanced BFG Family is a significant part of the Doom/Quake universe, even in canon.</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Nuclear BFG 9000 - Big Gun Family - Exotic</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>8d6 radius 8</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Plasma</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+5</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>1.5s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>NA</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>40 (consumes 40 per shot)</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>None</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>None</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>Nuclear overcharge</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>A self-charging BFG9000! How much more lucky can you get?</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>The nuclear BFG 9000 automatically recharges 1 ammo on each of the wielder's actions.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>It cannot be otherwise reloaded or unloaded.</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>The original BFG 9000 is, of course, from Doom. The nuclear version appear from DoomRL. Imbalanced BFG Family is a significant part of the Doom/Quake universe, even in canon.</td></tr>
+</table>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Tristar blaster - Miscellaneous Family - Exotic</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>(4d5)x3 radius 2 </td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Plasma</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+5</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>1.5s</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>45 (consumes 5 per shot)</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>Power cell</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>Now this is a wierd weapon.</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>This weapon fires its three shots in a spread: one straight ahead and one to each side (like a mancubus).</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>It is possible to fire this weapon with only 5 cells in the magazine even though it will consume up to 15.</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Tristar blaster - Miscellaneous Family - Exotic</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>(4d5)x3 radius 2 </td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Plasma</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+5</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>1.0s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>1.5s</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>45 (consumes 5 per shot)</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>Power cell</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>None</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>None</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>Now this is a wierd weapon.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>This weapon fires its three shots in a spread: one straight ahead and one to each side (like a mancubus).</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>It is possible to fire this weapon with only 5 cells in the magazine even though it will consume up to 15.</td></tr>
+</table>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Acid Spitter - Miscellaneous Family - Unique</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>10d10, radius 3</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Acid</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+5</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>0.8s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>1.2s</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>10 (consumes 10 per shot)</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>Acid</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>Whoa, looks cool, but how do I reload it?</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>The Acid Spitter has a 9/10 chance to leave behind acid tiles in its explosion radius</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>reloading the Acid Spitter requires standing in acid</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>Each tile of acid provides 1 round, and changes the tile to water.</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>The Acid Spitter cannot be unloaded</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>Unlike most other weapons, the Acid Spitter is empty the first time it is encountered.</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>It provides 75% acid resistance when wielded (but not in the prepared slot).</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Acid Spitter - Miscellaneous Family - Unique</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>10d10, radius 3</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Acid</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+5</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>0.8s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>1.2s</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>10 (consumes 10 per shot)</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>Acid</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>None</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>None</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>Whoa, looks cool, but how do I reload it?</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>The Acid Spitter has a 9/10 chance to leave behind acid tiles in its explosion radius</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>reloading the Acid Spitter requires standing in acid</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>Each tile of acid provides 1 round, and changes the tile to water.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>The Acid Spitter cannot be unloaded</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>Unlike most other weapons, the Acid Spitter is empty the first time it is encountered.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>It provides 75% acid resistance when wielded (but not in the prepared slot).</td></tr>
+</table>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Railgun - Miscellaneous Family - Unique</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>8d8</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>Bullet</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+12</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>1.5s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>2.0s</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>40 (consumes 5 per shot)</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>Power cell</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>Groovy! Wait 'till they stand in a row, and watch them being impaled.</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>The Railgun's projectile continues after hitting beings, so multiple beings can be hit simultaneously.</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>It doesn't cause knockback.</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>Also, the Railgun can be modded by Technicians with a single mod (and/or a basic assembly), regardless of any Whizkid ranks.</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>Scavenging the Railgun always produces a sniper weapon pack.</td>
-	</tr><tr>
-	<td style="text-align:right">Source</td><td>Quake II (computer game)</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Railgun - Miscellaneous Family - Unique</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>8d8</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>Bullet</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+12</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>1.5s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>2.0s</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>40 (consumes 5 per shot)</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>Power cell</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>None</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>None</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>Groovy! Wait 'till they stand in a row, and watch them being impaled.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>The Railgun's projectile continues after hitting beings, so multiple beings can be hit simultaneously.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>It doesn't cause knockback.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>Also, the Railgun can be modded by Technicians with a single mod (and/or a basic assembly), regardless of any Whizkid ranks.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>Scavenging the Railgun always produces a sniper weapon pack.</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Source</td>
+		<td>Quake II (computer game)</td></tr>
+</table>
 
-<table><tr>
-	<th colspan=2 style="text-align:left">Charch's Null Pointer - Miscellaneous Family - Unique</th>
-	</tr><tr>
-	<td style="text-align:right">Damage</td><td>10 radius 1</td>
-	</tr><tr>
-	<td style="text-align:right">Damage Type</td><td>BFG Plasma</td>
-	</tr><tr>
-	<td style="text-align:right">Accuracy</td><td>+6</td>
-	</tr><tr>
-	<td style="text-align:right">Base Fire Time</td><td>1.0s</td>
-	</tr><tr>
-	<td style="text-align:right">Base Reload Time</td><td>2.0s</td>
-	</tr><tr>
-	<td style="text-align:right">Clip Size</td><td>60 (consumes 10 per shot)</td>
-	</tr><tr>
-	<td style="text-align:right">Ammunition</td><td>Power cell</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Fire</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Alternate Reload</td><td>None</td>
-	</tr><tr>
-	<td style="text-align:right">Description</td><td>It feels extremely unstable... what twisted mind could conceive such a weird device?</td>
-	</tr><tr>
-	<td style="text-align:right">Comments/Special</td><td>Has no effect if it doesn't hit an enemy.</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>Adds 1.0s to the time of the targets current action unless the target is a boss, modified by their universal speed modifier.</td>
-	</tr><tr>
-	<td style="text-align:right"></td><td>Bosses only ass 0.5 seconds before modification.</td>
-</tr></table>
+<table style="border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
+	<tr>
+		<th colspan="2" style="background: darkred; color: yellow; font-size: 120%; text-align: center">Charch's Null Pointer - Miscellaneous Family - Unique</th></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage</td>
+		<td>10 radius 1</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Damage Type</td>
+		<td>BFG Plasma</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Accuracy</td>
+		<td>+6</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Fire Time</td>
+		<td>1.0s</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Base Reload Time</td>
+		<td>2.0s</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Clip Size</td>
+		<td>60 (consumes 10 per shot)</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Ammunition</td>
+		<td>Power cell</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Fire</td>
+		<td>None</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Alternate Reload</td>
+		<td>None</td></tr>
+	<tr style="background: #333">
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Description</td>
+		<td>It feels extremely unstable... what twisted mind could conceive such a weird device?</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex">Comments/Special</td>
+		<td>Has no effect if it doesn't hit an enemy.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>Adds 1.0s to the time of the targets current action unless the target is a boss, modified by their universal speed modifier.</td></tr>
+	<tr>
+		<td style="text-align:right; border: solid darkred; border-width: 0 .5ex 0 0; padding: 0 1ex 0 1ex"></td>
+		<td>Bosses only ass 0.5 seconds before modification.</td></tr>
+</table>
 
 <h4>Special Body Armor</h4>
 
-<table style="float:right"><tr>
+<table style="float:right">
+<tr>
 	<th>Body Armor</th>
 	</tr><tr>
 	<td>ballistic shield</td>
