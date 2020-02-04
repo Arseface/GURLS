@@ -801,10 +801,7 @@
 		<td>Shottyman (2 ranks)</td></tr>
 	<tr>
 		<td style="text-align: right; padding: 0 2ex 0 0">Effect</td>
-		<td>Reload time of all weapons is reduced by .1s per rank.</td></tr>
-	<tr>
-		<td style="text-align: right; padding: 0 2ex 0 0">Effect</td>
-		<td>Reload time is reduced by an addition .2s per rank for each second of reload time the weapon has.</td></tr>
+		<td>Reload time of all weapons is reduced by .2s per rank.</td></tr>
 </table>
 
 <p>Eagle Eye</p>
@@ -2598,7 +2595,7 @@
 		<td style="border-width: 0 0 0 .2em; padding: 0 .5em 0 .5em">Power cells are stackable. The amount found depends on the source, but it generally comes in stacks of 20. The maximum stack size is 50.</td></tr>
 </table>
 
-<p>All types of ammo can also be found in ammunition packages (or ammo packs). Ammo packs contain a larger quantity of ammo than usual, and equipping an ammo pack in the prepared slot allows the wielder to reload from the pack taking only a fifth of the normal reload time.</p>
+<p>All types of ammo can also be found in ammunition packages (or ammo packs). Ammo packs contain a larger quantity of ammo than usual, and equipping an ammo pack in the prepared slot allows the wielder to reload from the pack taking only a fifth of the normal reload time(rounded down, minimum .1s).</p>
 
 <table style="width:75%; border: 2px solid darkred; border-spacing: 0; font-size: 90%; margin: 0.25em 0.5em">
 	<tr>
@@ -9792,6 +9789,7 @@
 
 <p>House of Pain</p>
 
+<pre style="color:white;font-size:larger;background-color:black">
 ############################$$$$$$$$$$$$$$$$$$$$$$$$ZZZZZZZZZZZZZZZZZZZZZZZZZZ
 #######3..A#####A..4#######..$12.......$$.......34$..ZZZZZZZ===========ZZZZZZZ
 #####........#........#####..$4........$$........1$..ZZZZZ===.........===ZZZZZ
@@ -9812,6 +9810,7 @@
 #####........#........#####..$3........$$........2$..ZZZZZ===.........===ZZZZZ
 #######2..A#####A..1#######..$21.......$$.......43$..ZZZZZZZ===========ZZZZZZZ
 ############################$$$$$$$$$$$$$$$$$$$$$$$$ZZZZZZZZZZZZZZZZZZZZZZZZZZ
+</pre>
 
 <p>The Mortuary</p>
 
@@ -10191,6 +10190,614 @@
 	
 	
 	
+	
+	
+	
+	</pre></td></tr>
+</table>
+
+<table style="width:100%;color:white">
+	<tr>
+		<td colspan=2>Player Name</td>
+		<td colspan=2>Character Name</td>
+		<td>Class</td>
+		<td>Level</td>
+		<td></td>
+		<td>Health</td>
+		<td>Movespeed</td></tr>
+		
+	<tr>
+		<td colspan=2>Mary</td>
+		<td colspan=2>Meiling</td>
+		<td>Marine</td>
+		<td>5</td>
+		<td></td>
+		<td>60</td>
+		<td></td></tr>
+	<tr>
+		<td></td>
+		<td>Name</td>
+		<td>Durability</td>
+		<td>Protection</td>
+		<td>Resistances</td>
+		<td>Knockback</td>
+		<td>Movemod</td>
+		<td colspan=2>Notes</td></tr>
+	<tr>
+		<td>Armor</td>
+		<td>Red</td>
+		<td>100</td>
+		<td>4</td>
+		<td>2 Fire</td>
+		<td>0</td>
+		<td>+0.2s</td>
+		<td colspan=2></td></tr>
+	<tr>
+		<td>Boots</td>
+		<td>Plasteel Boots</td>
+		<td>100</td>
+		<td>2</td>
+		<td>2 Fire, 5 Acid</td>
+		<td>-2</td>
+		<td>0</td>
+		<td colspan=2 rowspan=2></td></tr>
+	<tr>
+		<td>Traits</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td></tr>
+	<tr>
+		<td></td>
+		<td>Name</td>
+		<td>Accuracy</td>
+		<td>Damage</td>
+		<td>Damage Type</td>
+		<td>Alt Fire</td>
+		<td colspan=3>Notes</td></tr>
+	<tr>
+		<td>Equipped Weapon</td>
+		<td>High Power Chaingun</td>
+		<td>+2</td>
+		<td>(1d8+2)x6</td>
+		<td>Bullet</td>
+		<td>Chain Fire</td>
+		<td colspan=3 rowspan=3>Chain Fire does x4 shots round 1,<br>x6 shots round 2,<br>and x8 shots after that</td></tr>
+	<tr>
+		<td></td>
+		<td>Fire Time</td>
+		<td>Reload Time</td>
+		<td>Clip Size</td>
+		<td>Ammo Type</td>
+		<td>Alt Reload</td></tr>
+	<tr>
+		<td> </td>
+		<td>1.0s</td>
+		<td>.4s/2.3s</td>
+		<td>26/26</td>
+		<td>10mm</td>
+		<td>N/A</td></tr>
+	<tr>
+		<td></td>
+		<td>Name</td>
+		<td>Accuracy</td>
+		<td>Damage</td>
+		<td>Damage Type</td>
+		<td>Alt Fire</td>
+		<td colspan=3>Notes</td></tr>
+	<tr>
+		<td>Quick-Swap Weapon</td>
+		<td>10mm Ammo Chain</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td colspan=3 rowspan=3>Having this in the quick slot makes<br>the chaingun take only .4s to reload<br>Cannot be reloaded</td></tr>
+	<tr>
+		<td></td>
+		<td>Fire Time</td>
+		<td>Reload Time</td>
+		<td>Clip Size</td>
+		<td>Ammo Type</td>
+		<td>Alt Reload</td></tr>
+	<tr>
+		<td> </td>
+		<td></td>
+		<td></td>
+		<td>250/250</td>
+		<td>10mm</td>
+		<td></td></tr>
+	<tr>
+		<td>Class</td>
+		<td>Level</td>
+		<td>Master Trait</td></tr>
+	<tr>
+		<td>Marine</td>
+		<td>5</td>
+		<td></td></tr>
+	<tr>
+		<td>Iro</td>
+		<td>Fin</td>
+		<td>HR</td>
+		<td>TaN</td>
+		<td>SoB</td>
+		<td>SoG</td>
+		<td>Rel</td>
+		<td>EE</td>
+		<td>Bru</td></tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>2</td>
+		<td></td>
+		<td>1</td>
+		<td></td>
+		<td></td></tr>
+	<tr>
+		<td>Jug</td>
+		<td>Ber</td>
+		<td>DG</td>
+		<td>DM</td>
+		<td>Int</td>
+		<td>WK</td>
+		<td>Bad</td>
+		<td>SM</td>
+		<td>TH</td></tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>2</td></tr>
+	<tr>
+		<td>Notes</td>
+		<td colspan=8></tr>
+		<tr><td colspan=9><pre>Meiling is a badass machine-gun toting killing machine who does not believe there is such a thing as too much lead.
+She joined the UAF to mow down the demon assholes who ruined her hometown in eastern Eurasia.
+She's fiercely loyal to her fellow UAF squad mates, and has a very simple mindset when it comes to dealing with demons.
+"Shoot it till it stops moving. Then shoot it some more."</pre></td></tr>
+	<tr>
+		<td>Ammo</td></tr>
+	<tr>
+		<td>10mm</td>
+		<td>Spare</td>
+		<td>Shells</td>
+		<td>Spare</td>
+		<td>Energy Cells</td>
+		<td>Spare</td>
+		<td>Rockets</td>
+		<td>Spare</td>
+		<td>Backpack</td></tr>
+	<tr>
+		<td>100/100</td>
+		<td>3 Boxes</td>
+		<td>   /50</td>
+		<td></td>
+		<td>30/50</td>
+		<td>1 Box</td>
+		<td>   /10</td>
+		<td></td>
+		<td>Y/<b>(N)</b></td></tr>
+	<tr>
+		<td>Inventory</td></tr>
+	<tr><td><pre>
+	1x Large Medkit
+	2x Small Medkit
+	1x Green Armor(backup)
+	
+	
+	
+	
+	</pre></td></tr>
+</table>
+
+<table style="width:100%;color:white">
+	<tr>
+		<td colspan=2>Player Name</td>
+		<td colspan=2>Character Name</td>
+		<td>Class</td>
+		<td>Level</td>
+		<td></td>
+		<td>Health</td>
+		<td>Movespeed</td></tr>
+		
+	<tr>
+		<td colspan=2>Sara</td>
+		<td colspan=2>Sandra</td>
+		<td>Scout</td>
+		<td>5</td>
+		<td></td>
+		<td>50</td>
+		<td></td></tr>
+	<tr>
+		<td></td>
+		<td>Name</td>
+		<td>Durability</td>
+		<td>Protection</td>
+		<td>Resistances</td>
+		<td>Knockback</td>
+		<td>Movemod</td>
+		<td colspan=2>Notes</td></tr>
+	<tr>
+		<td>Armor</td>
+		<td>Green</td>
+		<td>100</td>
+		<td>1</td>
+		<td>1 Bullet, 1 Shrapnel</td>
+		<td>0</td>
+		<td>0</td>
+		<td colspan=2></td></tr>
+	<tr>
+		<td>Boots</td>
+		<td>Tactical Boots</td>
+		<td>100</td>
+		<td>1</td>
+		<td>0</td>
+		<td>0</td>
+		<td>-0.1s</td>
+		<td colspan=2 rowspan=2></td></tr>
+	<tr>
+		<td>Traits</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>-0.1s</td></tr>
+	<tr>
+		<td></td>
+		<td>Name</td>
+		<td>Accuracy</td>
+		<td>Damage</td>
+		<td>Damage Type</td>
+		<td>Alt Fire</td>
+		<td colspan=3>Notes</td></tr>
+	<tr>
+		<td>Equipped Weapon</td>
+		<td>Combat Shotgun</td>
+		<td>N/A</td>
+		<td>7d3</td>
+		<td>Shrapnel</td>
+		<td>N/A</td>
+		<td colspan=3 rowspan=3>Needs pumped after firing<br>Shottyman allows you to<br>reload/pump while moving</tr>
+	<tr>
+		<td></td>
+		<td>Fire Time</td>
+		<td>Reload Time</td>
+		<td>Clip Size</td>
+		<td>Ammo Type</td>
+		<td>Alt Reload</td></tr>
+	<tr>
+		<td> </td>
+		<td>1.0s</td>
+		<td>1.0s</td>
+		<td>5</td>
+		<td>Shells</td>
+		<td>Full Reload</td></tr>
+	<tr>
+		<td></td>
+		<td>Name</td>
+		<td>Accuracy</td>
+		<td>Damage</td>
+		<td>Damage Type</td>
+		<td>Alt Fire</td>
+		<td colspan=3>Notes</td></tr>
+	<tr>
+		<td>Quick-Swap Weapon</td>
+		<td>Rocket Launcher</td>
+		<td>+4</td>
+		<td>6d6, radius 4</td>
+		<td>Fire</td>
+		<td>Rocket Jump</td>
+		<td colspan=3 rowspan=3>Rockete jump does half self<br>damage and full knockback.<br>Shottyman works with it.</tr>
+	<tr>
+		<td></td>
+		<td>Fire Time</td>
+		<td>Reload Time</td>
+		<td>Clip Size</td>
+		<td>Ammo Type</td>
+		<td>Alt Reload</td></tr>
+	<tr>
+		<td> </td>
+		<td>1.0s</td>
+		<td>1.5s</td>
+		<td>1/1</td>
+		<td>Rocket</td>
+		<td>N/A</td></tr>
+	<tr>
+		<td>Class</td>
+		<td>Level</td>
+		<td>Master Trait</td></tr>
+	<tr>
+		<td>Sout</td>
+		<td>5</td>
+		<td></td></tr>
+	<tr>
+		<td>Iro</td>
+		<td>Fin</td>
+		<td>HR</td>
+		<td>TaN</td>
+		<td>SoB</td>
+		<td>SoG</td>
+		<td>Rel</td>
+		<td>EE</td>
+		<td>Bru</td></tr>
+	<tr>
+		<td></td>
+		<td>1</td>
+		<td>1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>2</td>
+		<td></td>
+		<td></td></tr>
+	<tr>
+		<td>Jug</td>
+		<td>Ber</td>
+		<td>DG</td>
+		<td>DM</td>
+		<td>Int</td>
+		<td>WK</td>
+		<td>Bad</td>
+		<td>SM</td>
+		<td>TH</td></tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>1</td>
+		<td></td></tr>
+	<tr>
+		<td>Notes</td>
+		<td colspan=8></tr>
+		<tr><td colspan=9><pre>Sandra is a fast, efficient, and lethal. She doesn't waste time with frivilous nonsense and her first order of buisness is usually 
+placing a shotgun barrel down the throat of a demon.
+A high school gym teacher before the demonic invasion, she was one of the first in line to apply to UAF for serious payback.
+She prioritizes the well-being of her squad mates and won't hesitate to pull their bacon out of the fire and into the frying pan.</pre></td></tr>
+	<tr>
+		<td>Ammo</td></tr>
+	<tr>
+		<td>10mm</td>
+		<td>Spare</td>
+		<td>Shells</td>
+		<td>Spare</td>
+		<td>Energy Cells</td>
+		<td>Spare</td>
+		<td>Rockets</td>
+		<td>Spare</td>
+		<td>Backpack</td></tr>
+	<tr>
+		<td>   /100</td>
+		<td></td>
+		<td>50/50</td>
+		<td>3 boxes</td>
+		<td>   /50</td>
+		<td></td>
+		<td>5/10</td>
+		<td>1 box</td>
+		<td>Y/<b>(N)</b></td></tr>
+	<tr>
+		<td>Inventory</td></tr>
+	<tr><td><pre>
+	3x Small Medkit
+	1x Envirosuit
+	1x Green Armor(backup)
+	
+	
+	
+	
+	</pre></td></tr>
+</table>
+
+<table style="width:100%;color:white">
+	<tr>
+		<td colspan=2>Player Name</td>
+		<td colspan=2>Character Name</td>
+		<td>Class</td>
+		<td>Level</td>
+		<td></td>
+		<td>Health</td>
+		<td>Movespeed</td></tr>
+		
+	<tr>
+		<td colspan=2>Tania</td>
+		<td colspan=2>Tess</td>
+		<td>Technician</td>
+		<td>5</td>
+		<td></td>
+		<td>50</td>
+		<td></td></tr>
+	<tr>
+		<td></td>
+		<td>Name</td>
+		<td>Durability</td>
+		<td>Protection</td>
+		<td>Resistances</td>
+		<td>Knockback</td>
+		<td>Movemod</td>
+		<td colspan=2>Notes</td></tr>
+	<tr>
+		<td>Armor</td>
+		<td>Blue</td>
+		<td>100</td>
+		<td>2</td>
+		<td>2 Plasma</td>
+		<td>0</td>
+		<td>+0.1s</td>
+		<td colspan=2></td></tr>
+	<tr>
+		<td>Boots</td>
+		<td>Protective Boots</td>
+		<td>100</td>
+		<td>2</td>
+		<td>3 Acid</td>
+		<td>-1</td>
+		<td>0</td>
+		<td colspan=2 rowspan=2></td></tr>
+	<tr>
+		<td>Traits</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>-0.2s</td></tr>
+	<tr>
+		<td></td>
+		<td>Name</td>
+		<td>Accuracy</td>
+		<td>Damage</td>
+		<td>Damage Type</td>
+		<td>Alt Fire</td>
+		<td colspan=3>Notes</td></tr>
+	<tr>
+		<td>Equipped Weapon</td>
+		<td>Chainsword</td>
+		<td>+2</td>
+		<td>8d2</td>
+		<td>Melee</td>
+		<td>N/A</td>
+		<td colspan=3 rowspan=3>Counts as a bladed weapon</tr>
+	<tr>
+		<td></td>
+		<td>Fire Time</td>
+		<td>Reload Time</td>
+		<td>Clip Size</td>
+		<td>Ammo Type</td>
+		<td>Alt Reload</td></tr>
+	<tr>
+		<td> </td>
+		<td>1.0s</td>
+		<td>1.0s</td>
+		<td>N/A</td>
+		<td>N/A</td>
+		<td>N/A</td></tr>
+	<tr>
+		<td></td>
+		<td>Name</td>
+		<td>Accuracy</td>
+		<td>Damage</td>
+		<td>Damage Type</td>
+		<td>Alt Fire</td>
+		<td colspan=3>Notes</td></tr>
+	<tr>
+		<td>Quick-Swap Weapon</td>
+		<td>Speedloader Pistol</td>
+		<td>+4</td>
+		<td>2d4</td>
+		<td>Bullet</td>
+		<td>Aimed Shot</td>
+		<td colspan=3 rowspan=3>Ranged combat is important<br>Don't neglect this</tr>
+	<tr>
+		<td></td>
+		<td>Fire Time</td>
+		<td>Reload Time</td>
+		<td>Clip Size</td>
+		<td>Ammo Type</td>
+		<td>Alt Reload</td></tr>
+	<tr>
+		<td> </td>
+		<td>1.0s</td>
+		<td>0.6s</td>
+		<td>6/6</td>
+		<td>10mm</td>
+		<td>Dual Reload</td></tr>
+	<tr>
+		<td>Class</td>
+		<td>Level</td>
+		<td>Master Trait</td></tr>
+	<tr>
+		<td>Scout</td>
+		<td>5</td>
+		<td></td></tr>
+	<tr>
+		<td>Iro</td>
+		<td>Fin</td>
+		<td>HR</td>
+		<td>TaN</td>
+		<td>SoB</td>
+		<td>SoG</td>
+		<td>Rel</td>
+		<td>EE</td>
+		<td>Bru</td></tr>
+	<tr>
+		<td></td>
+		<td>1</td>
+		<td>2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>2</td></tr>
+	<tr>
+		<td>Jug</td>
+		<td>Ber</td>
+		<td>DG</td>
+		<td>DM</td>
+		<td>Int</td>
+		<td>WK</td>
+		<td>Bad</td>
+		<td>SM</td>
+		<td>TH</td></tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td></tr>
+	<tr>
+		<td>Notes</td>
+		<td colspan=8></tr>
+		<tr><td colspan=9><pre>Tess' intelligence is as keen as her blades. She knows where and how to cut into demons for maximum effectiveness.
+Once a medical student with a penchant for old kung-fu movies, the learning hospital she worked in has since become a butchery.
+In order to save her friends, family, and squad mates, she knows she has to eliminate the root of the problem. Every last demon.</pre></td></tr>
+	<tr>
+		<td>Ammo</td></tr>
+	<tr>
+		<td>10mm</td>
+		<td>Spare</td>
+		<td>Shells</td>
+		<td>Spare</td>
+		<td>Energy Cells</td>
+		<td>Spare</td>
+		<td>Rockets</td>
+		<td>Spare</td>
+		<td>Backpack</td></tr>
+	<tr>
+		<td>100/100</td>
+		<td></td>
+		<td>   /50</td>
+		<td></td>
+		<td>   /50</td>
+		<td></td>
+		<td>   /10</td>
+		<td></td>
+		<td>Y/<b>(N)</b></td></tr>
+	<tr>
+		<td>Inventory</td></tr>
+	<tr><td><pre>
+	2x Large Medkit
+	2x Small Medkit
+	1x Phase Device
+	1x Green Armor(backup)
 	
 	
 	
