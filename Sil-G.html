@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+	body {background-color:black;max-width: 1080px;margin: auto}
+	h1,h2,h3,h4   {color:silver}
+	p,ul,td,th   {color:white}
+	a	{color: cyan}
+	table	{background: #111111}
+	.side-index	{float:right;clear:both;width:15%}
+	.side-text	{float:right;clear:both;width:35%}</style></head>
 <body>
 
 <h1>Sil-G</h1>
@@ -31,6 +40,7 @@
 
 <h4>Skill Mastery</h4>
 
+<ul>
 	<li>Mastery is like a double affinity for a single skill</li>
 	<li>you get a bonus of 2 to your skill total</li>
 	<li>all abilities linked to that skill are 1000 experience points cheaper</li>
@@ -39,12 +49,14 @@
 
 <h4>Penalty</h4>
 
+<ul>
 	<li>Penalty is the opposite of an affinity</li>
 	<li>You get a penalty of 1 to your skill total</li>
 	<li>All abilities linked to that skill are 500 experience points more expensive.</li></ul>
 
 <h4>Weapon proficiency</h4>
 
+<ul>
 	<li>All elves (Noldor and Sindar) have a blade proficiency</li>
 	<ul>	
 		<li>This gives them a bonus of 1 to their melee so long as they are using a blade (sword or dagger).</li></ul>
@@ -107,7 +119,7 @@ Grace). The costs increase as the triangular numbers: 1, 3, 6, 10.</p>
 <ul>
 	<li>Helps you hit an opponent in hand-to-hand combat.</li>
 	<ul>
-		<li>difficulty = 10 + opponent’s evasion</li>
+		<li>difficulty = opponent’s evasion roll</li>
 		<li>You can also get critical hits (if you succeed by enough).</li>
 		<li>See Combat section for full details.</li></ul>
 	<li>Helps you hit an opponent with thrown weapons.</li>
@@ -120,7 +132,7 @@ Grace). The costs increase as the triangular numbers: 1, 3, 6, 10.</p>
 <ul>
 	<li>Helps you hit an opponent in ranged combat.</li>
 	<ul>
-		<li>difficulty = 10 + <i>half</i> opponent’s evasion</li>
+		<li>difficulty = <i>half</i> opponent’s evasion roll</li>
 		<li>You can also get critical hits (if you succeed by enough).</li>
 		<li>See Combat section for full details.</li></ul></ul>
 		
@@ -129,8 +141,7 @@ Grace). The costs increase as the triangular numbers: 1, 3, 6, 10.</p>
 <ul>
 	<li>Helps you avoid being hit in combat.</li>
 	<ul>
-		<li>Evasion + 10 = Opponents melee difficulty</li>
-		<li><i>Half</i> Evasion + 10 = Opponents Archery difficulty</li>
+		<li>difficulty = opponent’s melee or archery roll</li>
 		<li>You can also suffer critical hits (if they succeed by enough).</li>
 		<li>See Combat section for full details.</li></ul>
 	<li>Helps you climb out of pits</li>
@@ -167,7 +178,7 @@ Grace). The costs increase as the triangular numbers: 1, 3, 6, 10.</p>
 			<li>+15 for chest traps</li>
 			<li>+5 if you cannot see properly</li>
 			<li>+5 if confused</li>
-			<li>+5 for each square of distance from you (beyond the first)</li>
+			<li>+2 for each square of distance from you (beyond the first)</li>
 			<li>–5 if you search(adjacent squares only)</li></ul>
 		<li>Rolled by the GM</li></ul>
 	<li>Helps you disarm traps and pick locks.</li>
@@ -220,9 +231,12 @@ Grace). The costs increase as the triangular numbers: 1, 3, 6, 10.</p>
 
 <p>During an encounter the GM will count up for the number of seconds that have passed. They'll say "and" between the numbers to signify half-seconds should somebody need them. When your number comes up, notify the GM and take your turn. If multiple players have turns at the same time, feel free to take them in any order. When it doesn't matter just go clockwise with enemy turns going last.</p>
 
-<p>On a players turn execute the results of their last action, and declare thier intent for their next action. If the action doesn't require a roll, then they roll for armor and announce the results on their next turn. If it requires one or more rolls, they make them while play goes around the table and announce the results during their next turn.</p>
+<p>On a players turn execute the results of their last action including evasion and armor rolls, and declare thier intent for their next action. If the action doesn't require a roll, then they roll for armor and evasion and announce the results on their next turn. If it requires one or more rolls, they make them while play goes around the table and announce the results during their next turn.</p>
 
 <p>Sil-G operates in seconds. Your speed determines how fast a typical action is. There are 4 speeds, any bonuses or penalties that would bring you outside this range cap at the closest legal value.</p>
+
+<table>
+	<tr></tr></table>
 
 <ul>
 	<li>1 Speed: You move half as fast. Every standard action takes 4 seconds.</li>
@@ -262,15 +276,37 @@ Grace). The costs increase as the triangular numbers: 1, 3, 6, 10.</p>
 	
 <h4>Attacking</h4>
 
-<p>To determine whether an attack hits, the attacker makes an attack roll with a penalty equal to the defender's evasion. If the attack roll is greater than 10, then the attack hits.</p>
+<table class="side-text">
+	<tr>
+		<th>Optional Rule:</th></tr>
+	<tr>
+		<th>Evasion Averaging and Natural Crits</th></tr>
+	<tr>
+		<td>Rolling for evasion adds more variance to the fight, which can be exciting. It also takes a lot of rolling. To speed up the game, I reccomend treating every evasion roll as 10 and adding in Natural Crits. A Natural Crit is when you roll a natural 20 on your attacking roll. When this happens, you calculate how heavy the crit would be and you add an additional damage die over that.<br>Doing this keeps the variance reasonably high even though it standardizes it a bit less, and keeps things exciting by adding in some extra impactful moments.</td></tr></table>
+
+<p>To determine whether an attack hits, the attacker makes an attack roll opposing the defenders most recent evasion result. If the attack roll is greater, then the attack hits and they immediately roll for damage.</p>
 
 <p>Attack roll: Attacker’s melee score + 1d20</p>
+
+<p>Evasion roll: Defender’s evasion score + 1d20</p>
+
+<p>When the attack is declared, the attackers asks the current evasion score of the target and uses that for the attack.</p>
 
 <p>The melee and evasion scores are the associated skills combined with a number of modifiers. Firstly, as noted above, the skills are affected by your weapons and armour. They can also be affected by other things, such as being stunned (which gives –2 to all your skills including both melee and evasion), being overwhelmed, and various special abilities. The penalty for being overwhelmed only affects evasion. The size of the penalty depends upon how many monsters are surrounding you, and on where they are relative to the monster who is currently attacking. You get a –2 penalty for each monster that is in one of the three sides furthest away from the attacking monster, and a –1 penalty for any other adjacent monsters. This is a severe penalty, and even weak monsters can become deadly when they surround you.</p>
 
 <p>Finally, the melee score is halved if the attacker cannot see the defender and the evasion score is likewise halved if the defender cannot see the attacker. Opponents that are unwary count as not being able to see you for these purposes. If you are unfortunate enough to be fighting from within a pit or a web, both your evasion and melee scores are halved (again). If someone is completely unable to move (i.e. an enemy is asleep or the player is entranced) then their evasion score is set to –5 irrespective of any other relevant modifiers.</p>
 
 <h4>Doing Damage</h4>
+
+<table class="side-text">
+	<tr>
+		<th>Reccomended Rule:</th></tr>
+	<tr>
+		<th>Armor Averaging</th></tr>
+	<tr>
+		<td>Similar to evasion, rolling for armor adds to variance and excitement. It's also considerably more time intensive so averaging the results is reccomended, especially for the GM. You just take the average of the rolls, round up, and use that instead of rolling every turn.</td></tr></table>
+
+<p>Damage is resolved when an attacker reports the results of the roll on their next turn. When the damage is <i>resolved</i>, the target reduces the damage by the most recent protection roll.</p>
 
 <p>To determine how much damage is dealt when an attack hits, the attacker makes a damage roll and subtracts the reult of the defender's protection rolls. If the result is 0 or less, the attack does no damage. If it is greater, it does damage equal to the result.</p>
 
@@ -282,10 +318,7 @@ Grace). The costs increase as the triangular numbers: 1, 3, 6, 10.</p>
 
 <p>Extra damage dice are added in two ways. Some weapons are especially deadly against certain enemies. In such cases, they do an extra die of damage. For example, if the axe above is an axe of orc-slaying and is being used against an orc, it will do 4d9 damage instead of 3d9. Elemental brands (such as fire brand or frost brand) are similar, doing an extra die of damage against enemies that do not resist the element and 2 extra dice against enemies that are explicitly vulnerable to it (such as fire damage against a frost demon). As always, damage by your enemies works the same way. For example if a Werewolf bites you with a 2d9 poison attack, you will take 3d9 damage if you do not resist poison. Elemental attacks are thus a bit more dangerous than they first appear in the monster recall window.</p>
 
-<p>It is also possible to get extra dice via critical hits. These are awarded when the attack roll
-exceeds the evasion roll by a particularly large amount. This amount is determined by the
-weight of the weapon, with lighter weapons more likely to produce critical hits, due to their
-easier handling.</p>
+<p>It is also possible to get extra dice via critical hits. These are awarded when the attack roll exceeds the evasion roll by a particularly large amount. This amount is determined by the weight of the weapon, with lighter weapons more likely to produce critical hits, due to their easier handling.</p>
 
 <p>To get a critical hit, you need to beat the evasion roll by a certain amount. This amount is 7 points plus one point per pound of weight of your weapon. You are granted a bonus damage die for every multiple of this amount by which you exceed the required score. For example, if wielding a 3 lb longsword, you would need to beat the evasion score by 10 points to get the first bonus die, by 20 points for the second die, 30 points for the third, and so on. This sounds very difficult, but characters who concentrate on accuracy can get very large critical hits, particularly on sleeping or unwary monsters. Of course, monsters can also get critical hits upon you if you are too poor at evasion. You don’t need to memorize this formula; just bear in mind that high accuracy and light weapons can sometimes do a lot of extra damage.</p>
 
@@ -299,7 +332,7 @@ easier handling.</p>
 
 <p>The range of a bow is equal to 1.5 times the number of sides of damage you do with it. Thus, if you are doing 1d10 with your Longbow, its range will be 15 square.</p>
 
-<p>Finally, it is very dangerous to use your bow when there are enemies in melee range. Firing your bow in such a circumstance will let your guard down, allowing all adjacent enemies to immediately resolve any actions targeting you(and declare new actions).</p>
+<p>Finally, it is very dangerous to use your bow when there are enemies in melee range. Firing your bow in such a circumstance will let your guard down. When this happens, all enemies targeting you with melee have the option to either resolve their attack immediately against you and take another turn, OR they can halve your evasion roll for the attack. Enemies adjacent to you attacking other characters may also choose to switch their target to you, though they cannot resolve immediately or halve your evasion.</p>
 
 <h4>Thrown Weapons</h4>
 
@@ -494,19 +527,11 @@ count are special protection from special abilities, or magical rings and amulet
 		<li>Breath weapons (10)</li>
 		<li>Unearthly screeching (20)</li></ul></ul>
 		
-<p>Stealth is thus quite abstract: a high stealth may mean little noise made, or that you kept in
-the shadows, or that you moved in an unobtrusive way, or let the noises that did occur
-sound like the natural background noises in the dungeon.</p>
+<p>Stealth is thus quite abstract: a high stealth may mean little noise made, or that you kept in the shadows, or that you moved in an unobtrusive way, or let the noises that did occur sound like the natural background noises in the dungeon.</p>
 
-<p>If you attack a monster, or an unaware monster tries to move into the square you are on, it
-will immediately notice you.</p>
+<p>If you attack a monster, or an unaware monster tries to move into the square you are on, it will immediately notice you.</p>
 
-<p>Once a monster has noticed you, it will become unwary again if you are out of sight of it,
-and it fails its perception check to spot you by 25 points or more. In this case, they lose a
-point of alertness for each point in excess of 25 that they fail by. This is very hard to achieve
-and will typically require you to get a fair distance from the monster and close some
-intervening doors. Note that this number is reduced to 15 if you have the ability ‘Vanish’. In
-addition, there are a few other ways in which you can make monsters become unwary:</p>
+<p>Once a monster has noticed you, it will become unwary again if you are out of sight of it, and it fails its perception check to spot you by 25 points or more. In this case, they lose a point of alertness for each point in excess of 25 that they fail by. This is very hard to achieve and will typically require you to get a fair distance from the monster and close some intervening doors. Note that this number is reduced to 15 if you have the ability ‘Vanish’. In addition, there are a few other ways in which you can make monsters become unwary:</p>
 
 <ul>
 	<li>It is possible to put monsters to sleep with a Staff of Slumber or the Song of Lorien.</li>
@@ -514,9 +539,7 @@ addition, there are a few other ways in which you can make monsters become unwar
 	
 <h3>Smithing</h3>
 
-<p>As well as its many treasures, Angband has mighty forges, to arm the hosts who fight under
-Morgoth's banner. If you find one, you may be able to use such a forge to make yourself
-arms or armour, or even items of great power.</p>
+<p>As well as its many treasures, Angband has mighty forges, to arm the hosts who fight under Morgoth's banner. If you find one, you may be able to use such a forge to make yourself arms or armour, or even items of great power.</p>
 
 <p>To create an item, you need:</p>
 
@@ -527,7 +550,6 @@ arms or armour, or even items of great power.</p>
 		<li><i>Weaponsmith</i> for weapons, including bows, arrows, and digging implements</li>
 		<li><i>Armoursmith</i> for armour, including cloaks and shields</li>
 		<li><i>Jeweller</i> for amulets, rings, and light sources</li>
-		<li><i>Artistry</i> if you want to make a particularly fine weapon or piece of armour</li>
 		<li><i>Enchantment</i> if you want to add a special enchantment to a weapon, piece of armour, or light source</li></ul>
 	<li>to have enough mithril, if the item requires it,</li>
 	<li>to have a high enough Smithing skill (which depends on the item type and the bonuses you add to it),</li>
@@ -633,20 +655,16 @@ arms or armour, or even items of great power.</p>
 
 <ul>
 	<li>You regain health at three times the normal rate.</li>
+	<li>You regain voice at three times the normal rate.</li>
 	<li>You also suffer from great hunger, and will grow hungry at three times the normal rate</li></ul>
 
 <h3>Experience</h3>
 
-<p>Sil has neither classes nor levels, but it is far from the case that all characters of a given race
-are the same. As you adventure, you will accrue experience points, which you can spend in
-the character screen (accessed by pressing the @ symbol) to improve your prowess. There is
-a lot of flexibility in how you spend your experience, and this is a major part of the game.</p>
+<p>Sil has neither classes nor levels, but it is far from the case that all characters of a given race are the same. As you adventure, you will accrue experience points, which you can spend in the character screen (accessed by pressing the @ symbol) to improve your prowess. There is a lot of flexibility in how you spend your experience, and this is a major part of the game.</p>
 
 <h4><b>Sources of Experience</b></h4>
 
-<p>All characters begin the game with 5,000 experience points to allocate. There are four
-sources of further experience in the game: encountering monsters; killing monsters;
-descending deeper into the Iron Hells; identifying objects.</p>
+<p>All characters begin the game with 5,000 experience points to allocate. There are four sources of further experience in the game: encountering monsters; killing monsters; descending deeper into the Iron Hells; identifying objects.</p>
 
 <h4>Encountering monsters</h4>
 
@@ -675,13 +693,9 @@ descending deeper into the Iron Hells; identifying objects.</p>
 
 <h4><b>Spending Experience points</b></h4>
 
-<p>Your character may use the lessons learned to train any of the eight skills detailed below.
-Your first point in a skill will cost 100 experience, your second 200, your third 300, and so
-on.</p>
+<p>Your character may use the lessons learned to train any of the eight skills detailed below. Your first point in a skill will cost 100 experience, your second 200, your third 300, and so on.</p>
 
-<p>You may also learn various unique abilities. Each ability is linked to a skill, and may have
-requirements before you are able to learn it. For each skill, the first linked ability costs 500
-experience points, the second costs 1000, the third costs 1500, and so on.</p>
+<p>You may also learn various unique abilities. Each ability is linked to a skill, and may have requirements before you are able to learn it. For each skill, the first linked ability costs 500 experience points, the second costs 1000, the third costs 1500, and so on.</p>
 
 <h3>Abilities</h3>
 
