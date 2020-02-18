@@ -7,10 +7,19 @@
 	p,td,th   {color:white}
 	ul	{list-style-type:none;color:white}
 	a	{color: cyan}
-	table	{background: #111111}
+	table	{background-color: #111111;margin-top:.5em;margin-bottom.5em}
 	th	{background-color:midnightblue}
-	.side-index	{float:right;clear:both;width:15%}
-	.side-text	{float:right;clear:both;width:35%}</style></head>
+	tr:nth-of-type(2n)	{background-color: #333}
+	.side-text	{float:right;clear:both;width:40%;margin:1em}
+	.tableofmonsters	{background-color:black}
+	.tableofmonsters	tr	{background-color:black}
+	.tableofmonsters	td	{width:45%}
+	.monster	{width:95%;margin:auto;margin-top:.5em;margin-bottom:.5em}
+	.monster tr	{background-color: #111111}
+	.monster tr:nth-of-type(2n)	{background-color: #333}
+	.monster td	{width:25%}
+	.monster td:nth-of-type(2n)	{width:75%}
+</style></head>
 <body>
 
 <h1>Sil-G</h1>
@@ -1246,6 +1255,7 @@ Note that you don’t get the free attack if you cannot see the opponent or you 
 
 <p>Prerequisites: Song 1</p>
 
+<p>"You begin a strident song of mockery and scorn."</p>
 <p>Boosts your enemies’ morale and makes them aggressive.<br>
 Morale is boosted by up to +3<br>
 Enemies with morale greater than 5 become aggressive<br>
@@ -1261,6 +1271,7 @@ Noise: 12</p>
 
 <p>Prerequisites: Song 2</p>
 
+<p>"You begin a song about the rocky bones of the earth."</p>
 <p>Reveals terrain adjacent to known areas, including forges, stairs, traps and secret doors<br>.
 Squares adjacent to squares already known to you are revealed if they pass the check: Song - distance from player > 1d6<br>
 Stairs and forges do not need to be adjacent to a wall to be seen.<br>
@@ -1271,6 +1282,7 @@ Noise: 4</p>
 
 <p>Prerequisites: Song 1</p>
 
+<p>"You begin a song to the Queen of the Stars."</p>
 <p>Causes fear in intelligent enemies.<br>
 This is done through a skill check of your Song skill versus:<br>
 difficulty = enemy’s Will skill</p>
@@ -1285,6 +1297,7 @@ Noise: 8</p>
 
 <p>Prerequisites: Song 2</p>
 
+<p>"You begin a song of freedom and safe passage."</p>
 <p> Eases your passage through the dungeon.<br>
 It gives you free action (protection from entrancement and slowing) and makes existing effects of these types wear off very quickly.<br>
 It has a chance of disarming nearby traps (whether discovered or not), removing rubble, and discovering secret doors and unlocking locked or stuck doors or chests.<br>
@@ -1300,6 +1313,7 @@ Noise: 4</p>
 
 <p>Prerequisites: Song 8, Song of Silence</p>
 
+<p>"You begin a soothing song about weariness and rest."</p>
 <p>Lowers the alertness of nearby enemies, making them unwary and then ultimately putting them to sleep.<br>
 This is done through a skill check of your Song skill versus:<br>
 difficulty = enemy’s Will skill + 5</p>
@@ -1313,6 +1327,7 @@ Noise: 4</p>
 
 <p>Prerequisites: Song 9, Song of Freedom</p>
 
+<p>"You begin a song of mastery and command."</p>
 <p>Attempts to make nearby enemies completely powerless before you.<br>
 If you succeed in a skill check against an enemy, they will completely miss their turn, staying still and not attacking.<br>
 This skill check uses your Song skill against:<br>
@@ -1327,6 +1342,7 @@ Noise: 8</p>
 
 <p>Prerequisites: Song 3</p>
 
+<p>"You whisper a song of silence."</p>
 <p>Quietens sounds in the dungeon, making opponents less likely to notice you.<br>
 Lowers the noise you make by half your Song skill, effectively giving opponents a penalty of this size to their perception checks.<br>
 Also gives this penalty to opponents in hearing each other when they call for help etc.<br>
@@ -1347,6 +1363,7 @@ Noise: 4</p>
 
 <p>Prerequisites: Song 7, Song of Challenge OR Song of Staunching</p>
 
+<p>"You begin a song about the courage of great heroes past."</p>
 <p>Gives you [2d2] protection.<br>
 This protection works against all damage types, like a ring of protection.<br>
 Increases your Will skill by 1 for every point of Song skill.<br>
@@ -1357,6 +1374,7 @@ Noise: 8</p>
 
 <p>Prerequisites: Song 5, Song of Elbereth OR Song of Staunching</p>
 
+<p>"You begin a song about the Two Trees of Valinor."</p>
 <p>Increases your light radius by 1 per 5 points of Song skill.<br>
 Voice: ⅓ per turn.<br>
 Noise: 4</p>
@@ -1365,6 +1383,7 @@ Noise: 4</p>
 
 <p>Prerequisites: Song 6, Song of Elbereth OR Song of Delvings</p>
 
+<p>"You begin a song of ways guarded and impassable."</p>
 <p>Doors you close while singing this song are warded. Warded doors can be green, blue or purple.</p>
 <ul>
 	<li>Green doors are wards that take a 20 strength Will check to pass.</li>
@@ -1822,7 +1841,7 @@ count are special protection from special abilities, or magical rings and amulet
 
 <table>
 	<tr>
-		<th>Armours</th></tr>
+		<th colspan=6>Armours</th></tr>
 	<tr>
 		<th>Soft Armour</th>
 		<th>Combat Values</th>
@@ -1997,21 +2016,21 @@ count are special protection from special abilities, or magical rings and amulet
 	<tr>
 		<th>Gloves</th></tr>
 	<tr>
-		<td>Set~ of Gloves</td>
+		<td>Set of Gloves</td>
 		<td>[1d0]</td>
 		<td>1.0 lbs</td>
 		<td>1</td>
 		<td>3</td>
 		<td></td></tr>
 	<tr>
-		<td>Set~ of Gauntlets</td>
+		<td>Set of Gauntlets</td>
 		<td>(-1)[1d1]</td>
 		<td>3.0 lbs</td>
 		<td>3</td>
 		<td>35</td>
 		<td>IGNORE_FIRE</td></tr>
 	<tr>
-		<td>Set~ of Mithril Gauntlets</td>
+		<td>Set of Mithril Gauntlets</td>
 		<td>[1d1]</td>
 		<td>1.5 lbs</td>
 		<td>5</td>
@@ -2021,7 +2040,7 @@ count are special protection from special abilities, or magical rings and amulet
 
 <table>
 	<tr>
-		<th>Weapons</th></tr>
+		<th colspan=6>Weapons</th></tr>
 	<tr>
 		<th>Edged Weapons</th>
 		<th>Combat Values</th>
@@ -2190,7 +2209,7 @@ count are special protection from special abilities, or magical rings and amulet
 
 <table>
 	<tr>
-		<th>Wearables</th></tr>
+		<th colspan=5>Wearables</th></tr>
 	<tr>
 		<th>Lights</th>
 		<th>Weight</th>
@@ -2373,7 +2392,7 @@ count are special protection from special abilities, or magical rings and amulet
 
 <table>
 	<tr>
-		<th>Evokables</th></tr>
+		<th colspan=5>>Evokables</th></tr>
 	<tr>
 		<th>Staves</th>
 		<th>Weight</th>
@@ -2512,7 +2531,7 @@ count are special protection from special abilities, or magical rings and amulet
 
 <table>
 	<tr>
-		<th>Consumables</th></tr>
+		<th colspan=5>Consumables</th></tr>
 	<tr>
 		<th>Foods</th>
 		<th>Weight</th>
@@ -2725,7 +2744,7 @@ count are special protection from special abilities, or magical rings and amulet
 
 <table>
 	<tr>
-		<th>Other</th></tr>
+		<th colspan=5>Other</th></tr>
 	<tr>
 		<th>Name</th>
 		<th>Weight</th>
@@ -2770,99 +2789,188 @@ count are special protection from special abilities, or magical rings and amulet
 		<td>DAMAGED | NO_SMITHING</td></tr>
 </table>
 
-
-
-
-
 <h2>Enemies</h2>
 
+<table class=tableofmonsters>
+	<tr>
+		<th colspan=2>##### 1 #####</th></tr>
+	<tr>
+		<td>
+			<table class=monster>
+				<tr>
+					<th colspan=2>Wolf <span style="color:saddlebrown">C</span></th></tr>
+				<tr>
+					<td>Depth</td>
+					<td>1</td></tr>
+				<tr>
+					<td>Speed</td>
+					<td>3</td></tr>
+				<tr>
+					<td>Health</td>
+					<td>6d4</td></tr>
+				<tr>
+					<td>Light</td>
+					<td>0</td></tr>
+				<tr>
+					<td>Sleep</td>
+					<td>20</td></tr>
+				<tr>
+					<td>Skills</td>
+					<td>Perception +2, Stealth +3, Will +1</td></tr>
+				<tr>
+					<td>Protection</td>
+					<td>[+1,1d4]</td></tr>
+				<tr>
+					<td>BITE:WOUND</td>
+					<td>(+3,2d3)</td></tr>
+				<tr>
+					<td>Flags</td>
+					<td>FRIENDS | RAND_25 | WOLF</td></tr>
+				<tr>
+					<td colspan=2>This ragged wolf is part of the orcish packs.</td></tr>
+				</table></td>
+		<td>
+			<table class=monster>
+				<tr>
+					<th colspan=2>Tanglethorn <span style="color:Gray">& </span></th></tr>
+				<tr>
+					<td>Depth</td>
+					<td>1</td></tr>
+				<tr>
+					<td>Speed</td>
+					<td>2</td></tr>
+				<tr>
+					<td>Health</td>
+					<td>4d4</td></tr>
+				<tr>
+					<td>Light</td>
+					<td>0</td></tr>
+				<tr>
+					<td>Sleep</td>
+					<td>0</td></tr>
+				<tr>
+					<td>Skills</td>
+					<td>Perception +0, Stealth +0, Will +0</td></tr>
+				<tr>
+					<td>Protection</td>
+					<td>[-5,1d4]</td></tr>
+				<tr>
+					<td>THORN:WOUND</td>
+					<td>(+5,3d3)</td></tr>
+				<tr>
+					<td>Flags</td>
+					<td>NEVER_MOVE | MINDLESS | FRIEND | HURT_FIRE | NO_FEAR | RES_POIS | NO_CONF | NO_SLEEP | NO_CRIT</td></tr>
+				<tr>
+					<td colspan=2>'... great writhing, tangled brambles sprawled. Some had long stabbing thorns, some hooked barbs that rent like knives.'</td></tr></table></td></tr>
+	<tr>
+		<th colspan=2>##### 2 #####</th></tr>
+	<tr>
+		<td>
+			<table class=monster>
+				<tr>
+					<th colspan=2>Orc <span style="color:SandyBrown">o</span></th></tr>
+				<tr>
+					<td>Depth</td>
+					<td>2</td></tr>
+				<tr>
+					<td>Speed</td>
+					<td>2</td></tr>
+				<tr>
+					<td>Health</td>
+					<td>7d4</td></tr>
+				<tr>
+					<td>Light</td>
+					<td>0</td></tr>
+				<tr>
+					<td>Sleep</td>
+					<td>15</td></tr>
+				<tr>
+					<td>Skills</td>
+					<td>Perception +1, Stealth +1, Will +1</td></tr>
+				<tr>
+					<td>Protection</td>
+					<td>[+3,1d4]</td></tr>
+				<tr>
+					<td>HIT:HURT</td>
+					<td>(+2,2d6)</td></tr>
+				<tr>
+					<td>Flags</td>
+					<td>MALE | DROP_33 | OPEN_DOOR | ORC | HURT_LITE | SMART | FRIEND</td></tr>
+				<tr>
+					<td colspan=2>He is one of Morgoth's grim mockeries of the firstborn. He has little armour but carries a cruel blade.</td></tr></table></td>
+		<td>
+			<table class=monster>
+				<tr>
+					<th colspan=2>Grimhawk <span style="color:saddlebrown">b</span></th></tr>
+				<tr>
+					<td>Depth</td>
+					<td>2</td></tr>
+				<tr>
+					<td>Speed</td>
+					<td>4</td></tr>
+				<tr>
+					<td>Health</td>
+					<td>1d4</td></tr>
+				<tr>
+					<td>Light</td>
+					<td>0</td></tr>
+				<tr>
+					<td>Sleep</td>
+					<td>5</td></tr>
+				<tr>
+					<td>Skills</td>
+					<td>Perception +4, Stealth +4, Will+1</td></tr>
+				<tr>
+					<td>Protection</td>
+					<td>[+7]</td></tr>
+				<tr>
+					<td>PECK:HURT</td>
+					<td>(+8,1d5)</td></tr>
+				<tr>
+					<td>Flags</td>
+					<td>FLYING | RAND_50 | TERRITORIAL</td></tr>
+				<tr>
+					<td colspan=2>A hunting bird, beloved of the orcs, with iron barbs on its talons.</td></tr></table></td></tr>
+	<tr>
+		<td>
+<table class=monster>
+	<tr>
+		<th colspan=2>Mewlip <span style="color:saddlebrown">H</span></th></tr>
+	<tr>
+		<td>Depth</td>
+		<td>2</td></tr>
+	<tr>
+		<td>Speed</td>
+		<td>3</td></tr>
+	<tr>
+		<td>Health</td>
+		<td>6d4</td></tr>
+	<tr>
+		<td>Light</td>
+		<td>0</td></tr>
+	<tr>
+		<td>Sleep</td>
+		<td>5</td></tr>
+	<tr>
+		<td>Skills</td>
+		<td>Perception +2, Stealth +3, Will +1</td></tr>
+	<tr>
+		<td>Protection</td>
+		<td>[+1,2d4]</td></tr>
+	<tr>
+		<td>CLAW:WOUND</td>
+		<td>(+6,3d2)</td></tr>
+	<tr>
+		<td>Flags</td>
+		<td>DROP_100 | OPEN_DOOR | UNLOCK_DOOR | BASH_DOOR | SMART | NO_FEAR</td></tr>
+	<tr>
+		<td colspan=2>Spell:DIM, Spell Odds:25%</td></tr>
+	<tr>
+		<td colspan=2>An evil swamp dwelling creature that feeds on the bones of those who draw near.</td></tr></table></td></tr>
+			
+			</table></td></tr>
 
-<p>##### 1 #####
-
-Wolf
-Depth:1
-G:C:u
-Speed:3
-Health:6d4
-Light:0
-Max Sleep:20
-Perception:2
-Stealth:3
-Will:1
-Protection:[+1,1d4]
-B:BITE:WOUND:(+3,2d3)
-Flags:FRIENDS | RAND_25 | WOLF
-This ragged wolf is part of the orcish packs.
-
-
-Tanglethorn
-Depth:1
-G:&:s 
-Speed:2
-Health:4d4
-Light:0
-Sleep:0
-Perception:0
-Stealth:0
-Will:0
-Protection:[-5,1d4]
-B:THORN:WOUND:(+5,3d3)
-Flags:NEVER_MOVE | MINDLESS | FRIEND | HURT_FIRE | NO_FEAR | RES_POIS | NO_CONF | NO_SLEEP | NO_CRIT
-'... great writhing, tangled brambles sprawled. Some had long stabbing thorns, some hooked barbs that rent like knives.'
-
-
-##### 2 #####
-
-Orc
-Depth:2
-G:o:u
-Speed:2
-Health:7d4
-Light:0
-Sleep:15
-Perception:1
-Stealth:1
-Will:1
-Protection:[+3,1d4]
-B:HIT:HURT:(+2,2d6)
-Flags:MALE | DROP_33 | OPEN_DOOR | ORC | HURT_LITE | SMART | FRIEND
-He is one of Morgoth's grim mockeries of the firstborn. He has little armour but carries a cruel blade.
-
-
-Grimhawk
-Depth:2
-G:b:u
-Speed:4
-Health:1d4
-Light:0
-Sleep:5
-Perception:4
-Stealth:4
-Will:1
-Protection:[+7]
-B:PECK:HURT:(+8,1d5)
-Flags:FLYING | RAND_50 | TERRITORIAL
-A hunting bird, beloved of the orcs, with iron barbs on its talons.
-
-
-Mewlip
-Depth:2
-G:H:u
-Speed:3
-Health:6d4
-Light:0
-Sleep:5
-Perception:2
-Stealth:3
-Will:1
-Protection:[+1,2d4]
-B:CLAW:WOUND:(+6,3d2)
-Flags:DROP_100 | OPEN_DOOR | UNLOCK_DOOR | BASH_DOOR | SMART | NO_FEAR
-Spell Odds:25%
-Spell:DIM
-An evil swamp dwelling creature that feeds on the bones of those who draw near.
-
-
+<!--
 ##### 3 #####
 
 Orc scout
@@ -3921,48 +4029,56 @@ Known as the giant of summer and the south, he towers above you like a great tre
 Cave troll
 Depth:15
 G:T:u
-I:2:18d4:0
-A:15:4:0:4
-P:[+11,2d4]
+Speed:2
+Health:18d4
+Light:0
+Sleep:15
+Perception:4
+Stealth:0
+Will:4
+Protection:[+11,2d4]
 B:HIT:BATTER:(+13,4d7)
 B:BITE:WOUND:(+12,2d11)
-F:MALE | FRIEND | DROP_33 | REGENERATE | OPEN_DOOR
-F:BASH_DOOR | TROLL | HURT_LITE | SMART | NO_FEAR
-F:KNOCK_BACK
-D:A great brute of a troll, it seems to have come
-D: from the depths of the very earth.
+Flags:MALE | FRIEND | DROP_33 | REGENERATE | OPEN_DOOR | BASH_DOOR | TROLL | HURT_LITE | SMART | NO_FEAR | KNOCK_BACK
+A great brute of a troll, it seems to have come from the depths of the very earth.
 
 
 Emerald serpent
 Depth:15
 G:s:G
-I:2:8d4:0
-A:15:7:3:9
-P:[+11,5d4]
+Speed:2
+Health:8d4
+Light:0
+Sleep:15
+Perception:7
+Stealth:3
+Will:9
+Protection:[+11,5d4]
 B:BITE:POISON:(+15,2d6)
-F:SERPENT | ATTR_MULTI | RAND_25
-F:RES_POIS
-S:SPELL_PCT_20 | POW_6
-S:BRTH_POIS
-D:A great serpent with scales of gleaming emerald.
-D: Noxious vapours surround it.
+Flags:SERPENT | ATTR_MULTI | RAND_25 | RES_POIS
+Spell Odds:SPELL_PCT_20
+Spell Power:6
+Spedd:BRTH_POIS
+A great serpent with scales of gleaming emerald. Noxious vapours surround it.
 
 
 # Can't move from idx 153, used by monster Song of Oaths
 Oathwraith
 Depth:15
 G:W:D
-I:2:12d4:0
-A:10:11:10:10
-P:[+14,3d4]
+Speed:2
+Health:12d4
+Light:0
+Sleep:10
+Perception:11
+Stealth:10
+Will:10
+Protection:[+14,3d4]
 B:TOUCH:HUNGER:(+19)
-F:UNDEAD | DROP_100 | RES_COLD | SMART | HURT_LITE
-F:NO_FEAR | RES_POIS | NO_CONF | NO_SLEEP | RES_CRIT
-F:OPEN_DOOR
-S:SPELL_PCT_15
-S:HOLD
-D:A figure that seems made of void, its strangely human shape is cloaked
-D: in shadow.  It reaches out at you.
+Flags:UNDEAD | DROP_100 | RES_COLD | SMART | HURT_LITE | NO_FEAR | RES_POIS | NO_CONF | NO_SLEEP | RES_CRIT | OPEN_DOOR
+Spell Odds:15
+Spell:HOLD
+A figure that seems made of void, its strangely human shape is cloaked in shadow.  It reaches out at you.
 
 
 
@@ -3971,17 +4087,17 @@ D: in shadow.  It reaches out at you.
 Cat warrior
 Depth:15
 G:f:U
-I:3:8d4:0
-A:20:10:10:5
-P:[+15,1d4]
+Speed:3
+Health:8d4
+Light:0
+Sleep:20
+Perception:10
+Stealth:10
+Will:5
+Protection:[+15,1d4]
 B:CLAW:WOUND:(+18,1d9)
-F:FRIENDS | OPEN_DOOR | UNLOCK_DOOR | BASH_DOOR | SMART
-F:DROP_33
-F:EXCHANGE_PLACES
-D:It is as though a great cat stood like a man.
-D: You cannot tell whether its long scything claws
-D: could be natural. It moves with astonishing
-D: speed and agility.
+Flags:FRIENDS | OPEN_DOOR | UNLOCK_DOOR | BASH_DOOR | SMART | DROP_33 | EXCHANGE_PLACES
+It is as though a great cat stood like a man. You cannot tell whether its long scything claws could be natural. It moves with astonishing speed and agility.
 
 
 ##### 16 #####
@@ -3990,50 +4106,52 @@ D: speed and agility.
 Amethyst serpent
 Depth:16
 G:s:v
-I:2:8d4:-2
-A:15:7:3:9
-P:[+12,5d4]
+Speed:2
+Health:8d4
+Light:-2
+Sleep:15
+Perception:7
+Stealth:3
+Will:9
+Protection:[+12,5d4]
 B:BITE:DARK:(+16,2d6)
-F:SERPENT | RAND_25
-F:HURT_LITE | ATTR_MULTI
-S:SPELL_PCT_20 | POW_6
-S:BRTH_DARK
-D:A great serpent with scales of darkly glinting amethyst.
-D: Shadows darken as it approaches.
+Flags:SERPENT | RAND_25 | HURT_LITE | ATTR_MULTI
+Spell Odds:20
+Spell Power:6
+Spell:BRTH_DARK
+A great serpent with scales of darkly glinting amethyst. Shadows darken as it approaches.
 
 
 Kemenrauko
 Depth:16
 G:R:s
-I:2:10d4:0
-A:10:6:0:14
-P:[+12,4d4]
+Speed:2
+Health:10d4
+Light:0
+Sleep:10
+Perception:6
+Stealth:0
+Will:14
+Protection:[+12,4d4]
 B:HIT:SHATTER:(+11,4d8)
-F:BASH_DOOR | TUNNEL_WALL | STONE | RAUKO | SMART
-F:RES_COLD | RES_FIRE
-F:RES_POIS | RES_CRIT
-D:It seems the very stone from which Angband is hewn
-D: now opposes you.
+Flags:BASH_DOOR | TUNNEL_WALL | STONE | RAUKO | SMART | RES_COLD | RES_FIRE | RES_POIS | RES_CRIT
+It seems the very stone from which Angband is hewn now opposes you.
 
 
 Grotesque
 Depth:16
 G:H:W
-I:4:10d4:0
-A:0:10:10:10
-P:[-5,8d4]
+Speed:4
+Health:10d4
+Light:0
+Sleep:0
+Perception:10
+Stealth:10
+Will:10
+Protection:[-5,8d4]
 B:CLAW:WOUND:(+16,3d9)
-F:HIDDEN_MOVE | RES_COLD | RES_FIRE | STONE
-F:OPEN_DOOR | BASH_DOOR | MINDLESS
-F:NO_FEAR | RES_POIS | NO_CONF | NO_SLEEP | NO_CRIT
-#D:A marble statue of a nightmare creature with claws like blades.
-D:'Huge shapes there stood like carven trolls
-D: enormous hewn of blasted rock
-D: to forms that mortal likeness mock;
-D: monstrous and menacing, entombed,
-D: at every turn they silent loomed
-D: in fitful glares that leaped and died.'
-
+Flags:HIDDEN_MOVE | RES_COLD | RES_FIRE | STONE | OPEN_DOOR | BASH_DOOR | MINDLESS | NO_FEAR | RES_POIS | NO_CONF | NO_SLEEP | NO_CRIT
+A marble statue of a nightmare creature with claws like blades. 'Huge shapes there stood like carven trolls enormous hewn of blasted rock to forms that mortal likeness mock; monstrous and menacing, entombed, at every turn they silent loomed in fitful glares that leaped and died.'
 
 
 # need to leave Young cold-drake at location 164
@@ -4041,34 +4159,39 @@ D: in fitful glares that leaped and died.'
 Young cold-drake
 Depth:16
 G:d:w
-I:2:30d4:0
-A:30:8:2:13
-P:[+11,2d4]
+Speed:2
+Health:30d4
+Light:0
+Sleep:30
+Perception:8
+Stealth:2
+Will:13
+Protection:[+11,2d4]
 B:CLAW:HURT:(+16,3d11)
 B:BITE:WOUND:(+12,2d21)
-F:DROP_1D2 | DROP_GOOD
-F:SMART | TERRITORIAL
-F:BASH_DOOR | DRAGON
-S:SPELL_PCT_20
-S:CONF | SCARE | HOLD
-D:Not all dragons have the gift of fire, but it is hardly
-D: needed -- the lashing tail, the great claws, the sharp
-D: teeth, and the mesmerising eyes...
+Flags:DROP_1D2 | DROP_GOOD | SMART | TERRITORIAL | BASH_DOOR | DRAGON
+Spell:20
+Spells:CONF | SCARE | HOLD
+Not all dragons have the gift of fire, but it is hardly needed -- the lashing tail, the great claws, the sharp teeth, and the mesmerising eyes...
 
 
 Umuiyan, the Doorkeeper
 Depth:16
 G:f:y
-I:3:12d4:0
-A:20:13:10:8
-P:[+20,1d4]
+Speed:3
+Health:12d4
+Light:0
+Sleep:20
+Perception:13
+Stealth:10
+Will:8
+Protection:[+20,1d4]
 B:CLAW:WOUND:(+25,1d11)
-F:ESCORT | UNIQUE | MALE | OPEN_DOOR | BASH_DOOR | SMART
-F:DROP_100 | UNLOCK_DOOR | DROP_GOOD
-S:SPELL_PCT_50 | POW_21
-S:ARROW2
-D:This cat seems older than most, and more sly.
-D: He has long guarded the entrance to the fortress of Tevildo.
+Flags:ESCORT | UNIQUE | MALE | OPEN_DOOR | BASH_DOOR | SMART | DROP_100 | UNLOCK_DOOR | DROP_GOOD
+Spell Odds:50
+Spell Power:21
+Spell:ARROW2
+This cat seems older than most, and more sly. He has long guarded the entrance to the fortress of Tevildo.
 
 
 # (Belegwath = mighty shadow)
@@ -4076,18 +4199,18 @@ D: He has long guarded the entrance to the fortress of Tevildo.
 Belegwath, Balrog of Shadow
 Depth:16
 G:R:v
-I:2:36d4:-5
-A:5:9:1:15
-P:[+17,4d4]
+Speed:2
+Health:36d4
+Light:-5
+Sleep:5
+Perception:9
+Stealth:1
+Will:15
+Protection:[+17,4d4]
 B:HIT:FIRE:(+22,2d14)
 B:WHIP:DISARM:(+18,3d8)
-F:UNIQUE | MALE | SMART | GLOW
-F:DROP_1D2 | DROP_100 | DROP_GREAT
-F:NO_FEAR | BASH_DOOR
-F:RAUKO | RES_FIRE | HURT_COLD
-D:A fell fiery figure, great wings of shadow unfolding around
-D: him. For many of the Children of Iluvatar, this has been their
-D: final vision.
+Flags:UNIQUE | MALE | SMART | GLOW | DROP_1D2 | DROP_100 | DROP_GREAT | NO_FEAR | BASH_DOOR | RAUKO | RES_FIRE | HURT_COLD
+A fell fiery figure, great wings of shadow unfolding around him. For many of the Children of Iluvatar, this has been their final vision.
 
 
 
@@ -4097,59 +4220,70 @@ D: final vision.
 Spider of Gorgoroth
 Depth:17
 G:M:r
-I:2:16d4:-1
-A:15:8:3:11
-P:[+14,1d4]
+Speed:2
+Health:16d4
+Light:-1
+Sleep:15
+Perception:8
+Stealth:3
+Will:11
+Protection:[+14,1d4]
 B:BITE:ENTRANCE:(+14,2d13)
-F:BASH_DOOR | SPIDER | HURT_LITE | RES_POIS | SMART
-F:TERRITORIAL
-D:This great spider was one of the brood laid by the
-D: Unlight, Ungoliant, in the mountains of Ered Gorgoroth.
-D: Some have made their way North to Angband, and crept down
-D: to the very darkest parts of the stronghold.
+Flags:BASH_DOOR | SPIDER | HURT_LITE | RES_POIS | SMART | TERRITORIAL
+This great spider was one of the brood laid by the Unlight, Ungoliant, in the mountains of Ered Gorgoroth. Some have made their way North to Angband, and crept down to the very darkest parts of the stronghold.
 
 
 Greater werewolf
 Depth:17
 G:C:D1
-I:3:14d4:0
-A:15:11:5:10
-P:[+18,2d4]
+Speed:3
+Health:14d4
+Light:0
+Sleep:15
+Perception:11
+Stealth:5
+Will:10
+Protection:[+18,2d4]
 B:CLAW:WOUND:(+20,3d7)
 B:BITE:POISON:(+17,2d11)
-F:RAND_25 | OPEN_DOOR | BASH_DOOR
-F:WOLF | FRIEND | SMART
-D:It is a huge wolf with eyes that glow with manly intelligence.
+Flags:RAND_25 | OPEN_DOOR | BASH_DOOR : WOLF | FRIEND | SMART
+It is a huge wolf with eyes that glow with manly intelligence.
 
 
 Adamant serpent
 Depth:17
 G:s:w
-I:2:8d4:0
-A:15:8:3:9
-P:[+13,5d4]
+Speed:2
+Health:8d4
+Light:0
+Sleep:15
+Perception:8
+Stealth:3
+Will:9
+Protection:[+13,5d4]
 B:BITE:WOUND:(+17,3d6)
-F:SERPENT | ATTR_MULTI | RAND_25
-F:RES_FIRE | RES_COLD | RES_POIS
-S:SPELL_PCT_30 | POW_6
-S:BRTH_FIRE | BRTH_COLD | BRTH_POIS | BRTH_DARK
-D:A great serpent with scales of gleaming diamond.
-D: It sparkles with prismatic hues.
+Flags:SERPENT | ATTR_MULTI | RAND_25 | RES_FIRE | RES_COLD | RES_POIS
+Spell Odds:30
+Spell Power:6
+Spell:BRTH_FIRE | BRTH_COLD | BRTH_POIS | BRTH_DARK
+A great serpent with scales of gleaming diamond. It sparkles with prismatic hues.
 
 
 Lesser vampire
 Depth:17
 G:v:s
-I:3:8d4:0
-A:20:9:7:11
-P:[+21,1d4]
+Speed:3
+Health:8d4
+Light:0
+Sleep:20
+Perception:9
+Stealth:7
+Will:11
+Protection:[+21,1d4]
 B:CLAW:WOUND:(+22,3d5)
 B:BITE:LOSE_CON:(+17,2d7)
-F:FLYING | RAND_25 | OPEN_DOOR | UNLOCK_DOOR
-F:HURT_LITE | SMART
-D:It flits quickly back and forth, like a great bat,
-D: although surely no bat could harbour so much malice
-D: behind its eyes.
+Flags:FLYING | RAND_25 | OPEN_DOOR | UNLOCK_DOOR | HURT_LITE | SMART
+It flits quickly back and forth, like a great bat, although surely no bat could harbour so much malice behind its eyes.
 
 
 # need to leave Cat assassin at location 175
@@ -4157,34 +4291,39 @@ D: behind its eyes.
 Cat assassin
 Depth:17
 G:f:D
-I:3:8d4:0
-A:5:12:15:5
-P:[+19,1d4]
+Speed:3
+Health:8d4
+Light:0
+Sleep:5
+Perception:12
+Stealth:15
+Will:5
+Protection:[+19,1d4]
 B:CLAW:WOUND:(+20,1d11)
-F:INVISIBLE | OPEN_DOOR | UNLOCK_DOOR | BASH_DOOR | SMART
-F:DROP_100 | FRIEND
-S:SPELL_PCT_50 | POW_23
-S:ARROW1
-D:Slinking in the shadows, this jet-black cat is hard
-D: to discern even as it fires its cruel bow.
+Flags:INVISIBLE | OPEN_DOOR | UNLOCK_DOOR | BASH_DOOR | SMART | DROP_100 | FRIEND
+Spell Odds:50
+Spell Power:23
+Spell:ARROW1
+Slinking in the shadows, this jet-black cat is hard to discern even as it fires its cruel bow.
 
 
 Scatha the Worm
 Depth:17
 G:d:B
-I:2:35d4:0
-A:30:9:2:18
-P:[+14,2d4]
+Speed:2
+Health:35d4
+Light:0
+Sleep:30
+Perception:9
+Stealth:2
+Will:18
+Protection:[+14,2d4]
 B:CLAW:HURT:(+20,3d11)
 B:BITE:WOUND:(+17,2d21)
-F:UNIQUE | MALE | TERRITORIAL
-F:DROP_2D2 | DROP_GOOD | SMART
-F:BASH_DOOR | DRAGON
-S:SPELL_PCT_15
-S:CONF | SCARE | HOLD
-D:A long and sinuous worm, coiling on the floor.
-D: His claws are sharp, and by some force,  cunning or
-D: treachery his hoard is large for a young worm.
+Flags:UNIQUE | MALE | TERRITORIAL | DROP_2D2 | DROP_GOOD | SMART | BASH_DOOR | DRAGON
+Spell Odds:15
+Spells:CONF | SCARE | HOLD
+A long and sinuous worm, coiling on the floor. His claws are sharp, and by some force,  cunning or treachery his hoard is large for a young worm.
 
 
 # only ever appears in the escort of Tevildo
@@ -4192,14 +4331,17 @@ D: treachery his hoard is large for a young worm.
 Oikeroi, Guard of Tevildo
 Depth:17
 G:f:o
-I:3:18d4:0
-A:15:13:10:9
-P:[+21,1d4]
+Speed:3
+Health:18d4
+Light:0
+Sleep:15
+Perception:13
+Stealth:10
+Will:9
+Protection:[+21,1d4]
 B:CLAW:WOUND:(+28,1d11)
-F:UNIQUE | MALE | OPEN_DOOR | BASH_DOOR | SMART
-F:UNLOCK_DOOR | UNIQUE_FRIEND | DROP_1D2 | DROP_GOOD
-D:A fierce and warlike cat, thane of Tevildo
-D: and ever at his side.
+Flags:UNIQUE | MALE | OPEN_DOOR | BASH_DOOR | SMART | UNLOCK_DOOR | UNIQUE_FRIEND | DROP_1D2 | DROP_GOOD
+A fierce and warlike cat, thane of Tevildo and ever at his side.
 
 
 ##### 18 #####
@@ -4210,85 +4352,87 @@ D: and ever at his side.
 Young fire-drake
 Depth:18
 G:d:r
-I:2:30d4:0
-A:30:9:2:16
-P:[+13,2d4]
+Speed:2
+Health:30d4
+Light:0
+Sleep:30
+Perception:9
+Stealth:2
+Will:16
+Protection:[+13,2d4]
 B:CLAW:HURT:(+18,3d11)
 B:BITE:FIRE:(+14,2d21)
-F:DROP_1D2 | DROP_GOOD
-F:SMART | TERRITORIAL
-F:BASH_DOOR | DRAGON
-F:RES_FIRE | HURT_COLD
+Flags:DROP_1D2 | DROP_GOOD | SMART | TERRITORIAL | BASH_DOOR | DRAGON | RES_FIRE | HURT_COLD
 S:SPELL_PCT_30 | POW_16
 S:BRTH_FIRE | SCARE
-D:...no feet he heard, though the earth quaked.
-D: when the young dragon his thirst slaked.
-D: and the stream smoked at his dark door.
-D: The flames hissed on the dank floor,
-D: and he died alone in the red fire;
-D: his bones were ashes in the hot mire.
+...no feet he heard, though the earth quaked. when the young dragon his thirst slaked. and the stream smoked at his dark door. The flames hissed on the dank floor, and he died alone in the red fire; his bones were ashes in the hot mire.
 
 
 Darting horror
 Depth:18
 G:H:r
-I:4:6d4:0
-A:10:14:3:14
-P:[+20,2d4]
+Speed:4
+Health:6d4
+Light:0
+Sleep:10
+Perception:14
+Stealth:3
+Will:14
+Protection:[+20,2d4]
 B:BITE:HALLU:(+22,2d9)
-F:BASH_DOOR | RAND_25 | NO_FEAR
-S:SPELL_PCT_15
+Flags:BASH_DOOR | RAND_25 | NO_FEAR
+Spell Odds:15
 S:SCARE
-D:No larger than a wolf, but much swifter,
-D: it is hard to comprehend what evil thought
-D: first brought this into the world.
-D: You would prefer not to see it any closer.
+No larger than a wolf, but much swifter, it is hard to comprehend what evil thought first brought this into the world. You would prefer not to see it any closer.
 
 
 Unmourned
 Depth:18
-G:W:v1
-I:1:12d4:0
-A:10:13:10:13
-P:[+17,3d4]
+G:W:v
+Speed:1
+Health:12d4
+Light:0
+Sleep:10
+Perception:13
+Stealth:10
+Will:13
+Protection:[+17,3d4]
 B:TOUCH:HUNGER:(+22)
-F:UNDEAD | PASS_WALL | RES_COLD | SMART | FRIENDS
-F:NO_FEAR | RES_POIS | NO_CONF | NO_SLEEP | RES_CRIT
-F:HURT_LITE
-D:The shades of elves and men who have rotted away,
-D: forgotten, in the deep dungeons of Angband.
+Flags:UNDEAD | PASS_WALL | RES_COLD | SMART | FRIENDS | NO_FEAR | RES_POIS | NO_CONF | NO_SLEEP | RES_CRIT | HURT_LITE
+The shades of elves and men who have rotted away, forgotten, in the deep dungeons of Angband.
 
 
 Ururauko
 Depth:18
 G:R:R
-I:2:4d4:3
-A:10:8:2:14
-P:[+15,2d4]
+Speed:2
+Health:4d4
+Light:3
+Sleep:10
+Perception:8
+Stealth:2
+Will:14
+Protection:[+15,2d4]
 B:HIT:FIRE:(+26,4d10)
-F:BASH_DOOR | SMART
-F:RAUKO | RES_FIRE | HURT_COLD
-D:A form of pure flame, it is bright to look at and
-D: hard to tell the shape. A lesser relative, perhaps,
-D: of Arien, who guides the Sun, it was one of those who
-D: flocked to the banner of Melkor when the World was
-D: yet young.
+Flags:BASH_DOOR | SMART | RAUKO | RES_FIRE | HURT_COLD
+A form of pure flame, it is bright to look at and hard to tell the shape. A lesser relative, perhaps, of Arien, who guides the Sun, it was one of those who flocked to the banner of Melkor when the World was yet young.
 
 
 
 Tevildo, Prince of Cats
 Depth:18
 G:f:u
-I:3:14d4:0
-A:15:14:10:10
-P:[+22,1d4]
+Speed:3
+Health:14d4
+Light:0
+Sleep:15
+Perception:14
+Stealth:10
+Will:10
+Protection:[+22,1d4]
 B:CLAW:WOUND:(+26,1d13)
-F:UNIQUE | MALE | OPEN_DOOR | BASH_DOOR | SMART
-F:UNLOCK_DOOR | UNIQUE_FRIEND | DROP_1D2 | DROP_GREAT
-F:CRUEL_BLOW
-D:Renowned for his cruelty even among the cruel
-D: cat-people, is it a wonder that this fierce
-D: warrior is royalty?
+Flags:UNIQUE | MALE | OPEN_DOOR | BASH_DOOR | SMART | UNLOCK_DOOR | UNIQUE_FRIEND | DROP_1D2 | DROP_GREAT | CRUEL_BLOW
+Renowned for his cruelty even among the cruel cat-people, is it a wonder that this fierce warrior is royalty?
 
 
 # (Turkano = powerful commander)
@@ -4296,19 +4440,18 @@ D: warrior is royalty?
 Turkano, Balrog of the Hosts
 Depth:18
 G:R:b
-I:2:40d4:-3
-A:5:9:1:19
-P:[+19,5d4]
+Speed:2
+Health:40d4
+Light:-3
+Sleep:5
+Perception:9
+Stealth:1
+Will:19
+Protection:[+19,5d4]
 B:HIT:FIRE:(+24,2d16)
 B:WHIP:DISARM:(+20,3d8)
-F:UNIQUE | MALE | SMART | GLOW
-F:DROP_1D2 | DROP_100 | DROP_GREAT
-F:ESCORTS | NO_FEAR | BASH_DOOR
-F:RAUKO | RES_FIRE | HURT_COLD
-D:All of the Balrogs are held among the mighty of Angband and
-D: obeyed swiftly. But Turkano is a true battle-commander, 
-D: leading a host of Raukar to bring
-D: glory after glory for his fell master.
+Flags:UNIQUE | MALE | SMART | GLOW | DROP_1D2 | DROP_100 | DROP_GREAT | ESCORTS | NO_FEAR | BASH_DOOR | RAUKO | RES_FIRE | HURT_COLD
+All of the Balrogs are held among the mighty of Angband and obeyed swiftly. But Turkano is a true battle-commander, leading a host of Raukar to bring glory after glory for his fell master.
 
 
 ##### 19 #####
@@ -4915,7 +5058,9 @@ D: his jaws were gaping like a tomb,
 D: his teeth were bare, his tongue aflame;
 D: aroused he watched that no one came,
 D: no flitting shade nor hunted shape,
-D: seeking from Angband to escape.</p>
+D: seeking from Angband to escape.
+-->
+</table>
 
 </html>
 </body>
