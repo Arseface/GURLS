@@ -1,5 +1,25 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+	body {background-color:black;max-width: 1080px;margin: auto}
+	h1,h2,h3,h4,h5   {color:silver}
+	p,td,th   {color:white}
+	ul	{list-style-type:none;color:white}
+	a	{color: cyan}
+	table	{background-color: #111111;margin-top:.5em;margin-bottom.5em}
+	th	{background-color:midnightblue}
+	tr:nth-of-type(2n)	{background-color: #333}
+	.side-text	{float:right;clear:both;width:40%;margin:1em}
+	.tableofmonsters	{background-color:black}
+	.tableofmonsters	tr	{background-color:black}
+	.tableofmonsters	td	{width:45%}
+	.monster	{width:95%;margin:auto;margin-top:.5em;margin-bottom:.5em}
+	.monster tr	{background-color: #111111}
+	.monster tr:nth-of-type(2n)	{background-color: #333}
+	.monster td	{width:25%}
+	.monster td:nth-of-type(2n)	{width:75%}
+</style></head>
 <body>
 
 <h1>Fantasy GURLS: Enneazatton</h1>
@@ -9,6 +29,128 @@
 <h3>Introduction</h3>
 
 <p>Enneazatton is the default fantasy setting and system for GURLS. Thematically it's based around a magic system grounded in the idea that the elements exist as separate spacial dimentions that can be percieved and moved along. Magical effects require an amount of energy or force behind them to create an effect, and generally speaking you can't move anything with magic that you couldn't move normally. Mechanically it's largely inspired by both Sil and Star Wars: Saga Edition.</p>
+
+<h2>Attributes</h2>
+
+<p>Player Characters are largely defined by their attributes. All stats start at 1 and you may spend 19 points to increase them. The costs increase as the triangular numbers: 1, 3, 6, 10, and 15.</p>
+
+<p>If an effect would reduce at stat to 0 you suffer severe penalties. Lost stat points take 1 day to restore per point that it is being raised to. Negative values are treated as 0 for effect and recovery, though they can stack to make recovery take longer.</p>
+
+<h3>Dexterity</h3>
+
+<ul>
+	<li>Dexterity measures your physical precision.</li>
+	<li>It is the attribute used for skills involving finesse.</li>
+	<li>All physical combat skills use dexterity as their attribute.</li>
+	<li>At 0 dexterity you become paralysed and cannot move.</li></ul>
+
+<h3>Strength</h3>
+
+<ul>
+	<li>Strength measures your physical power.</li>
+	<li>It is the attribute used for skills involving might.</li>
+	<li>It adds sides to physical damage rolls in combat.</li>
+	<li>At 0 strength you become unable to stand or lift anything heavier than 1 lb.</li></ul>
+	
+<h3>Constitution</h3>
+
+<ul>
+	<li>Constitution measures your health and endurace.</li>
+	<li>Consitution is the attribute for skills involving fortitude.</li>
+	<li>Each point gives you 10 HP.</li>
+	<li>At 0 constitution you fall unconscious.</li></ul>
+
+<h3>Intelligence</h3>
+
+<ul>
+	<li>Intelligence measures your ability to think quickly.</li>
+	<li>It is the attribute used for skills involving thinking and memory.</li>
+	<li>All spellcasting skills use this attribute.</li>
+	<li>At 0 intelligence you lose the ability to use any of your skills and are untrained in everything.</li></ul>
+
+<h3>Charisma</h3>
+
+<ul>
+	<li>Charisma measures the force of your personally.</li>
+	<li>It is the attribute used for skills involving social interactions.</li>
+	<li>It increases the effects of most spells.</li>
+	<li>At 0 charisma you lose the ability to communicate and cannot cast spells.</li></ul>
+
+<h3>Wisdom</h3>
+
+<ul>
+	<li>Wisdome measures your intuition.</li>
+	<li>It is the attribute used for skills involving perceptiveness and your unconscious.</li>
+	<li>You may cast a number of spells equal to your Wisdom per day.</li>
+	<li>At 0 wisdom you zone out and do not react to anything.</li></ul>
+
+<h2>Race</h2>
+
+<p>I had considered only having humans be playable in Enneazatton, but I wanted Formians so bad I decided to create other races to fill the world out as well.</p>
+
+<h3>Human</h3>
+
+<ul>
+	<li>Humans recieve no bonuses or penalties to any attributes</li>
+	<li>Quick learners - Humans start with one additional skill of their choice</li>
+	<li>Integrated - Humans may learn an additional language of their choice on character creation, and learn an additional language any time they take a new language proficiency</li>
+	<li>Adrenaline - Human adrenal glands allow them to enter a state of heightened awareness in times of great stress.</li>
+	<ul>
+		<li>A human may spend a cast to feel an adrenaline rush. The rush lasts for 10 seconds.</li>
+		<li>During the rush, all actions take 1 second shorter(to a minimum of 1 second), and all attributes are considered 1 higher.</li>
+		<ul>
+			Including constitution, gain 10 temporary hit points, lose 10 when this ends. This loss of hit points cannot cause an injury.</ul>
+		<li>If adrenaline is used to overcast, instead take a stat drop to EVERY attribute.</li></ul></ul>
+
+<h3>Jelnian</h3>
+
+<ul>
+	<li>Jelnians have +1 intelligence -1 constitution. Their long lives give them a wealth of experience to draw from, but the consistency of their bodies leaves them frail.</li>
+	<li>Water Sensisitve - All Jelnians can see along the plane of water from birth and have a +1 bonus water spells and spell effects.</li>
+	<li>Jelnians speak Common and Aquatic. Aquatic is notable for being the only verbal skill that can be transmitted underwater.</li>
+	<li>Regeneration - The amorphous nature of their bodies allows them to heal quickly.</li>
+	<ul>
+		<li>A Jelnian may spend a cast to regenerate their body.</li>
+		<li>For 10 seconds, they heal 1 HP per point of charisma.</li>
+		<li>It takes 3 days worth of calories to fuel this, and doing so repeatedly will cause them to starve.</li></ul>
+	</ul>
+
+<h3>Formian</h3>
+
+<ul>
+	<li>Formians have +1 constitution and -1 charisma. Their hard bodies are very resilient, but they find it hard to relate to those who don't share a hive.</li>
+	<li>Earth Sensitive - All formicids can see along the plane of earth from birth and recieve a +1 bonus to earth spells and effects.</li>
+	<li>Formicids speak common and use can communicate via tremorsense with their antennae.</li>
+	<li>Formicids can only see up to 5 ft away. They have tremorsense up to 30 ft, and can extend their perception by communicating via tremorsense, sharing their perceptions with other formicids.</li>
+	<li>Tunnel - Formicids know the earth very, very well and are able to force tunnels to appear in the earth by pushing it away.</li>
+	<ul>
+		<li>A Formicid may create a hole in the earth with a diameter of 3ft + 1 ft per point of charisma and a depth of 5 ft per point of charisma.</li>
+		<li>Watch out for cave-ins.</li></ul>
+	</ul>
+	
+<h3>Gruul</h3>
+
+<ul>
+	<li>Gruul have +1 strength and -1 dexterity. Trees are strong, but are stiff and slow to move.</li>
+	<li>Fire Sensitive - All Grull can see along the plane of fire from birth and recieve a +1 bonus to earth spells and effects.</li>
+	<li>Grull speak common. They may also speak to plants, though a plants perception is usually very limited.</li>
+	<li>Ignite - Grull can unleash the energy of their bodies in a fiery explosion.</li>
+	<ul>
+		<li>A grull can set itself on fire, dealing damage to anything it touches, or that touches it for 10 seconds.</li>
+		<li>During that time, any weapon they hold is considered fire branded and they add their charisma modifier to damage as well as strength.</li>
+		<li>Any creature that attacks or touches an inflamed Grull in melee takes 1 point of damage per point of charisma the Grull has.</li>
+		<li>The grull takes 1 point of damage per second, and may end the fire at any time.</li></ul></ul>
+		
+<h3>Goat things I forget the name of</h3>
+
+<ul>
+	<li>Goats have +1 dexterity and -1 wisdom. Goats are nimble but lacking in intuition.</li>
+	<li>Air Sensitive - All Grull can see along the plane of air from birth and recieve a +1 bonus to earth spells and effects.</li>
+	<li>Goats speak common and goat. They're very good at controlling their volume, and are all passable ventiloquists.</li>
+	<li>Horn Blast - goats may empty the entire capacity of their lungs through their horns. Very, very forcefully.</li>
+	<ul>
+		<li>I have the effects written somewhere I need to find it.</li></ul>
+	</ul>
 
 </html>
 </body>
