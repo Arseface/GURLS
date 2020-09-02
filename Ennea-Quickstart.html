@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body {background-color:black;max-width: 720px;margin: auto}
+	h1,h2,h3,h4,h5   {color:silver}
+	p,td,th   {color:white}
+	ul	{list-style-type:none;color:white}
+	a	{color: cyan}
+	table	{background-color: #111111;margin-top:.5em;margin-bottom.5em}
+	th	{background-color:midnightblue}
+	tr:nth-of-type(2n)	{background-color: #333}
+	.side-text	{float:right;clear:both;width:40%;margin:1em}
+	.tableofmonsters	{background-color:black}
+	.tableofmonsters	tr	{background-color:black}
+	.tableofmonsters	td	{width:45%}
+	.monster	{width:95%;margin:auto;margin-top:.5em;margin-bottom:.5em}
+	.monster tr	{background-color: #111111}
+	.monster tr:nth-of-type(2n)	{background-color: #333}
+	.monster td	{width:25%}
+	.monster td:nth-of-type(2n)	{width:75%}
+</style></head>
+<body>
+
+<h2>Intro</h2>
+
+<p>This is a quickstart guide to playing Enneazatton. An RPG using the GURLS system set in a fantasy world of elemental magic. The document will be short on description to get you up and running as soon as possible. When in doubt, do what makes sense and don't sweat the small stuff.</p>
+
+<p>Attributes</p>
+
+<p>Attributes make up the core of a character, and in Enneazatton there are 8 primary attributes that range in scores from 2-5. Primary attributes generally act as a target to roll under, so higher is always better. Sometimes they give advantages to certain outcomes or have other effects, but the main goal is you want to roll at or under that number on a d6. The stats are Strength(Str), Agility(Agi), Dexterity(Dex), Fortitude(For), Logic(Log), Instinct(Ins), Empathy(Emp), and Willpower(Wil).</p>
+
+<p>There are a few secondary attributes in the game derived from primary attributes. Health Points(HP), which is Str + For. Movement(Mov), which is equal to Agi. Stamina Points(SP), which is For + Wil. And Mana Points(MP), which is Wil + Wil</p>
+
+<p>Skills</p>
+
+<p>Skill rolls are the main ways that players determine if they can succeed at a difficult task. Each skill roll has three associated primary attributes. The player attempts to roll a d6 equal to or under each of the attributes to succeed at a check.</p>
+
+<p>Every die is associated with a linked attribute chosen before it is rolled. In order to succeed at a check, all three dice must roll under their attribute.</p>
+
+<p>Characters with training in skills can pull from their training points to make the check easier. When you make a skill roll for a skill you are trained in, you can reduce the results of each of the dice by 1 per training point. All the dice rolled shared this point pool, and each point spent can only reduce one of the dice.</p>
+
+<p>If you manage to get at or equal to the attributes for all three rolls, you succeed. The remaining TPs become the quality of the success, with no points left being quality level 1. Some especially involved checks require a certain level of quality to succeed, or require multiple successes adding up to a total quality.</p>
+
+<p>If you run out of training points before reducing all the skills to at most their linked attribute, you fail the roll. How you fail the roll depends on which attributes were over. For instance, a Climb check uses Str, Agi, and Wil. If you rolled over on your Str roll, you might lose your grip and fall.</p>
+
+<p>Rolling 1s and 6s are special. When you roll a 1 before modifiers, you do exceptionally well in that area and get a bonus effect related to the attribute. Rolling a 6 is especially debiliting. In addition to generally costing many points to make up, a roll of 6 must be reduced after the other rolls. A remaining 6 means a spectacular failure in that area and will have a failure worse than normal as a result.</p>
+
+<p>Rolling two 1s always succeed with maximum quality level regardless of the other die, with extra bonuses flavored depending on which dice were the 1s. Rolling  two 6s has the reverse effect. It always fails and comes with significant penalties depending on the attributes that failed.</p>
+
+<p>Triple 1s and 6s are major and should be treated as significant points in the session by the GM. The resulting event should be interesting and impactful enough that people talk about that moment for several sessions. It should still make sense, but also be really awesome(or devestating).</p>
+
+<p>Combat</p>
+
+<p>There are two systems you need to get familiar with for combat in Enneazatton. Count up initiative and stamina.</p>
+
+<p>In count up initiative, players keep track of when their actions result, and the GM counts up to signify the passage of time. When it's a players time to go, they speak up and take their turn.</p>
+
+<p>On your turn, you start by resolving whatever your last action was. Whatever you did happens now. After you and anybody else involved in the action announces their rolls and the GM describes the results, you announce your next action and end your turn.</p>
+
+<p>Actions take time, and when you announce an action you note when it will resolve on your sheet and end your turn. While other players and the GM resolve their turns, you can make any rolls your action requires to speed things up.</p>
+
+<p>Actions also usually either cost stamina or are involved in regaining it. Stamina is a pool of dice used to take actions in combat. You start combat with dice equal to your Agi, and cannot go above your stamina maximum. If an outside effect would bring you below 0 stamina, you are winded and cannot act for as many seconds as your stamina would be negative.</p>
+
+<p>Attacks and defenses are skill rolls. When somebody attacks, they announce their target and make a weapon skill roll. At any time until the action is resolved, the target can choose to respond with a defensive action. Defensive actions are taken as part of the attackers actions, but the defender rolls and uses stamina for them. If the quality level of the defensive roll meets or exceeds the attack roll, the attack is avoided.</p>
+
+<p>Armor effectively reduces the quality level of attacks by the level of the armor, indicating that it takes that much more force or presision to penetrate the armor and get a solid damaging hit.</p>
+
+<p>As with normal skill rolls, 1s and 6s are special. The effect a roll of 1 has is dependant on the stat it was rolled for. Double 1s are automatic successes, and double 6s are automatic failures. An offensive triple 1 does double damage, and a defensive triple 1 regenerates all your stamina instantly. In the event of a block, it also does 3 points of stamina damage to the opponent as they are knocked back. Offensive triple 6s drain all your stamina and cancel any pending defensive actions. Defensive triple 6s involve stumbling and falling prone with a dodge, dropping your weapon with a parry, and breaking your shield with a block.</p>
+
+<p>At 0 hit points you are incapacitated, and below that you are dying. When dying, every 10 seconds roll a d6. On a roll of 1 you stabilize, and on a roll of 6 you die.</p>
+
+<table>
+	<tr>
+		<th colspan = 4>Combat Actions</th></tr>
+	<tr>
+		<th colspan = 4>Movement</td></tr>
+	<tr>
+		<td>Action</td><td>Time</td><td>Stamina</td><td>Description</td></tr>
+	<tr>
+		<td>Breathe Deep</td><td>1 Second</td><td>+2 Stamina</td><td>Do nothing and recover stamina.</td></tr>
+	<tr>
+		<td>Walk</td><td>1 Second</td><td>+1 Stamina</td><td>Move 2 Meters</td></tr>
+	<tr>
+		<td>Jog</td><td>1 Second</td><td>0 Stamina</td><td>Move 4 meters</td></tr>
+	<tr>
+		<td>Sprint</td><td>1 second</td><td>1 second</td><td>Move 1d6 + Agility meters.</td></tr>
+	<tr>
+		<th colspan = 4>Attacks</th></tr>
+	<tr>
+		<td>Primary Attack</td><td>3 Seconds</td><td>-3 Stamina</td><td>Roll weapon skill. If successful, deal weapon damage. Roll quality makes it harder to defend. Using your non-dominant hand to make a primary attack has a -1 penalty.</td></tr>
+	<tr>
+		<td>Secondary Attack</td><td>+1 Seconds</td><td>-1 Stamina</td><td>Done as part of a Primary attack, declared later as a reaction. Requires an offhand weapon. Roll weapon skill, using the two highest dice from the primary attack. If successful deal weapon damage</td></tr>
+	<tr>
+		<th colspan = 4>Defenses</th></tr>
+	<tr>
+		<td>Dodge</td><td>+0 Seconds</td><td>-3 Stamina</td><td>Dodge skill roll at -1. Raction to an enemy attack. If roll quality exceeds attack, avoid all damage from an attack made against you.</td></tr>
+	<tr>
+		<td>Parry</td><td>+0 Seconds</td><td>-3 Stamina</td><td>Weapon skill roll. Reaction to enemy attack. Cannot be done while attacking with the weapon. If roll quality exceeds attack, avoid all damage from an attack made against you.</td></tr>
+	<tr>
+		<td>Block</td><td>+0 Seconds</td><td>-3 Stamina</td><td>Shields skill roll, Reaction to an enemy attack. If roll quality equals or exceeds attack quality, block all damage. Damage over the shield value is taken stamina damage.</td></tr>
+	<tr>
+		<th colspan = 4>Other</th></tr>
+	<tr>
+		<td>Retrieve object from belt</td><td>1 Secoond</td><td>+1 Stamina</td><td>Retrieve an object from a ready position like a belt, sheath, pocket etc. Requires a free hand.</td></tr>
+	<tr>
+		<td>Retrieve object from container</td><td>6-Dex Seconds</td><td>+1 Stamina</td><td>Retrieve an object from a loose container such as a backpack, purse, superfull pockets. Requires a free hand</td></tr>
+	<tr>
+		<td>Retrieve object from ground</td><td>3 seconds</td><td>+1 Stamina</td><td>Pick something up off the ground. Requires a free hand.</td></tr>
+	<tr>
+		<td>Store object</td><td>1 Second</td><td>+1 Stamina</td><td>Store an object in either a ready position or loose container.</td></tr>
+	<tr>
+		<td>Drop Object</td><td>+0 Seconds</td><td>0 Stamina</td><td>Taken as part of another action and takes no time. The dropped object can't be used as part of the main action.</td></tr>
+	<tr>
+		<td>Quaff Drink</td><td>1 second per 30 ml</td><td>0 stamina</td><td>This is the normal human chugging speed, I checked.</td></tr>
+</table>
+
+<table>
+	<tr>
+		<th colspan = 2>Natural 1 Effects</th><th colspan = 2>Double/Triple 1/6s</th></tr>
+	<tr>
+		<td>Attack Str</td><td>+1 Damage</td>
+		<td>Attack Double 1s</td><td>Automatic Hit</td></tr>
+	<tr>
+		<td>Attack Agi</td><td>-1 Second Attack</td>
+		<td>Attack Triple 1s</td><td>Double Damage Automatic Hit</td></tr>
+	<tr>
+		<td>Attack Dex</td><td>+1 Attack Quality</td>
+		<td>Attack Double 6s</td><td>Automatic Miss</td></tr>
+	<tr>
+		<td>Attack For</td><td>+1 Attack Stamina Damage</td>
+		<td>Attack Triple 6s</td><td>Miss. Lose All Stamina. Cancel Defenses</td></tr>
+	<tr>
+		<td>Attack Ins</td><td>+1 to Next Defense</td>
+		<td>Defense Double 1s</td><td>Automatic Success</td></tr>
+	<tr>
+		<td>Dodge Dice</td><td>Move 1 Meter</td>
+		<td>Defense Triple 1s</td><td>Success. Regain all Stamina.</td></tr>
+	<tr>
+		<td>Parry Dice</td><td>+1 Second to attack</td>
+		<td>Defense Double 6s</td><td>Failure</td></tr>
+	<tr>
+		<td>Block Dice</td><td>Regain 1 Stamina</td>
+		<td>Defense Triple 6s</td><td>Failure. Lose all Stamina. Cancel Attacks.</td></tr></table>
+</body>
+</html>

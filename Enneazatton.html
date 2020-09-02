@@ -2,7 +2,7 @@
 <html>
 <head>
 <style>
-	body {background-color:black;max-width: 1080px;margin: auto}
+	body {background-color:black;max-width: 720px;margin: auto}
 	h1,h2,h3,h4,h5   {color:silver}
 	p,td,th   {color:white}
 	ul	{list-style-type:none;color:white}
@@ -28,129 +28,334 @@
 
 <h3>Introduction</h3>
 
-<p>Enneazatton is the default fantasy setting and system for GURLS. Thematically it's based around a magic system grounded in the idea that the elements exist as separate spacial dimentions that can be percieved and moved along. Magical effects require an amount of energy or force behind them to create an effect, and generally speaking you can't move anything with magic that you couldn't move normally. Mechanically it's largely inspired by both Sil and Star Wars: Saga Edition.</p>
+<p>Enneazatton is the default fantasy setting and system for GURLS. Thematically it's based around a magic system grounded in the idea that the elements exist as separate spacial dimentions that can be percieved and moved along. Magical effects require an amount of energy or force behind them, and generally speaking you can't move anything with magic that you couldn't move normally.</p>
+
+<p>Mechanically it's a 3d6 roll-under the stat system with dice having a heavy influence on the flavor of successes and failures. Combat is handled with a count-up system and uses a stamina pool to manage what actions you can take.</p>
+
+<p>All the dice used are six sided.</p>
 
 <h2>Attributes</h2>
 
-<p>Player Characters are largely defined by their attributes. All stats start at 1 and you may spend 19 points to increase them. The costs increase as the triangular numbers: 1, 3, 6, 10, and 15.</p>
+<p>Attributes are the core characteristics that define how well a person performs at certain tasks. How strong, fast, tough, and smart they are without regard to task specific training. Skill rolls in this system attempt to roll equal to or under their linked attribute.</p>
 
 <p>If an effect would reduce at stat to 0 you suffer severe penalties. Lost stat points take 1 day to restore per point that it is being raised to. Negative values are treated as 0 for effect and recovery, though they can stack to make recovery take longer.</p>
-
-<h3>Dexterity</h3>
-
-<ul>
-	<li>Dexterity measures your physical precision.</li>
-	<li>It is the attribute used for skills involving finesse.</li>
-	<li>All physical combat skills use dexterity as their attribute.</li>
-	<li>At 0 dexterity you become paralysed and cannot move.</li></ul>
 
 <h3>Strength</h3>
 
 <ul>
-	<li>Strength measures your physical power.</li>
-	<li>It is the attribute used for skills involving might.</li>
-	<li>It adds sides to physical damage rolls in combat.</li>
-	<li>At 0 strength you become unable to stand or lift anything heavier than 1 lb.</li></ul>
-	
-<h3>Constitution</h3>
+	<li>Strength is the measurement of physical might and force.</li>
+	<li>Strength is used for skills involving physical force being applied.</li>
+	<li>Strength determines the total wight you can weild without penalty. Each point in strength allows you to wield .5 KG in your hands.</li>
+	<li>Strength is used to calculate hit point totals. Strength + Fortitdude + Modifiers = Hit Points</li></ul>
+
+<h3>Agility</h3>
 
 <ul>
-	<li>Constitution measures your health and endurace.</li>
-	<li>Consitution is the attribute for skills involving fortitude.</li>
-	<li>Each point gives you 10 HP.</li>
-	<li>At 0 constitution you fall unconscious.</li></ul>
+	<li>Agility is the measurement of physical quickness.</li>
+	<li>Agility is used for skills where physical speed is a major determiner for success.</li>
+	<li>At the beginning of combat, you start with Stamina dice equal to your Agility.</li>
+	<li>When you take the Sprint action in combat, you move 2 + Agility meters per second.</li></ul>
 
-<h3>Intelligence</h3>
-
-<ul>
-	<li>Intelligence measures your ability to think quickly.</li>
-	<li>It is the attribute used for skills involving thinking and memory.</li>
-	<li>All spellcasting skills use this attribute.</li>
-	<li>At 0 intelligence you lose the ability to use any of your skills and are untrained in everything.</li></ul>
-
-<h3>Charisma</h3>
+<h3>Dexterity</h3>
 
 <ul>
-	<li>Charisma measures the force of your personally.</li>
-	<li>It is the attribute used for skills involving social interactions.</li>
-	<li>It increases the effects of most spells.</li>
-	<li>At 0 charisma you lose the ability to communicate and cannot cast spells.</li></ul>
+	<li>Dexterity is the measurement of physical coordination.</li>
+	<li>Dexterity is used for skills where physical precision is key.</li>
+	<li>Dexterity tends to be important for ranged and light weapon combat.</li></ul>
 
-<h3>Wisdom</h3>
-
-<ul>
-	<li>Wisdome measures your intuition.</li>
-	<li>It is the attribute used for skills involving perceptiveness and your unconscious.</li>
-	<li>You may cast a number of spells equal to your Wisdom per day.</li>
-	<li>At 0 wisdom you zone out and do not react to anything.</li></ul>
-
-<h2>Race</h2>
-
-<p>I had considered only having humans be playable in Enneazatton, but I wanted Formians so bad I decided to create other races to fill the world out as well.</p>
-
-<h3>Human</h3>
+<h3>Fortitude</h3>
 
 <ul>
-	<li>Humans recieve no bonuses or penalties to any attributes</li>
-	<li>Quick learners - Humans start with one additional skill of their choice</li>
-	<li>Integrated - Humans may learn an additional language of their choice on character creation, and learn an additional language any time they take a new language proficiency</li>
-	<li>Adrenaline - Human adrenal glands allow them to enter a state of heightened awareness in times of great stress.</li>
+	<li>Fortitude is the measurement of physical toughness and endurance.</li>
+	<li>Fortitude is used for skills that are physically strenuous.</li>
+	<li>When you are recovering Stamina, your maximum is equal to your Fortitude.</li>
+	<li>Fortitude is used to calculate hit point totals. Strength + Fortitdude + Modifiers = Hit Points</li></ul>
+
+<h3>Logic</h3>
+
+<ul>
+	<li>Logic is the measurement of the ability to parse information.</li>
+	<li>Logic is used for skills where you need to figure something out.</li></ul>
+
+<h3>Instinct</h3>
+
+<ul>
+	<li>Instinct is the measurement of your ability to notice and respond to things.</li>
+	<li>Instinct is used for skills that require you recognize or react to something.</li>
+	<li>When combat begins, you start at 1d6 - Instinct seconds.</li></ul>
+
+<h3>Empathy</h3>
+
+<ul>
+	<li>Empathy is the measurement of your ability to make emotional connections.</li>
+	<li>Empathy is used for skills involving understanding and communicating with others.</li></ul>
+
+<h3>Willpower</h3>
+
+<ul>
+	<li>Willpower is the measurement of how much mental force and endurance.</li>
+	<li>Willpower is used for skills that are either mentally strenuous or require a forceful personality to succeed.</li>
+	<li>Your maximum mana pool is equal to your Willpower.</li></ul>
+
+<h2>Skills</h2>
+
+<p>Skill rolls are how you handle almost all actions taken. When you attempt something with a chance of failure, you make a skill roll.</p>
+
+<p>All skills are tied to three attributes. When you make a skill check, you roll three dice and compare each of them to the linked attribute. Which die is tied to which attribute is determined before you roll.</p>
+
+<p>General skills cannot be trained and are used for general actions not defined here. The types of general skills are Physical(Str, Agi, Ins), Social(Emp, Emp, Wil), and Mental(Log, Log, Wil).</p>
+
+<p>Trained skills have pools of points that can be used to adjust rolls. For every point in a skill, you can adjust a die in a skill roll by 1 point.</p>
+
+<p>An end result of 6 is always a failure and a result of 1 is always a success, no matter what your stats are.</p>
+
+<h3>Critcals</h3>
+
+<p>Rolls of 1 and 6 are special. 1s often allow you to gain a benefit depending on the skill used, and 6s allow the GM to add additional setbacks. The nature of the benefit and setback should tie into the stat used for the roll.</p>
+
+<p>Doubles 1s/6s are especially spectacular and are called criticals. A double 1 always succeeds and a double 6 always fails, regardless of the other roll and training.</p>
+
+<p>Triple 1s/6s are even rarer and often frame the highlight of a session. The exact effects are up to the GM, but it should be significant and the GM should consider it their responsibility to make it as interesting as possible.</p>
+
+<h3>Skill List</h3>
+
+<table>
+	<tr>
+		<th>Physical</th><th>Str</th><th>Agi</th><th>Ins</th></tr>
+	<tr>
+		<td>Acrobatics</td><td>Agi</td><td>Agi</td><td>Str</td></tr>
+	<tr>
+		<td>Athletics</td><td>Str</td><td>Agi</td><td>For</td></tr>
+	<tr>
+		<td>Brute Force</td><td>Str</td><td>Str</td><td>For</td></tr>
+	<tr>
+		<td>Climbing</td><td>Str</td><td>Agi</td><td>Wil</td></tr>
+	<tr>
+		<td>Dancing</td><td>Agi</td><td>Dex</td><td>Emp</td></tr>
+	<tr>
+		<td>Legerdemain</td><td>Dex</td><td>Dex</td><td>Log</td></tr>
+	<tr>
+		<td>Stealth</td><td>Agi</td><td>Dex</td><td>Dex</td></tr>
+	<tr>
+		<td>Swimming</td><td>Str</td><td>Agi</td><td>For</td></tr>
+	<tr>
+		<td>Tolerance</td><td>Wil</td><td>For</td><td>For</td></tr>
+	<tr>
+		<td>Tracking</td><td>Agi</td><td>Dex</td><td>Wil</td></tr>
+	<tr>
+		<th>Social</th><th>Emp</th><th>Emp</th><th>Wil</th></tr>
+	<tr>
+		<td>Argue</td><td>Log</td><td>Emp</td><td>Wil</td></tr>
+	<tr>
+		<td>Charm</td><td>Ins</td><td>Emp</td><td>Wil</td></tr>
+	<tr>
+		<td>Disguise</td><td>Dex</td><td>Ins</td><td>Emp</td></tr>
+	<tr>
+		<td>Ettiquette</td><td>Log</td><td>Ins</td><td>Emp</td></tr>
+	<tr>
+		<td>Insight</td><td>Log</td><td>Ins</td><td>Emp</td></tr>
+	<tr>
+		<td>Intimidation</td><td>Ins</td><td>Emp</td><td>Wil</td></tr>
+	<tr>
+		<td>Resist</td><td>Ins</td><td>Wil</td><td>Wil</td></tr>
+	<tr>
+		<td>Seduction</td><td>Ins</td><td>Emp</td><td>Emp</td></tr>
+	<tr>
+		<td>Singing</td><td>For</td><td>Emp</td><td>Emp</td></tr>
+	<tr>
+		<td>Streetwise</td><td>Log</td><td>Ins</td><td>Emp</td></tr>
+	<tr>
+		<th>Mental</th><th>Log</th><th>Log</th><th>Wil</th></tr>
+	<tr>
+		<td>Bearings</td><td>Log</td><td>Ins</td><td>Ins</td></tr>
+	<tr>
+		<td>Bushcraft</td><td>Agi</td><td>For</td><td>Wil</td></tr>
+	<tr>
+		<td>History</td><td>Log</td><td>Log</td><td>Log</td></tr>	
+	<tr>
+		<td>Law</td><td>Log</td><td>Log</td><td>Emp</td></tr>
+	<tr>
+		<td>Legends</td><td>Log</td><td>Log</td><td>Ins</td></tr>
+	<tr>
+		<td>Math</td><td>Log</td><td>Log</td><td>Log</td></tr>
+	<tr>
+		<td>Mechanics</td><td>Log</td><td>Log</td><td>Ins</td></tr>
+	<tr>
+		<td>Religion</td><td>Log</td><td>Emp</td><td>Emp</td></tr>
+	<tr>
+		<td>Ropes</td><td>Str</td><td>Dex</td><td>Log</td></tr>
+	<tr>
+		<td>Warfare</td><td>Log</td><td>Ins</td><td>Wil</td></tr>
+	<tr>
+		<th>Combat</th><th>Str</th><th>Agi</th><th>Ins</th></tr>
 	<ul>
-		<li>A human may spend a cast to feel an adrenaline rush. The rush lasts for 10 seconds.</li>
-		<li>During the rush, all actions take 1 second shorter(to a minimum of 1 second), and all attributes are considered 1 higher.</li>
-		<ul>
-			Including constitution, gain 10 temporary hit points, lose 10 when this ends. This loss of hit points cannot cause an injury.</ul>
-		<li>If adrenaline is used to overcast, instead take a stat drop to EVERY attribute.</li></ul></ul>
+		<li>Dodge		Agi, Agi, Ins</li>
+		<li>Shields		Str, Agi, For</li>
+		<li>Unarmed		Str, Agi, Ins</li>
+		<li>Daggers		Agi, Dex, Ins</li>
+		<li>Swords		Str, Agi, Ins</li>
+		<li>Clubs		Str, Str, Ins</li>
+		<li>Two Handers	Str, Str, For</li>
+		<li>Polearms		Str, Agi, Dex</li>
+		<li>Bows			Str, Dex, Ins</li>
+		<li>Crossbows	Dex, Dex, Ins</li></ul></table>
 
-<h3>Jelnian</h3>
+<h2>Combat</h2>
 
-<ul>
-	<li>Jelnians have +1 intelligence -1 constitution. Their long lives give them a wealth of experience to draw from, but the consistency of their bodies leaves them frail.</li>
-	<li>Water Sensisitve - All Jelnians can see along the plane of water from birth and have a +1 bonus water spells and spell effects.</li>
-	<li>Jelnians speak Common and Aquatic. Aquatic is notable for being the only verbal skill that can be transmitted underwater.</li>
-	<li>Regeneration - The amorphous nature of their bodies allows them to heal quickly.</li>
-	<ul>
-		<li>A Jelnian may spend a cast to regenerate their body.</li>
-		<li>For 10 seconds, they heal 1 HP per point of charisma.</li>
-		<li>It takes 3 days worth of calories to fuel this, and doing so repeatedly will cause them to starve.</li></ul>
-	</ul>
+<p>There are three main components to combat in Enneazatton. The count up turn order, the stamina system, and the actions players can perform.</p>
 
-<h3>Formian</h3>
+<p>The count up turn order is how you determine who is acting. Combat starts at 0 seconds, and everybody rolls 1d6 to determine their starting time. As time passes, the GM will announce the time and players who can move on that mark. Ties among team mates can be performed in any order. Unless there's a reason to do otherwise, it's usually easiest to just go clockwise around the table. Players always go before NPCs. In the case of players or NPCs fighting eachother, whoever has the lowest stamina goes first.</p>
 
-<ul>
-	<li>Formians have +1 constitution and -1 charisma. Their hard bodies are very resilient, but they find it hard to relate to those who don't share a hive.</li>
-	<li>Earth Sensitive - All formicids can see along the plane of earth from birth and recieve a +1 bonus to earth spells and effects.</li>
-	<li>Formicids speak common and use can communicate via tremorsense with their antennae.</li>
-	<li>Formicids can only see up to 5 ft away. They have tremorsense up to 30 ft, and can extend their perception by communicating via tremorsense, sharing their perceptions with other formicids.</li>
-	<li>Tunnel - Formicids know the earth very, very well and are able to force tunnels to appear in the earth by pushing it away.</li>
-	<ul>
-		<li>A Formicid may create a hole in the earth with a diameter of 3ft + 1 ft per point of charisma and a depth of 5 ft per point of charisma.</li>
-		<li>Watch out for cave-ins.</li></ul>
-	</ul>
-	
-<h3>Gruul</h3>
+<p>When the GM calls your time, you get to go. On your turn, you first resolve any pending actions. Tell the table the results of any rolls or actions you made and resolve them. Then, you announce the intent and target of your next action and end your turn. While other players are taking their turns, you can make any rolls that would be needed so that when they resolve you know what happens.</p>
 
-<ul>
-	<li>Gruul have +1 strength and -1 dexterity. Trees are strong, but are stiff and slow to move.</li>
-	<li>Fire Sensitive - All Grull can see along the plane of fire from birth and recieve a +1 bonus to earth spells and effects.</li>
-	<li>Grull speak common. They may also speak to plants, though a plants perception is usually very limited.</li>
-	<li>Ignite - Grull can unleash the energy of their bodies in a fiery explosion.</li>
-	<ul>
-		<li>A grull can set itself on fire, dealing damage to anything it touches, or that touches it for 10 seconds.</li>
-		<li>During that time, any weapon they hold is considered fire branded and they add their charisma modifier to damage as well as strength.</li>
-		<li>Any creature that attacks or touches an inflamed Grull in melee takes 1 point of damage per point of charisma the Grull has.</li>
-		<li>The grull takes 1 point of damage per second, and may end the fire at any time.</li></ul></ul>
-		
-<h3>Goat things I forget the name of</h3>
+<p>The stamina system determines the flow of combat. Stamina is the number of dice you have available to make rolls. Your maximum stamina is equal to your Fortitude + Willpower, and your starting stamina in combat is equal to your Agility. Most actions you take will either add dice to the pool, or require you to make rolls with them and remove them from the pool. It's generally easier to just keep a number of dice in front of you to show what you can use than recording your stamina like hit points.</p>
 
-<ul>
-	<li>Goats have +1 dexterity and -1 wisdom. Goats are nimble but lacking in intuition.</li>
-	<li>Air Sensitive - All Grull can see along the plane of air from birth and recieve a +1 bonus to earth spells and effects.</li>
-	<li>Goats speak common and goat. They're very good at controlling their volume, and are all passable ventiloquists.</li>
-	<li>Horn Blast - goats may empty the entire capacity of their lungs through their horns. Very, very forcefully.</li>
-	<ul>
-		<li>I have the effects written somewhere I need to find it.</li></ul>
-	</ul>
+<p>Player actions are what players do during their turns, or in response to others. Almost all actions take time, and actions that require rolls take stamina. When you announce an action, it resolves after the time it takes passes on your next turn.</p>
+
+<p>Some actions are taken as part of other actions. They usually add additional time to the action, and sometimes requires rolling additional dice.</p>
+
+<p>Reactions to other actions can be declared at any time after they are announced, before they resolve. This means at least 1 second needs to pass before you can initiate a block. Reactions are considered part of the action they're responding to, and don't change the reactors initiative.</p>
+
+<p>Multiple actions can be combined into a single announcement to action to speed up the resolution of things like movement. For example, a player might want to run 15 meters. They could then roll each turn and move, but not have to announce they plan on moving again. There's no mechanical benefit to doing this, it can just make things go smoother.</p>
+
+<table>
+	<tr>
+		<th colspan = 4>Combat Actions</th></tr>
+	<tr>
+		<th colspan = 4>Movement</td></tr>
+	<tr>
+		<td>Action</td>
+		<td>Time</td>
+		<td>Stamina</td>
+		<td>Description</td></tr>
+
+	<tr>
+		<td>Breathe Deep</td>
+		<td>1 Second</td>
+		<td>+2 Stamina</td>
+		<td>Do nothing and recover stamina.</td></tr>
+	<tr>
+		<td>Walk</td>
+		<td>1 Second</td>
+		<td>+1 Stamina</td>
+		<td>Move 2 Meters</td></tr>
+	<tr>
+		<td>Jog</td>
+		<td>1 Second</td>
+		<td>0 Stamina</td>
+		<td>Move 4 meters</td></tr>
+	<tr>
+		<td>Sprint</td>
+		<td>1 second</td>
+		<td>1 second</td>
+		<td>Move 1d6 + Agility meters.</td></tr>
+	<tr>
+		<th colspan = 4>Attacks</th></tr>
+	<tr>
+		<td>Primary Attack</td>
+		<td>3 Seconds</td>
+		<td>-3 Stamina</td>
+		<td>Roll weapon skill. If successful, deal weapon damage. Roll quality makes it harder to defend. Using your non-dominant hand to make a primary attack has a -1 penalty.</td></tr>
+	<tr>
+		<td>Secondary Attack</td>
+		<td>+1 Seconds</td>
+		<td>-1 Stamina</td>
+		<td>Done as part of a Primary attack, declared later as a reaction. Requires an offhand weapon. Roll weapon skill, using the two highest dice from the primary attack. If successful deal weapon damage</td></tr>
+	<tr>
+		<th colspan = 4>Defenses</th></tr>
+	<tr>
+		<td>Dodge</td>
+		<td>+0 Seconds</td>
+		<td>-3 Stamina</td>
+		<td>Dodge skill roll at -1. Raction to an enemy attack. If roll quality exceeds attack, avoid all damage from an attack made against you.</td></tr>
+	<tr>
+		<td>Parry</td>
+		<td>+0 Seconds</td>
+		<td>-3 Stamina</td>
+		<td>Weapon skill roll. Reaction to enemy attack. Cannot be done while attacking with the weapon. If roll quality exceeds attack, avoid all damage from an attack made against you.</td>
+		</tr>
+	<tr>
+		<td>Block</td>
+		<td>+0 Seconds</td>
+		<td>-3 Stamina</td>
+		<td>Shields skill roll, Reaction to an enemy attack. If roll quality equals or exceeds attack quality, block all damage. Damage over the shield value is taken stamina damage.</td></tr>
+	<tr>
+		<th colspan = 4>Other</th></tr>
+	<tr>
+		<td>Retrieve item from belt</td>
+		<td>1 Secoond</td>
+		<td>+1 Stamina</td>
+		<td>Retrieve an object from a ready position like a belt, sheath, pocket etc. Requires a free hand.</td></tr>
+	<tr>
+		<td>Retrieve object from container</td>
+		<td>6-Dex Seconds</td>
+		<td>+1 Stamina</td>
+		<td>Retrieve an object from a loose container such as a backpack, purse, superfull pockets. Requires a free hand</td></tr>
+	<tr>
+		<td>Retrieve object from ground</td>
+		<td>3 seconds</td>
+		<td>+1 Stamina</td>
+		<td>Pick something up off the ground. Requires a free hand.</td></tr>
+	<tr>
+		<td>Store object</td>
+		<td>1 Second</td>
+		<td>+1 Stamina</td>
+		<td>Store an objectin either a ready position or loose container.</td></tr>
+	<tr>
+		<td>Drop Object</td>
+		<td>+0 Seconds</td>
+		<td>0 Stamina</td>
+		<td>Taken as part of another action and takes no time. The dropped object can't be used as part of the main action.</td></tr>
+	<tr>
+		<td>Quaff Drink</td>
+		<td>1 second per 30 ml</td>
+		<td>0 stamina</td>
+		<td>This is the normal human chugging speed, I checked.</td></tr>
+</table>
+
+<p>Criticals in Combat</p>
+
+<p>Criticals in combat work slightly differently. For offensive actions, the effect a natural 1 has depends on the stat it's being rolled for. For defensive actions, each natural 1 has the same effect. In both cases the advantages of multiple 1s stack.</p>
+
+<p>As with skills, double 1s/6s are special. Double 1s maximise the quality level of the action and ignore the other roll, stacking both the 1 advantages. Double 6s guarantee a failure.</p>
+
+<p>Triple 1s and 6s often lead to an instant victory or defeat in single combat. Triple 1s on offenses do double damage before modifiers and cannot miss except from defensive triple 1s. Offensive triple 6s are a devestating failure, resulting in completely draining the stamina of the attacker and forcing them to take 3 seconds to recover their position. Triple 1s on defenses fully regenerate the stamina of the defender, and in the case of a block also do 3 stamina damage to the attacker. Triple 6s on defense drain stamina fully and guarantee a hit that would normally miss.</p>
+
+<table>
+	<tr>
+		<th colspan = 2>Offensive Triggers</th></tr>
+	<tr>
+		<td>Strength</td>
+		<td>+1 Damage</td></tr>
+	<tr>
+		<td>Agility</td>
+		<td>-1 Second Attack Time</td></tr>
+	<tr>
+		<td>Dexterity</td>
+		<td>+1 Attack QUality</td></tr>
+	<tr>
+		<td>Fortitude</td>
+		<td>Str +1 Damage</td></tr>
+	<tr>
+		<td>Instinct</td>
+		<td>+1 to defense quality during attack</td></tr>
+	<tr>
+		<th colspan = 2>Defensive Triggers</th></tr>
+	<tr>
+		<td>Dodge</td>
+		<td>Move 1 meter</td></tr>
+	<tr>
+		<td>Parry</td>
+		<td>+1 second to parried attack</td></tr>
+	<tr>
+		<td>Block</td>
+		<td>Gain 1 stamina</td></tr></table>
+
+<p>Injury and Death</p>
+
+<p>When you run out of hit points, you are incapacitated and on the verge of death. You have three death dice that you roll every 10 seconds. For every two hit points below zero that would send you, start with one less die. A roll of 1 on a die adds a die to the pool, a roll of 6 removes one. If you'd end up with more than 3 dice, you stabilize and are no longer at risk of dying. If you run out of dice, you die.</p>
+
+<p>Attacks against dying creatures reduce their death dice by the damage of the weapon.</p>
 
 </html>
 </body>
